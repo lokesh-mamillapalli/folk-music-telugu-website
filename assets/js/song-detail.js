@@ -1,4 +1,6 @@
 (function () {
+  const { API_BASE = "" } = window.FolkSiteConfig || {};
+
   const {
     el,
     parseQuery,
@@ -52,7 +54,9 @@
     if (!value) {
       return "";
     }
-    return `/api/audio?url=${encodeURIComponent(value)}`;
+
+    const normalizedBase = String(API_BASE || "").replace(/\/$/, "");
+    return `${normalizedBase}/api/audio?url=${encodeURIComponent(value)}`;
   }
 
   function collectAdminEditPayload(currentSong) {

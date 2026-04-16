@@ -49,14 +49,30 @@
     return Array.from(new Set(candidates));
   }
 
-  function toAudioProxyUrl(sourceUrl) {
+  function toAudioProxyUrl(sourceUrl, baseUrl = "") {
     const value = String(sourceUrl || "").trim();
     if (!value) {
       return "";
     }
 
-    const normalizedBase = String(API_BASE || "").replace(/\/$/, "");
+    const normalizedBase = String(baseUrl || "").replace(/\/$/, "");
     return `${normalizedBase}/api/audio?url=${encodeURIComponent(value)}`;
+  }
+
+  function resolveApiBaseCandidates() {
+    const candidates = [];
+
+    const configuredBase = String(API_BASE || "").trim();
+    if (configuredBase) {
+      candidates.push(configuredBase);
+    }
+
+    if (window.location.hostname.endsWith("github.io")) {
+      candidates.push("https://folk-music-telugu-website.onrender.com");
+    }
+
+    candidates.push("");
+    return Array.from(new Set(candidates));
   }
 
   function collectAdminEditPayload(currentSong) {
@@ -220,8 +236,11 @@
     const audio = el("#main-audio");
     const primaryAudioUrl = String(song.audioVersions[0]?.url || "").trim();
     const fallbackUrls = getDriveFallbackUrls(primaryAudioUrl);
-    const proxiedCandidates = Array.from(new Set([primaryAudioUrl, ...fallbackUrls]))
-      .map((url) => toAudioProxyUrl(url))
+    const apiBaseCandidates = resolveApiBaseCandidates();
+    const sourceCandidates = Array.from(new Set([primaryAudioUrl, ...fallbackUrls]));
+
+    const proxiedCandidates = sourceCandidates
+      .flatMap((sourceUrl) => apiBaseCandidates.map((baseUrl) => toAudioProxyUrl(sourceUrl, baseUrl)))
       .filter(Boolean);
 
     if (proxiedCandidates.length) {

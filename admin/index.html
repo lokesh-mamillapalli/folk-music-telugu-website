@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel | Telugu Folk Songs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html">Telugu Folk Songs</a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../songs/index.html">Songs</a>
+        <a href="../artists/index.html">Artists</a>
+        <a href="index.html" aria-current="page">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="hero compact admin-head">
+      <h1>Admin Dashboard</h1>
+      <p>Add, edit, delete songs and categories. All public pages update from this data.</p>
+      <div class="admin-head-actions">
+        <button id="admin-logout-btn" class="btn-secondary" type="button">Logout</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Song Editor</h2>
+        <button id="song-form-reset" class="btn-secondary" type="button">New Song</button>
+      </div>
+
+      <form id="song-form" class="admin-form-grid">
+        <input id="song-id" type="hidden" />
+
+        <label>
+          Telugu Title
+          <input id="song-title-te" type="text" required />
+        </label>
+
+        <label>
+          English Title
+          <input id="song-title-en" type="text" required />
+        </label>
+
+        <label>
+          Region
+          <select id="song-region" required>
+            <option value="Telangana">Telangana</option>
+            <option value="Andhra">Andhra</option>
+          </select>
+        </label>
+
+        <label>
+          Category
+          <input id="song-category" list="category-options" type="text" placeholder="e.g. Festival" required />
+          <datalist id="category-options"></datalist>
+        </label>
+
+        <label>
+          Artist
+          <input id="song-artist" type="text" required />
+        </label>
+
+        <label class="full-row">
+          Audio URL (Google Drive playable link)
+          <input id="song-audio-url" type="url" placeholder="https://..." required />
+        </label>
+
+        <label class="full-row">
+          Song Link Label (optional)
+          <input id="song-link-label" type="text" placeholder="YouTube performance" />
+        </label>
+
+        <label class="full-row">
+          Song Link URL (optional)
+          <input id="song-link-url" type="url" placeholder="https://..." />
+        </label>
+
+        <label class="full-row">
+          Lyrics
+          <textarea id="song-lyrics" rows="7" required></textarea>
+        </label>
+
+        <div class="admin-actions full-row">
+          <button class="btn" type="submit">Save Song</button>
+          <button id="song-delete-btn" class="btn-secondary" type="button">Delete Song</button>
+        </div>
+      </form>
+      <p id="song-form-message" class="muted"></p>
+    </section>
+
+    <section class="card">
+      <h2>Category Manager</h2>
+      <div class="admin-inline-form">
+        <input id="new-category" type="text" placeholder="Add category" />
+        <button id="add-category-btn" class="btn" type="button">Add Category</button>
+      </div>
+      <div id="category-list" class="chip-row"></div>
+    </section>
+
+    <section class="card">
+      <h2>All Songs</h2>
+      <p id="admin-song-count" class="muted"></p>
+      <div id="admin-song-list" class="admin-song-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"></div>
+  </footer>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <script src="../assets/js/admin.js"></script>
+</body>
+</html>

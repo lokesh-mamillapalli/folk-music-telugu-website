@@ -1,0 +1,19 @@
+{
+  "name": "folk-music-telugu-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telugu folk songs website with Node API, MongoDB, Google Drive links, and admin dashboard",
+  "scripts": {
+    "start": "node server.js",
+    "stop": "sh -c 'pid=$(lsof -t -iTCP:8080 -sTCP:LISTEN 2>/dev/null | head -n1); if [ -n \"$pid\" ]; then kill \"$pid\" && echo \"Stopped PID $pid on :8080\"; else echo \"No process listening on :8080\"; fi'",
+    "restart": "npm run stop && npm start",
+    "check": "node --check server.js && node --check assets/js/common.js && node --check assets/js/data.js && node --check assets/js/songs.js && node --check assets/js/song-detail.js && node --check assets/js/artists.js && node --check assets/js/admin-login.js && node --check assets/js/admin.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  }
+}

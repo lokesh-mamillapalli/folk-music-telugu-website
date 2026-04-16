@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Songs Library | Telugu Folk Songs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html">Telugu Folk Songs</a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="index.html" aria-current="page">Songs</a>
+        <a href="../artists/index.html">Artists</a>
+        <a href="../admin/login.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="hero compact">
+      <h1>Songs Library</h1>
+      <p>Browse every song with region, category, and artist filters.</p>
+    </section>
+
+    <section class="filters-panel">
+      <div class="filter-grid">
+        <label>
+          Search
+          <input id="songs-search" type="search" placeholder="Search title, lyrics, tags..." />
+        </label>
+        <label>
+          Region
+          <select id="filter-region"></select>
+        </label>
+        <label>
+          Category
+          <select id="filter-category"></select>
+        </label>
+        <label>
+          Artist
+          <select id="filter-artist"></select>
+        </label>
+        <label>
+          Sort
+          <select id="sort-by">
+            <option value="latest">Latest</option>
+            <option value="alphabetical">Alphabetical</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>All Songs</h2>
+        <p id="songs-count" class="muted"></p>
+      </div>
+      <div id="songs-grid" class="grid cards-3"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"></div>
+  </footer>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <script src="../assets/js/songs.js"></script>
+</body>
+</html>

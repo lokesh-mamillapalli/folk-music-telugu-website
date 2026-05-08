@@ -262,10 +262,10 @@
       const nextTheme = current === "light" ? "dark" : "light";
       if (nextTheme === "light") {
         document.documentElement.setAttribute("data-theme", "light");
-        localStorage.setItem("theme", "light");
+        localStorage.setItem("folkSite_theme", "light");
       } else {
         document.documentElement.removeAttribute("data-theme");
-        localStorage.removeItem("theme");
+        localStorage.removeItem("folkSite_theme");
       }
     });
   }

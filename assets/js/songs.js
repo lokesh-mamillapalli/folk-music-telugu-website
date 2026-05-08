@@ -45,8 +45,16 @@
     };
   }
 
+  function showSkeletons(count = 6) {
+    songsGrid.innerHTML = Array.from({ length: count })
+      .map(() => '<div class="skeleton skeleton-card"></div>')
+      .join("");
+  }
+
   async function filterSongs() {
     const { search, region, category, artist, sort } = collectParams();
+
+    showSkeletons();
 
     const songs = await getSongs({
       search: search || "",
@@ -59,12 +67,14 @@
     if (!songs.length) {
       songsGrid.innerHTML = '<article class="card"><p class="muted">No songs found for this filter.</p></article>';
     } else {
-      songsGrid.innerHTML = songs.map((song) => cardHTML(song, "../")).join("");
+      songsGrid.innerHTML = songs.map((song, i) => cardHTML(song, "../", i)).join("");
     }
     countEl.textContent = `${songs.length} song(s) found`;
   }
 
   async function bootstrap() {
+    showSkeletons();
+
     const [songs, categories] = await Promise.all([
       getSongs({ sort: "latest" }),
       getCategories()

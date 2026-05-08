@@ -6,8 +6,9 @@
   <title>Admin Login | Telugu Folk Songs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>if(localStorage.getItem('theme')==='light') document.documentElement.setAttribute('data-theme', 'light');</script>
 </head>
 <body>
   <header class="site-header">
@@ -18,26 +19,27 @@
         <a href="../songs/index.html">Songs</a>
         <a href="../artists/index.html">Artists</a>
         <a href="login.html" aria-current="page">Admin</a>
+        <button id="theme-toggle" class="btn-secondary" style="padding: 0.4rem 0.6rem; margin-left: 0.5rem; border-radius: 50%;" aria-label="Toggle light/dark mode">🌗</button>
       </nav>
     </div>
   </header>
 
   <main class="container page-content admin-wrap">
     <section class="card admin-card">
-      <h1>Admin Login</h1>
-      <p class="muted">Only authorized admin can manage songs and metadata.</p>
+      <h1>🔐 Admin Login</h1>
+      <p class="muted" style="margin-top: 0.3rem;">Only authorized admin can manage songs and metadata.</p>
       <form id="admin-login-form" class="admin-form">
         <label>
           Email
-          <input id="admin-email" type="email" placeholder="btp@gmail.com" required />
+          <input id="admin-email" type="email" placeholder="btp@gmail.com" autocomplete="username" required />
         </label>
         <label>
           Password
-          <input id="admin-password" type="password" placeholder="********" required />
+          <input id="admin-password" type="password" placeholder="••••••••" autocomplete="current-password" required />
         </label>
         <button class="btn" type="submit">Login</button>
       </form>
-      <p id="admin-login-message" class="muted"></p>
+      <p id="admin-login-message" class="muted" style="margin-top: 0.5rem;"></p>
     </section>
   </main>
 

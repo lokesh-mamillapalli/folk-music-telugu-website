@@ -137,17 +137,21 @@
     return data;
   }
 
-  function cardHTML(song, base = "") {
-    const preview = song.lyrics.length > 75 ? `${song.lyrics.slice(0, 75)}...` : song.lyrics;
+  function cardHTML(song, base = "", index = 0) {
+    const preview = song.lyrics.length > 90 ? `${song.lyrics.slice(0, 90)}…` : song.lyrics;
+    const delay = Math.min(index * 0.08, 0.6);
     return `
-      <article class="card">
-        <h3>${song.titleTe}</h3>
-        <p class="meta">${song.titleEn}</p>
-        <p class="meta">${song.region} • ${song.category}</p>
-        <p class="meta">Artist: ${song.artist}</p>
-        <p class="lyrics-preview">${preview}</p>
+      <article class="card song-card card-reveal" style="animation-delay: ${delay}s">
+        <span class="card-region-badge">${song.region}</span>
+        <div class="card-title-te">${song.titleTe}</div>
+        <div class="card-title-en">${song.titleEn}</div>
+        <div class="card-meta">
+          <span>${song.category}</span>
+          <span>${song.artist}</span>
+        </div>
+        <p class="lyrics-preview">"${preview}"</p>
         <div class="card-footer">
-          <a class="btn" href="${base}songs/song.html?id=${encodeURIComponent(song.id)}">View Song</a>
+          <a class="btn" href="${base}songs/song.html?id=${encodeURIComponent(song.id)}">View Song →</a>
         </div>
       </article>
     `;
@@ -249,6 +253,21 @@
         bio: "Artist profile managed from Admin metadata.",
         songs: artistSongs.map((song) => song.id)
       }));
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const nextTheme = current === "light" ? "dark" : "light";
+      if (nextTheme === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("theme", "light");
+      } else {
+        document.documentElement.removeAttribute("data-theme");
+        localStorage.removeItem("theme");
+      }
+    });
   }
 
   window.FolkCommon = {

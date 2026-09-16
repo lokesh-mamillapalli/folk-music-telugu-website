@@ -17,7 +17,8 @@
       <a class="brand" href="../index.html">Telugu Folk Songs</a>
       <nav class="nav-links">
         <a href="../index.html">Home</a>
-        <a href="../songs/index.html">Songs</a>
+        <a href="../songs/andhra.html">Andhra Songs</a>
+        <a href="../songs/telangana.html">Telangana Songs</a>
         <a href="index.html" aria-current="page">Artists</a>
         <a href="../admin/login.html">Admin</a>
         <button id="theme-toggle" class="btn-secondary" style="padding: 0.4rem 0.6rem; margin-left: 0.5rem; border-radius: 50%;" aria-label="Toggle light/dark mode">🌗</button>
@@ -31,6 +32,14 @@
       <p>Performer profiles with their songs and contributions to Telugu folk music.</p>
     </section>
     <section>
+      <div class="section-head artists-toolbar">
+        <div id="artist-region-toggle" class="segmented" role="group" aria-label="Show artists by region">
+          <button type="button" data-region="All" aria-pressed="true">All Artists</button>
+          <button type="button" data-region="Andhra" aria-pressed="false">Andhra Pradesh Artists</button>
+          <button type="button" data-region="Telangana" aria-pressed="false">Telangana Artists</button>
+        </div>
+        <p id="artists-count" class="muted"></p>
+      </div>
       <div id="artists-grid" class="grid cards-2"></div>
     </section>
   </main>

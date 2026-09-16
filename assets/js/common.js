@@ -47,6 +47,16 @@
       .replaceAll("'", "&#39;");
   }
 
+  // Each region has its own songs page under songs/. `key` is the value stored on songs.
+  const REGIONS = [
+    { key: "Andhra", label: "Andhra Pradesh", page: "andhra.html" },
+    { key: "Telangana", label: "Telangana", page: "telangana.html" }
+  ];
+
+  function findRegion(key) {
+    return REGIONS.find((region) => region.key === key) || null;
+  }
+
   // Songs can credit several artists as "A, B, C".
   function splitArtists(value) {
     return String(value || "")
@@ -253,8 +263,8 @@
     setAuthToken("");
   }
 
-  async function getDerivedArtists() {
-    const songs = await getSongs();
+  // Group songs by individual artist name, sorted by name.
+  function groupSongsByArtist(songs) {
     const byArtist = new Map();
     songs.forEach((song) => {
       splitArtists(song.artist).forEach((name) => {
@@ -267,11 +277,7 @@
 
     return Array.from(byArtist.entries())
       .sort((a, b) => a[0].localeCompare(b[0]))
-      .map(([name, artistSongs]) => ({
-        name,
-        bio: `${artistSongs.length} song${artistSongs.length === 1 ? "" : "s"} in the collection.`,
-        songs: artistSongs.map((song) => song.id)
-      }));
+      .map(([name, artistSongs]) => ({ name, songs: artistSongs }));
   }
 
   const themeToggle = document.getElementById("theme-toggle");
@@ -296,6 +302,9 @@
     slugify,
     escapeHtml,
     splitArtists,
+    REGIONS,
+    findRegion,
+    groupSongsByArtist,
     normalizeAudioUrl,
     getGoogleDriveFileId,
     cardHTML,
@@ -309,7 +318,6 @@
     removeSong,
     adminLogin,
     checkAdminAuth,
-    adminLogout,
-    getDerivedArtists
+    adminLogout
   };
 })();

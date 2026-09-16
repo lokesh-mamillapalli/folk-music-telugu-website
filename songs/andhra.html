@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Browse the full library of Telugu folk songs from Andhra Pradesh and Telangana." />
-  <title>Songs Library | Telugu Folk Songs</title>
+  <meta name="description" content="Folk songs from Andhra Pradesh — Telugu lyrics with transliteration, English translation and notes on each song." />
+  <title>Andhra Pradesh Songs | Telugu Folk Songs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
       <a class="brand" href="../index.html">Telugu Folk Songs</a>
       <nav class="nav-links">
         <a href="../index.html">Home</a>
-        <a href="andhra.html">Andhra Songs</a>
+        <a href="andhra.html" aria-current="page">Andhra Songs</a>
         <a href="telangana.html">Telangana Songs</a>
         <a href="../artists/index.html">Artists</a>
         <a href="../admin/login.html">Admin</a>
@@ -26,10 +26,11 @@
     </div>
   </header>
 
-  <main class="container page-content">
+  <main class="container page-content" data-region="Andhra">
     <section class="hero compact">
-      <h1>All Songs</h1>
-      <p>Every song in the collection. Browse by region: <a class="text-link" href="andhra.html">Andhra Pradesh</a> · <a class="text-link" href="telangana.html">Telangana</a></p>
+      <h1>Andhra Pradesh Folk Songs</h1>
+      <p class="hero-te">ఆంధ్రప్రదేశ్ జానపద గీతాలు</p>
+      <p>Telugu lyrics with transliteration, English translation and notes on each song. Looking for Telangana? <a class="text-link" href="telangana.html">Telangana songs →</a></p>
     </section>
 
     <section class="filters-panel">
@@ -58,7 +59,7 @@
 
     <section>
       <div class="section-head">
-        <h2>All Songs</h2>
+        <h2>Andhra Pradesh Songs</h2>
         <p id="songs-count" class="muted"></p>
       </div>
       <div id="songs-grid" class="grid cards-3"></div>

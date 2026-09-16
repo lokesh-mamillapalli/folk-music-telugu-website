@@ -249,7 +249,7 @@ section { margin-top: 1.2rem; }
 
 .song-card:hover::before { opacity: 1; }
 
-.song-card .card-region-badge {
+.card-region-badge {
   display: inline-block;
   padding: 0.15rem 0.5rem;
   border-radius: 999px;
@@ -553,8 +553,10 @@ textarea { width: 100%; resize: vertical; min-height: 80px; }
 .lyric-block h3 { margin-bottom: 0.4rem; color: var(--primary); }
 
 /* Song summary */
-.summary-tabs { display: inline-flex; border: 1px solid var(--surface-border); border-radius: 999px; overflow: hidden; }
-.summary-tabs button {
+.summary-tabs,
+.segmented { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--surface-border); border-radius: 999px; overflow: hidden; }
+.summary-tabs button,
+.segmented button {
   border: none;
   background: transparent;
   color: var(--text-secondary);
@@ -563,7 +565,15 @@ textarea { width: 100%; resize: vertical; min-height: 80px; }
   font-size: 0.85rem;
   cursor: pointer;
 }
-.summary-tabs button[aria-selected="true"] { background: var(--primary-soft); color: var(--primary); font-weight: 600; }
+.summary-tabs button[aria-selected="true"],
+.segmented button[aria-pressed="true"] { background: var(--primary-soft); color: var(--primary); font-weight: 600; }
+.segmented button { padding: 0.45rem 0.95rem; }
+.segmented button:hover { color: var(--text); }
+
+/* Region pages and navigation */
+.hero-te { font-family: 'Noto Sans Telugu', 'Inter', sans-serif; font-size: 1.1rem; color: var(--primary); margin-bottom: 0.3rem; }
+.breadcrumb { margin-bottom: 0.4rem; font-size: 0.9rem; }
+.artists-toolbar { flex-wrap: wrap; }
 .summary-body p { color: var(--text-secondary); }
 .summary-body p + p { margin-top: 0.7rem; }
 .summary-te p { font-family: 'Noto Sans Telugu', 'Inter', sans-serif; line-height: 1.85; }

@@ -1,8 +1,7 @@
 (function () {
-  const { el, cardHTML, parseQuery, getSongs, getCategories, escapeHtml, splitArtists } = window.FolkCommon;
+  const { el, cardHTML, parseQuery, getSongs, getCategories, escapeHtml, splitArtists, findRegion } = window.FolkCommon;
 
   const searchEl = el("#songs-search");
-  const regionEl = el("#filter-region");
   const categoryEl = el("#filter-category");
   const artistEl = el("#filter-artist");
   const sortEl = el("#sort-by");
@@ -14,6 +13,18 @@
   }
 
   const query = parseQuery();
+  // Region pages (songs/andhra.html, songs/telangana.html) set data-region on <main>;
+  // songs/index.html has none and lists every song.
+  const fixedRegion = songsGrid.closest("[data-region]")?.dataset.region || "";
+
+  // Old links like songs/index.html?region=Andhra now belong on the region page.
+  if (!fixedRegion && findRegion(query.region)) {
+    const params = new URLSearchParams(window.location.search);
+    params.delete("region");
+    const suffix = params.toString() ? `?${params.toString()}` : "";
+    window.location.replace(`${findRegion(query.region).page}${suffix}`);
+    return;
+  }
 
   function optionsFor(values) {
     return ["All", ...Array.from(new Set(values)).sort()];
@@ -30,18 +41,11 @@
   }
 
   function collectParams() {
-    const search = normalize(searchEl.value);
-    const region = regionEl.value;
-    const category = categoryEl.value;
-    const artist = artistEl.value;
-    const sortBy = sortEl.value;
-
     return {
-      search,
-      region,
-      category,
-      artist,
-      sort: sortBy
+      search: normalize(searchEl.value),
+      category: categoryEl.value,
+      artist: artistEl.value,
+      sort: sortEl.value
     };
   }
 
@@ -52,16 +56,17 @@
   }
 
   let latestRequest = 0;
+  let regionHasSongs = true;
 
   async function filterSongs() {
-    const { search, region, category, artist, sort } = collectParams();
+    const { search, category, artist, sort } = collectParams();
     const requestId = ++latestRequest;
 
     showSkeletons();
 
     const songs = await getSongs({
       search: search || "",
-      region: region === "All" ? "" : region,
+      region: fixedRegion,
       category: category === "All" ? "" : category,
       artist: artist === "All" ? "" : artist,
       sort
@@ -73,28 +78,29 @@
     }
 
     if (!songs.length) {
-      songsGrid.innerHTML = '<article class="card"><p class="muted">No songs found for this filter.</p></article>';
+      const message = regionHasSongs
+        ? "No songs found for this filter."
+        : `${escapeHtml(findRegion(fixedRegion)?.label || fixedRegion)} songs are being added to the collection. Please check back soon.`;
+      songsGrid.innerHTML = `<article class="card"><p class="muted">${message}</p></article>`;
     } else {
       songsGrid.innerHTML = songs.map((song, i) => cardHTML(song, "../", i)).join("");
     }
-    countEl.textContent = `${songs.length} song(s) found`;
+    countEl.textContent = `${songs.length} song${songs.length === 1 ? "" : "s"}`;
   }
 
   async function bootstrap() {
     showSkeletons();
 
     const [songs, categories] = await Promise.all([
-      getSongs({ sort: "latest" }),
-      getCategories()
+      getSongs({ sort: "latest", region: fixedRegion }),
+      fixedRegion ? Promise.resolve(null) : getCategories()
     ]);
+    regionHasSongs = songs.length > 0;
 
-    setSelectOptions(regionEl, songs.map((song) => song.region));
-    setSelectOptions(categoryEl, categories);
+    // On a region page, only offer categories and artists that have songs in that region.
+    setSelectOptions(categoryEl, categories || songs.map((song) => song.category));
     setSelectOptions(artistEl, songs.flatMap((song) => splitArtists(song.artist)));
 
-    if (query.region) {
-      regionEl.value = query.region;
-    }
     if (query.category) {
       categoryEl.value = query.category;
     }
@@ -107,9 +113,14 @@
     if (query.search) {
       searchEl.value = query.search;
     }
+    // A value that isn't in the list leaves the select blank; fall back to "All".
+    [categoryEl, artistEl].forEach((select) => {
+      if (!select.value) {
+        select.value = "All";
+      }
+    });
 
-    // Selects fire both "input" and "change"; listen to one event per control and
-    // debounce typing so 100+ songs aren't refetched on every keystroke.
+    // Debounce typing so 100+ songs aren't refetched on every keystroke.
     let debounceTimer;
     const runFilter = () => {
       filterSongs().catch((error) => {
@@ -120,7 +131,7 @@
       clearTimeout(debounceTimer);
       debounceTimer = setTimeout(runFilter, 300);
     });
-    [regionEl, categoryEl, artistEl, sortEl].forEach((input) => {
+    [categoryEl, artistEl, sortEl].forEach((input) => {
       input.addEventListener("change", runFilter);
     });
 

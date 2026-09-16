@@ -8,6 +8,7 @@
     cardHTML,
     escapeHtml,
     splitArtists,
+    findRegion,
     getSongs,
     getSong,
     getCategories,
@@ -364,11 +365,21 @@
     const song = await getSong(id);
     const isAdmin = await checkAdminAuth();
     const categories = isAdmin ? await getCategories() : [];
-    const related = (await getSongs({ category: song.category, sort: "latest" }))
+    const related = (await getSongs({ category: song.category, region: song.region, sort: "latest" }))
       .filter((item) => item.id !== song.id)
       .slice(0, 2);
 
     document.title = `${song.titleTe} (${song.titleEn}) | Telugu Folk Songs`;
+
+    // Link back to the song's region page and highlight it in the top navigation.
+    const region = findRegion(song.region);
+    const regionPage = region ? region.page : "index.html";
+    const regionLabel = region ? region.label : song.region;
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      if (region && link.getAttribute("href") === region.page) {
+        link.setAttribute("aria-current", "page");
+      }
+    });
 
     const artistLinks = splitArtists(song.artist)
       .map((name) => `<a class="text-link" href="../artists/index.html?artist=${encodeURIComponent(name)}">${escapeHtml(name)}</a>`)
@@ -378,6 +389,7 @@
     root.innerHTML = `
       <section class="song-layout">
         <article>
+          <p class="breadcrumb"><a class="text-link" href="${regionPage}">← ${escapeHtml(regionLabel)} Songs</a></p>
           <h1 class="song-title-te">${escapeHtml(song.titleTe)}</h1>
           <p class="song-title-en">${escapeHtml(song.titleEn)}</p>
 
@@ -404,8 +416,8 @@
           <section class="card">
             <h2>📋 Details</h2>
             <div class="details-list">
-              <div><strong>Region:</strong> <a class="text-link" href="index.html?region=${encodeURIComponent(song.region)}">${escapeHtml(song.region)}</a></div>
-              <div><strong>Category:</strong> <a class="text-link" href="index.html?category=${encodeURIComponent(song.category)}">${escapeHtml(song.category)}</a></div>
+              <div><strong>Region:</strong> <a class="text-link" href="${regionPage}">${escapeHtml(regionLabel)}</a></div>
+              <div><strong>Category:</strong> <a class="text-link" href="${regionPage}?category=${encodeURIComponent(song.category)}">${escapeHtml(song.category)}</a></div>
               <div><strong>Artists:</strong> ${artistLinks || escapeHtml(song.artist)}</div>
               ${song.album ? `<div><strong>Album:</strong> ${escapeHtml(song.album)}${song.year ? ` (${escapeHtml(song.year)})` : ""}</div>` : ""}
             </div>

@@ -69,8 +69,18 @@
         </label>
 
         <label>
-          Artist
+          Artists (comma separated)
           <input id="song-artist" type="text" required />
+        </label>
+
+        <label>
+          Album (optional)
+          <input id="song-album" type="text" />
+        </label>
+
+        <label>
+          Year (optional)
+          <input id="song-year" type="text" />
         </label>
 
         <label class="full-row">
@@ -89,8 +99,28 @@
         </label>
 
         <label class="full-row">
-          Lyrics
+          Telugu Lyrics (one line per line)
           <textarea id="song-lyrics" rows="7" required></textarea>
+        </label>
+
+        <label class="full-row">
+          Transliteration (optional, same lines in the same order)
+          <textarea id="song-transliteration" rows="7"></textarea>
+        </label>
+
+        <label class="full-row">
+          English Translation (optional, same lines in the same order)
+          <textarea id="song-translation" rows="7"></textarea>
+        </label>
+
+        <label class="full-row">
+          About this song, English (optional)
+          <textarea id="song-summary-en" rows="4"></textarea>
+        </label>
+
+        <label class="full-row">
+          పాట గురించి, Telugu (optional)
+          <textarea id="song-summary-te" rows="4"></textarea>
         </label>
 
         <div class="admin-actions full-row">

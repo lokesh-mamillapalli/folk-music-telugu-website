@@ -3,3 +3,9 @@ node_modules/
 .env.*
 *.log
 npm-debug.log*
+
+# Raw song sources, audio and secrets (never commit)
+andhra_songs/
+andhra-songs/audio/
+*.mp3
+*firebase-adminsdk*.json

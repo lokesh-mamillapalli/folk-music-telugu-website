@@ -38,6 +38,23 @@
       .replace(/(^-|-$)/g, "");
   }
 
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+  }
+
+  // Songs can credit several artists as "A, B, C".
+  function splitArtists(value) {
+    return String(value || "")
+      .split(",")
+      .map((name) => name.trim())
+      .filter(Boolean);
+  }
+
   function getGoogleDriveFileId(urlValue) {
     const value = String(urlValue || "").trim();
     if (!value) {
@@ -142,14 +159,14 @@
     const delay = Math.min(index * 0.08, 0.6);
     return `
       <article class="card song-card card-reveal" style="animation-delay: ${delay}s">
-        <span class="card-region-badge">${song.region}</span>
-        <div class="card-title-te">${song.titleTe}</div>
-        <div class="card-title-en">${song.titleEn}</div>
+        <span class="card-region-badge">${escapeHtml(song.region)}</span>
+        <div class="card-title-te">${escapeHtml(song.titleTe)}</div>
+        <div class="card-title-en">${escapeHtml(song.titleEn)}</div>
         <div class="card-meta">
-          <span>${song.category}</span>
-          <span>${song.artist}</span>
+          <span>${escapeHtml(song.category)}</span>
+          <span>${escapeHtml(song.artist)}</span>
         </div>
-        <p class="lyrics-preview">"${preview}"</p>
+        <p class="lyrics-preview">"${escapeHtml(preview)}"</p>
         <div class="card-footer">
           <a class="btn" href="${base}songs/song.html?id=${encodeURIComponent(song.id)}">View Song →</a>
         </div>
@@ -240,17 +257,19 @@
     const songs = await getSongs();
     const byArtist = new Map();
     songs.forEach((song) => {
-      if (!byArtist.has(song.artist)) {
-        byArtist.set(song.artist, []);
-      }
-      byArtist.get(song.artist).push(song);
+      splitArtists(song.artist).forEach((name) => {
+        if (!byArtist.has(name)) {
+          byArtist.set(name, []);
+        }
+        byArtist.get(name).push(song);
+      });
     });
 
     return Array.from(byArtist.entries())
       .sort((a, b) => a[0].localeCompare(b[0]))
       .map(([name, artistSongs]) => ({
         name,
-        bio: "Artist profile managed from Admin metadata.",
+        bio: `${artistSongs.length} song${artistSongs.length === 1 ? "" : "s"} in the collection.`,
         songs: artistSongs.map((song) => song.id)
       }));
   }
@@ -275,6 +294,8 @@
     parseQuery,
     copyText,
     slugify,
+    escapeHtml,
+    splitArtists,
     normalizeAudioUrl,
     getGoogleDriveFileId,
     cardHTML,

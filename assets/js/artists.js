@@ -1,5 +1,5 @@
 (function () {
-  const { el, parseQuery, getDerivedArtists, getSongs } = window.FolkCommon;
+  const { el, parseQuery, getDerivedArtists, getSongs, escapeHtml } = window.FolkCommon;
   const root = el("#artists-grid");
   if (!root) {
     return;
@@ -31,14 +31,14 @@
         const songsList = artistSongs
           .map(
             (song) =>
-              `<li style="margin: 0.3rem 0;"><a class="text-link" href="../songs/song.html?id=${encodeURIComponent(song.id)}">${song.titleTe} <span style="color:var(--muted)">(${song.titleEn})</span></a></li>`
+              `<li style="margin: 0.3rem 0;"><a class="text-link" href="../songs/song.html?id=${encodeURIComponent(song.id)}">${escapeHtml(song.titleTe)} <span style="color:var(--muted)">(${escapeHtml(song.titleEn)})</span></a></li>`
           )
           .join("");
 
         return `
           <article class="card card-reveal" style="animation-delay: ${delay}s">
-            <h3 style="font-size:1.15rem;">${artist.name}</h3>
-            <p class="meta" style="margin-bottom:0.6rem;">${artist.bio}</p>
+            <h3 style="font-size:1.15rem;">${escapeHtml(artist.name)}</h3>
+            <p class="meta" style="margin-bottom:0.6rem;">${escapeHtml(artist.bio)}</p>
             <h4 style="font-size:0.9rem; color:var(--primary); margin-bottom:0.3rem;">Songs Performed</h4>
             <ul style="list-style:none; padding:0; margin:0;">${songsList || "<li class='muted'>No songs listed yet.</li>"}</ul>
           </article>
@@ -49,9 +49,13 @@
     if (!root.innerHTML) {
       root.innerHTML = '<article class="card"><h3>No artist found</h3><p class="meta">Please go back and select a valid artist.</p></article>';
     }
+
+    if (selectedArtist) {
+      root.insertAdjacentHTML("afterbegin", '<p class="full-row" style="grid-column: 1 / -1;"><a class="text-link" href="index.html">← Show all artists</a></p>');
+    }
   }
 
   bootstrap().catch((error) => {
-    root.innerHTML = `<article class="card"><p class="muted">${error.message}</p></article>`;
+    root.innerHTML = `<article class="card"><p class="muted">${escapeHtml(error.message)}</p></article>`;
   });
 })();

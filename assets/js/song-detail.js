@@ -6,6 +6,8 @@
     parseQuery,
     copyText,
     cardHTML,
+    escapeHtml,
+    splitArtists,
     getSongs,
     getSong,
     getCategories,
@@ -22,14 +24,41 @@
   }
 
   const { id } = parseQuery();
+  const LAYERS_KEY = "folkSite_lyricLayers";
+  const SUMMARY_LANG_KEY = "folkSite_summaryLang";
 
-  function escapeHtml(value) {
+  function readPref(key, fallback) {
+    try {
+      return localStorage.getItem(key) || fallback;
+    } catch {
+      return fallback;
+    }
+  }
+
+  function writePref(key, value) {
+    try {
+      localStorage.setItem(key, value);
+    } catch {
+      // Storage can be unavailable (private mode); preferences are optional.
+    }
+  }
+
+  function splitLines(value) {
     return String(value || "")
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#39;");
+      .replace(/\r/g, "")
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean);
+  }
+
+  function paragraphs(value) {
+    return String(value || "")
+      .replace(/\r/g, "")
+      .split(/\n\s*\n/)
+      .map((part) => part.trim())
+      .filter(Boolean)
+      .map((part) => `<p>${escapeHtml(part)}</p>`)
+      .join("");
   }
 
   function getDriveFallbackUrls(value) {
@@ -75,14 +104,143 @@
     return Array.from(new Set(candidates));
   }
 
-  function collectAdminEditPayload(currentSong) {
+  function lyricsHTML(song) {
+    const te = splitLines(song.lyrics);
+    const tr = splitLines(song.lyricsTransliteration);
+    const en = splitLines(song.lyricsTranslation);
+    const hasTr = tr.length > 0;
+    const hasEn = en.length > 0;
+
+    const toggles = hasTr || hasEn
+      ? `
+        <div class="layer-toggles" role="group" aria-label="Choose lyric layers">
+          <label><input type="checkbox" data-layer="te" checked /> తెలుగు</label>
+          ${hasTr ? '<label><input type="checkbox" data-layer="tr" checked /> Transliteration</label>' : ""}
+          ${hasEn ? '<label><input type="checkbox" data-layer="en" checked /> English</label>' : ""}
+        </div>
+      `
+      : "";
+
+    const aligned = (!hasTr || tr.length === te.length) && (!hasEn || en.length === te.length);
+    let body;
+    if (aligned) {
+      body = te
+        .map(
+          (line, i) => `
+            <div class="lyric-line">
+              <p class="lyric-te">${escapeHtml(line)}</p>
+              ${hasTr ? `<p class="lyric-tr">${escapeHtml(tr[i])}</p>` : ""}
+              ${hasEn ? `<p class="lyric-en">${escapeHtml(en[i])}</p>` : ""}
+            </div>
+          `
+        )
+        .join("");
+    } else {
+      // Line counts differ (e.g. edited by hand), so show each layer as its own block.
+      const block = (lines, cls, heading) =>
+        lines.length
+          ? `<div class="lyric-block"><h3>${heading}</h3>${lines.map((line) => `<p class="${cls}">${escapeHtml(line)}</p>`).join("")}</div>`
+          : "";
+      body = block(te, "lyric-te", "తెలుగు") + block(tr, "lyric-tr", "Transliteration") + block(en, "lyric-en", "English");
+    }
+
+    return `
+      <section class="card lyrics-panel" style="margin-top: 1rem;">
+        <div class="section-head lyrics-head">
+          <h2>📜 Lyrics</h2>
+          ${toggles}
+        </div>
+        <div id="lyrics-lines" class="lyrics-lines">${body}</div>
+      </section>
+    `;
+  }
+
+  function summaryHTML(song) {
+    if (!song.summaryEn && !song.summaryTe) {
+      return "";
+    }
+    const both = song.summaryEn && song.summaryTe;
+    return `
+      <section class="card summary-card" style="margin-top: 1rem;">
+        <div class="section-head">
+          <h2>📖 About this song</h2>
+          ${both ? `
+            <div class="summary-tabs" role="tablist">
+              <button type="button" role="tab" data-summary-lang="en">English</button>
+              <button type="button" role="tab" data-summary-lang="te">తెలుగు</button>
+            </div>
+          ` : ""}
+        </div>
+        ${song.summaryEn ? `<div class="summary-body" data-summary="en">${paragraphs(song.summaryEn)}</div>` : ""}
+        ${song.summaryTe ? `<div class="summary-body summary-te" data-summary="te" lang="te">${paragraphs(song.summaryTe)}</div>` : ""}
+      </section>
+    `;
+  }
+
+  function setupLyricToggles() {
+    const container = el("#lyrics-lines");
+    const boxes = Array.from(document.querySelectorAll(".layer-toggles input[data-layer]"));
+    if (!container || !boxes.length) {
+      return;
+    }
+
+    const saved = readPref(LAYERS_KEY, "te,tr,en").split(",");
+    const available = boxes.map((box) => box.dataset.layer);
+    const initial = saved.filter((layer) => available.includes(layer));
+    boxes.forEach((box) => {
+      box.checked = initial.length ? initial.includes(box.dataset.layer) : true;
+    });
+
+    function apply() {
+      boxes.forEach((box) => container.classList.toggle(`hide-${box.dataset.layer}`, !box.checked));
+    }
+
+    boxes.forEach((box) => {
+      box.addEventListener("change", () => {
+        if (!boxes.some((item) => item.checked)) {
+          box.checked = true; // keep at least one layer visible
+        }
+        apply();
+        writePref(LAYERS_KEY, boxes.filter((item) => item.checked).map((item) => item.dataset.layer).join(","));
+      });
+    });
+    apply();
+  }
+
+  function setupSummaryTabs() {
+    const tabs = Array.from(document.querySelectorAll("[data-summary-lang]"));
+    if (!tabs.length) {
+      return;
+    }
+    function show(lang) {
+      tabs.forEach((tab) => tab.setAttribute("aria-selected", String(tab.dataset.summaryLang === lang)));
+      document.querySelectorAll("[data-summary]").forEach((body) => {
+        body.hidden = body.dataset.summary !== lang;
+      });
+    }
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        show(tab.dataset.summaryLang);
+        writePref(SUMMARY_LANG_KEY, tab.dataset.summaryLang);
+      });
+    });
+    show(readPref(SUMMARY_LANG_KEY, "en") === "te" ? "te" : "en");
+  }
+
+  function collectAdminEditPayload() {
     const payload = {
       titleTe: el("#edit-title-te").value.trim(),
       titleEn: el("#edit-title-en").value.trim(),
       region: el("#edit-region").value,
       category: el("#edit-category").value.trim(),
       artist: el("#edit-artist").value.trim(),
+      album: el("#edit-album").value.trim(),
+      year: el("#edit-year").value.trim(),
       lyrics: el("#edit-lyrics").value.trim(),
+      lyricsTransliteration: el("#edit-transliteration").value.trim(),
+      lyricsTranslation: el("#edit-translation").value.trim(),
+      summaryEn: el("#edit-summary-en").value.trim(),
+      summaryTe: el("#edit-summary-te").value.trim(),
       audioUrl: normalizeAudioUrl(el("#edit-audio-url").value.trim())
     };
 
@@ -108,6 +266,89 @@
     return payload;
   }
 
+  function adminEditorHTML(song, categories) {
+    const categoryOptions = categories
+      .map((category) => `<option value="${escapeHtml(category)}"></option>`)
+      .join("");
+    const regionOptions = ["Andhra", "Telangana"]
+      .map((region) => `<option value="${region}" ${song.region === region ? "selected" : ""}>${region}</option>`)
+      .join("");
+
+    return `
+      <section class="card" style="margin-top: 0.9rem;">
+        <h2>Admin Quick Edit</h2>
+        <form id="song-inline-edit-form" class="admin-form-grid" style="margin-top: 0.7rem;">
+          <label>
+            Telugu Title
+            <input id="edit-title-te" type="text" value="${escapeHtml(song.titleTe)}" required />
+          </label>
+          <label>
+            English Title
+            <input id="edit-title-en" type="text" value="${escapeHtml(song.titleEn)}" required />
+          </label>
+          <label>
+            Region
+            <select id="edit-region" required>${regionOptions}</select>
+          </label>
+          <label>
+            Category
+            <input id="edit-category" list="edit-category-options" type="text" value="${escapeHtml(song.category)}" required />
+            <datalist id="edit-category-options">${categoryOptions}</datalist>
+          </label>
+          <label class="full-row">
+            Artists (comma separated)
+            <input id="edit-artist" type="text" value="${escapeHtml(song.artist)}" required />
+          </label>
+          <label>
+            Album
+            <input id="edit-album" type="text" value="${escapeHtml(song.album)}" />
+          </label>
+          <label>
+            Year
+            <input id="edit-year" type="text" value="${escapeHtml(song.year)}" />
+          </label>
+          <label class="full-row">
+            Audio URL
+            <input id="edit-audio-url" type="url" value="${escapeHtml(song.audioVersions[0]?.url || "")}" required />
+          </label>
+          <label class="full-row">
+            Song Link Label (optional)
+            <input id="edit-link-label" type="text" value="${escapeHtml(song.links[0]?.label || "")}" />
+          </label>
+          <label class="full-row">
+            Song Link URL (optional)
+            <input id="edit-link-url" type="url" value="${escapeHtml(song.links[0]?.url || "")}" />
+          </label>
+          <label class="full-row">
+            Telugu Lyrics (one line per line)
+            <textarea id="edit-lyrics" rows="8" required>${escapeHtml(song.lyrics)}</textarea>
+          </label>
+          <label class="full-row">
+            Transliteration (same lines, same order)
+            <textarea id="edit-transliteration" rows="8">${escapeHtml(song.lyricsTransliteration)}</textarea>
+          </label>
+          <label class="full-row">
+            English Translation (same lines, same order)
+            <textarea id="edit-translation" rows="8">${escapeHtml(song.lyricsTranslation)}</textarea>
+          </label>
+          <label class="full-row">
+            About this song (English)
+            <textarea id="edit-summary-en" rows="5">${escapeHtml(song.summaryEn)}</textarea>
+          </label>
+          <label class="full-row">
+            పాట గురించి (Telugu)
+            <textarea id="edit-summary-te" rows="5">${escapeHtml(song.summaryTe)}</textarea>
+          </label>
+          <div class="admin-actions full-row">
+            <button class="btn" type="submit">Save Changes</button>
+            <button class="btn-secondary" id="song-inline-delete" type="button">Delete Song</button>
+          </div>
+        </form>
+        <p id="song-inline-edit-message" class="muted"></p>
+      </section>
+    `;
+  }
+
   async function bootstrap() {
     if (!id) {
       root.innerHTML = `
@@ -127,99 +368,46 @@
       .filter((item) => item.id !== song.id)
       .slice(0, 2);
 
-    const categoryOptions = categories
-      .map((category) => `<option value="${escapeHtml(category)}"></option>`)
-      .join("");
+    document.title = `${song.titleTe} (${song.titleEn}) | Telugu Folk Songs`;
 
-    const adminEditor = isAdmin
-      ? `
-        <section class="card" style="margin-top: 0.9rem;">
-          <h2>Admin Quick Edit</h2>
-          <form id="song-inline-edit-form" class="admin-form-grid" style="margin-top: 0.7rem;">
-            <label>
-              Telugu Title
-              <input id="edit-title-te" type="text" value="${escapeHtml(song.titleTe)}" required />
-            </label>
-            <label>
-              English Title
-              <input id="edit-title-en" type="text" value="${escapeHtml(song.titleEn)}" required />
-            </label>
-            <label>
-              Region
-              <select id="edit-region" required>
-                <option value="Telangana" ${song.region === "Telangana" ? "selected" : ""}>Telangana</option>
-                <option value="Andhra" ${song.region === "Andhra" ? "selected" : ""}>Andhra</option>
-              </select>
-            </label>
-            <label>
-              Category
-              <input id="edit-category" list="edit-category-options" type="text" value="${escapeHtml(song.category)}" required />
-              <datalist id="edit-category-options">${categoryOptions}</datalist>
-            </label>
-            <label>
-              Artist
-              <input id="edit-artist" type="text" value="${escapeHtml(song.artist)}" required />
-            </label>
-            <label class="full-row">
-              Audio URL
-              <input id="edit-audio-url" type="url" value="${escapeHtml(song.audioVersions[0]?.url || "")}" required />
-            </label>
-            <label class="full-row">
-              Song Link Label (optional)
-              <input id="edit-link-label" type="text" value="${escapeHtml(song.links[0]?.label || "")}" />
-            </label>
-            <label class="full-row">
-              Song Link URL (optional)
-              <input id="edit-link-url" type="url" value="${escapeHtml(song.links[0]?.url || "")}" />
-            </label>
-            <label class="full-row">
-              Lyrics
-              <textarea id="edit-lyrics" rows="8" required>${escapeHtml(song.lyrics)}</textarea>
-            </label>
-            <div class="admin-actions full-row">
-              <button class="btn" type="submit">Save Changes</button>
-              <button class="btn-secondary" id="song-inline-delete" type="button">Delete Song</button>
-            </div>
-          </form>
-          <p id="song-inline-edit-message" class="muted"></p>
-        </section>
-      `
-      : "";
+    const artistLinks = splitArtists(song.artist)
+      .map((name) => `<a class="text-link" href="../artists/index.html?artist=${encodeURIComponent(name)}">${escapeHtml(name)}</a>`)
+      .join(", ");
+    const safeLinks = song.links.filter((link) => /^https?:\/\//i.test(link.url));
 
     root.innerHTML = `
       <section class="song-layout">
         <article>
-          <h1 class="song-title-te">${song.titleTe}</h1>
-          <p class="song-title-en">${song.titleEn}</p>
+          <h1 class="song-title-te">${escapeHtml(song.titleTe)}</h1>
+          <p class="song-title-en">${escapeHtml(song.titleEn)}</p>
 
           <div class="card" style="margin-bottom:1rem;">
             <h2>🎧 Audio Player</h2>
-            <audio id="main-audio" controls preload="none" style="width:100%;margin-top:0.5rem;" src="${song.audioVersions[0]?.url || ""}"></audio>
+            <audio id="main-audio" controls preload="none" style="width:100%;margin-top:0.5rem;"></audio>
           </div>
 
-          <article class="lyrics">
-            <h2>Lyrics</h2>
-            <p>${song.lyrics}</p>
-          </article>
+          ${lyricsHTML(song)}
+          ${summaryHTML(song)}
 
-          ${song.links.length ? `
+          ${safeLinks.length ? `
           <section class="card" style="margin-top: 1rem;">
             <h2>🔗 External Links</h2>
             <div class="mini-links">
-              ${song.links.map((link) => `<a class="text-link" href="${link.url}" target="_blank" rel="noopener noreferrer">↗ ${link.label}</a>`).join("")}
+              ${safeLinks.map((link) => `<a class="text-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">↗ ${escapeHtml(link.label)}</a>`).join("")}
             </div>
           </section>
           ` : ""}
-          ${adminEditor}
+          ${isAdmin ? adminEditorHTML(song, categories) : ""}
         </article>
 
         <aside>
           <section class="card">
-            <h2>📋 Metadata</h2>
+            <h2>📋 Details</h2>
             <div class="details-list">
-              <div><strong>Region:</strong> <a class="text-link" href="index.html?region=${encodeURIComponent(song.region)}">${song.region}</a></div>
-              <div><strong>Category:</strong> <a class="text-link" href="index.html?category=${encodeURIComponent(song.category)}">${song.category}</a></div>
-              <div><strong>Artist:</strong> <a class="text-link" href="../artists/index.html?artist=${encodeURIComponent(song.artist)}">${song.artist}</a></div>
+              <div><strong>Region:</strong> <a class="text-link" href="index.html?region=${encodeURIComponent(song.region)}">${escapeHtml(song.region)}</a></div>
+              <div><strong>Category:</strong> <a class="text-link" href="index.html?category=${encodeURIComponent(song.category)}">${escapeHtml(song.category)}</a></div>
+              <div><strong>Artists:</strong> ${artistLinks || escapeHtml(song.artist)}</div>
+              ${song.album ? `<div><strong>Album:</strong> ${escapeHtml(song.album)}${song.year ? ` (${escapeHtml(song.year)})` : ""}</div>` : ""}
             </div>
             <div class="mini-links" style="margin-top:0.8rem;">
               <button class="btn" id="share-btn">Share</button>
@@ -235,30 +423,26 @@
       </section>
     `;
 
+    setupLyricToggles();
+    setupSummaryTabs();
+
     const audio = el("#main-audio");
     const primaryAudioUrl = String(song.audioVersions[0]?.url || "").trim();
-    const fallbackUrls = getDriveFallbackUrls(primaryAudioUrl);
+    const sourceCandidates = Array.from(new Set([primaryAudioUrl, ...getDriveFallbackUrls(primaryAudioUrl)])).filter(Boolean);
     const apiBaseCandidates = resolveApiBaseCandidates();
-    const sourceCandidates = Array.from(new Set([primaryAudioUrl, ...fallbackUrls]));
-
     const proxiedCandidates = sourceCandidates
       .flatMap((sourceUrl) => apiBaseCandidates.map((baseUrl) => toAudioProxyUrl(sourceUrl, baseUrl)))
       .filter(Boolean);
 
+    let candidateIndex = 0;
     if (proxiedCandidates.length) {
       audio.src = proxiedCandidates[0];
     }
 
-    let fallbackIndex = 0;
-
     audio.addEventListener("error", () => {
-      while (fallbackIndex < proxiedCandidates.length && proxiedCandidates[fallbackIndex] === audio.src) {
-        fallbackIndex += 1;
-      }
-
-      if (fallbackIndex < proxiedCandidates.length) {
-        audio.src = proxiedCandidates[fallbackIndex];
-        fallbackIndex += 1;
+      candidateIndex += 1;
+      if (candidateIndex < proxiedCandidates.length) {
+        audio.src = proxiedCandidates[candidateIndex];
         audio.play().catch(() => {});
       }
     });
@@ -305,7 +489,7 @@
         let payload;
 
         try {
-          payload = collectAdminEditPayload(song);
+          payload = collectAdminEditPayload();
         } catch (error) {
           messageEl.textContent = error.message;
           messageEl.style.color = "#b91c1c";
@@ -340,11 +524,12 @@
     }
   }
 
-  bootstrap().catch(() => {
+  bootstrap().catch((error) => {
+    const notFound = error && error.status === 404;
     root.innerHTML = `
       <section class="card">
-        <h1>Song not found</h1>
-        <p class="muted">Please return to the songs page and choose a valid song.</p>
+        <h1>${notFound ? "Song not found" : "Could not load this song"}</h1>
+        <p class="muted">${notFound ? "Please return to the songs page and choose a valid song." : "The server may be waking up. Please wait a moment and refresh the page."}</p>
         <p><a class="btn" href="index.html">Back to Songs</a></p>
       </section>
     `;

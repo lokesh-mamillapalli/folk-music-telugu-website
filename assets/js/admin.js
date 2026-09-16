@@ -1,6 +1,7 @@
 (function () {
   const {
     el,
+    escapeHtml,
     slugify,
     normalizeAudioUrl,
     getSongs,
@@ -28,11 +29,20 @@
     region: "#song-region",
     category: "#song-category",
     artist: "#song-artist",
+    album: "#song-album",
+    year: "#song-year",
     audioUrl: "#song-audio-url",
     linkLabel: "#song-link-label",
     linkUrl: "#song-link-url",
-    lyrics: "#song-lyrics"
+    lyrics: "#song-lyrics",
+    lyricsTransliteration: "#song-transliteration",
+    lyricsTranslation: "#song-translation",
+    summaryEn: "#song-summary-en",
+    summaryTe: "#song-summary-te"
   };
+
+  // Plain text fields copied as-is between the form and the API.
+  const TEXT_FIELDS = ["album", "year", "lyricsTransliteration", "lyricsTranslation", "summaryEn", "summaryTe"];
 
   function field(name) {
     return el(fieldMap[name]);
@@ -71,6 +81,9 @@
       lyrics: field("lyrics").value.trim(),
       audioUrl
     };
+    TEXT_FIELDS.forEach((name) => {
+      payload[name] = field(name).value.trim();
+    });
 
     const links = linkUrl
       ? [
@@ -88,13 +101,13 @@
   async function renderCategoryOptions() {
     const categories = await getCategories();
     categoryDataList.innerHTML = categories
-      .map((category) => `<option value="${category}"></option>`)
+      .map((category) => `<option value="${escapeHtml(category)}"></option>`)
       .join("");
 
     categoryList.innerHTML = categories
       .map(
         (category) =>
-          `<span class="chip admin-chip">${category}<button class="chip-delete" type="button" data-delete-category="${category}">×</button></span>`
+          `<span class="chip admin-chip">${escapeHtml(category)}<button class="chip-delete" type="button" data-delete-category="${escapeHtml(category)}">×</button></span>`
       )
       .join("");
   }
@@ -113,13 +126,13 @@
         (song) => `
           <article class="admin-song-item">
             <div>
-              <h3>${song.titleTe}</h3>
-              <p class="meta">${song.titleEn}</p>
-              <p class="meta">${song.region} • ${song.category} • ${song.artist}</p>
+              <h3>${escapeHtml(song.titleTe)}</h3>
+              <p class="meta">${escapeHtml(song.titleEn)}</p>
+              <p class="meta">${escapeHtml(song.region)} • ${escapeHtml(song.category)} • ${escapeHtml(song.artist)}</p>
             </div>
             <div class="admin-actions">
-              <button type="button" class="btn-secondary" data-edit-song="${song.id}">Edit</button>
-              <button type="button" class="btn-secondary" data-remove-song="${song.id}">Delete</button>
+              <button type="button" class="btn-secondary" data-edit-song="${escapeHtml(song.id)}">Edit</button>
+              <button type="button" class="btn-secondary" data-remove-song="${escapeHtml(song.id)}">Delete</button>
             </div>
           </article>
         `
@@ -141,6 +154,9 @@
     field("category").value = song.category;
     field("artist").value = song.artist;
     field("lyrics").value = song.lyrics;
+    TEXT_FIELDS.forEach((name) => {
+      field(name).value = song[name] || "";
+    });
     field("audioUrl").value = song.audioVersions[0]?.url || "";
     field("linkLabel").value = song.links[0]?.label || "";
     field("linkUrl").value = song.links[0]?.url || "";
@@ -165,11 +181,12 @@
       return;
     }
 
+    let saved;
     try {
       if (field("id").value.trim()) {
-        await updateSong(field("id").value.trim(), payload);
+        saved = await updateSong(field("id").value.trim(), payload);
       } else {
-        await createSong(payload);
+        saved = await createSong(payload);
       }
       await addCategory(payload.category);
     } catch (error) {
@@ -178,11 +195,13 @@
       return;
     }
 
-    formMessage.textContent = "Song saved successfully.";
-    formMessage.style.color = "#166534";
     await renderCategoryOptions();
     await renderSongList();
-    await fillForm(songId);
+    // The server may change the id (e.g. adds a suffix when the title already exists),
+    // so reload the form with the id it returned, not the one we sent.
+    await fillForm((saved && saved.id) || songId);
+    formMessage.textContent = "Song saved successfully.";
+    formMessage.style.color = "#166534";
   });
 
   el("#song-form-reset").addEventListener("click", resetForm);
@@ -192,6 +211,9 @@
     if (!songId) {
       formMessage.textContent = "Select a song to delete.";
       formMessage.style.color = "#b91c1c";
+      return;
+    }
+    if (!window.confirm("Delete this song permanently?")) {
       return;
     }
     await removeSong(songId);
@@ -211,6 +233,9 @@
     const deleteBtn = event.target.closest("button[data-remove-song]");
     if (deleteBtn) {
       const songId = deleteBtn.getAttribute("data-remove-song");
+      if (!window.confirm("Delete this song permanently?")) {
+        return;
+      }
       await removeSong(songId);
       await renderSongList();
       if (field("id").value === songId) {

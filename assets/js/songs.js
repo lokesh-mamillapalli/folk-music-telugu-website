@@ -1,5 +1,5 @@
 (function () {
-  const { el, cardHTML, parseQuery, getSongs, getCategories } = window.FolkCommon;
+  const { el, cardHTML, parseQuery, getSongs, getCategories, escapeHtml, splitArtists } = window.FolkCommon;
 
   const searchEl = el("#songs-search");
   const regionEl = el("#filter-region");
@@ -21,7 +21,7 @@
 
   function setSelectOptions(target, values) {
     target.innerHTML = optionsFor(values)
-      .map((item) => `<option value="${item}">${item}</option>`)
+      .map((item) => `<option value="${escapeHtml(item)}">${escapeHtml(item)}</option>`)
       .join("");
   }
 
@@ -51,8 +51,11 @@
       .join("");
   }
 
+  let latestRequest = 0;
+
   async function filterSongs() {
     const { search, region, category, artist, sort } = collectParams();
+    const requestId = ++latestRequest;
 
     showSkeletons();
 
@@ -63,6 +66,11 @@
       artist: artist === "All" ? "" : artist,
       sort
     });
+
+    // Ignore responses that arrive after a newer search has started.
+    if (requestId !== latestRequest) {
+      return;
+    }
 
     if (!songs.length) {
       songsGrid.innerHTML = '<article class="card"><p class="muted">No songs found for this filter.</p></article>';
@@ -82,7 +90,7 @@
 
     setSelectOptions(regionEl, songs.map((song) => song.region));
     setSelectOptions(categoryEl, categories);
-    setSelectOptions(artistEl, songs.map((song) => song.artist));
+    setSelectOptions(artistEl, songs.flatMap((song) => splitArtists(song.artist)));
 
     if (query.region) {
       regionEl.value = query.region;
@@ -100,23 +108,26 @@
       searchEl.value = query.search;
     }
 
-    [searchEl, regionEl, categoryEl, artistEl, sortEl].forEach((input) => {
-      input.addEventListener("input", () => {
-        filterSongs().catch((error) => {
-          songsGrid.innerHTML = `<article class="card"><p class="muted">${error.message}</p></article>`;
-        });
+    // Selects fire both "input" and "change"; listen to one event per control and
+    // debounce typing so 100+ songs aren't refetched on every keystroke.
+    let debounceTimer;
+    const runFilter = () => {
+      filterSongs().catch((error) => {
+        songsGrid.innerHTML = `<article class="card"><p class="muted">${escapeHtml(error.message)}</p></article>`;
       });
-      input.addEventListener("change", () => {
-        filterSongs().catch((error) => {
-          songsGrid.innerHTML = `<article class="card"><p class="muted">${error.message}</p></article>`;
-        });
-      });
+    };
+    searchEl.addEventListener("input", () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(runFilter, 300);
+    });
+    [regionEl, categoryEl, artistEl, sortEl].forEach((input) => {
+      input.addEventListener("change", runFilter);
     });
 
     await filterSongs();
   }
 
   bootstrap().catch((error) => {
-    songsGrid.innerHTML = `<article class="card"><p class="muted">${error.message}</p></article>`;
+    songsGrid.innerHTML = `<article class="card"><p class="muted">${escapeHtml(error.message)}</p></article>`;
   });
 })();

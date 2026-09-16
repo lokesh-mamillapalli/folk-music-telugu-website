@@ -500,6 +500,75 @@ textarea { width: 100%; resize: vertical; min-height: 80px; }
 
 .mini-links { margin-top: 0.8rem; display: grid; gap: 0.4rem; }
 
+/* Lyrics: Telugu / transliteration / English, line by line */
+.lyrics-panel:hover,
+.summary-card:hover { transform: none; }
+
+.lyrics-head { flex-wrap: wrap; }
+.lyrics-head h2 { margin-bottom: 0; }
+
+.layer-toggles { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.layer-toggles label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  user-select: none;
+}
+.layer-toggles label:has(input:checked) {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+.layer-toggles input { width: auto; margin: 0; accent-color: var(--primary); }
+
+.lyrics-lines { display: grid; gap: 0.15rem; }
+
+.lyric-line {
+  padding: 0.45rem 0.6rem;
+  border-left: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition), border-color var(--transition);
+}
+.lyric-line:hover { background: var(--surface-hover); border-left-color: var(--primary); }
+
+.lyric-te {
+  font-family: 'Noto Sans Telugu', 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+.lyric-tr { font-style: italic; font-size: 0.9rem; color: var(--primary); }
+.lyric-en { font-size: 0.9rem; color: var(--text-secondary); }
+
+.lyrics-lines.hide-te .lyric-te,
+.lyrics-lines.hide-tr .lyric-tr,
+.lyrics-lines.hide-en .lyric-en { display: none; }
+
+.lyric-block + .lyric-block { margin-top: 1rem; }
+.lyric-block h3 { margin-bottom: 0.4rem; color: var(--primary); }
+
+/* Song summary */
+.summary-tabs { display: inline-flex; border: 1px solid var(--surface-border); border-radius: 999px; overflow: hidden; }
+.summary-tabs button {
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 0.3rem 0.8rem;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.summary-tabs button[aria-selected="true"] { background: var(--primary-soft); color: var(--primary); font-weight: 600; }
+.summary-body p { color: var(--text-secondary); }
+.summary-body p + p { margin-top: 0.7rem; }
+.summary-te p { font-family: 'Noto Sans Telugu', 'Inter', sans-serif; line-height: 1.85; }
+[hidden] { display: none !important; }
+
 /* Audio */
 audio { width: 100%; border-radius: var(--radius-sm); margin-top: 0.5rem; filter: sepia(0.2) hue-rotate(-10deg); }
 
@@ -630,6 +699,9 @@ audio { width: 100%; border-radius: var(--radius-sm); margin-top: 0.5rem; filter
 }
 
 /* ===== RESPONSIVE ===== */
+/* Let grid columns shrink below their content width (long lines, audio player). */
+.song-layout > * { min-width: 0; }
+
 @media (max-width: 900px) {
   .song-layout { grid-template-columns: 1fr; }
 }
@@ -641,7 +713,8 @@ audio { width: 100%; border-radius: var(--radius-sm); margin-top: 0.5rem; filter
 }
 
 @media (max-width: 600px) {
-  .nav-links { gap: 0.1rem; }
+  .nav-wrap { flex-wrap: wrap; gap: 0.3rem; }
+  .nav-links { gap: 0.1rem; flex-wrap: wrap; }
   .nav-links a { padding: 0.35rem 0.5rem; font-size: 0.82rem; }
   .hero { padding: 1.2rem 1rem; }
   .cards-3 { grid-template-columns: 1fr; }

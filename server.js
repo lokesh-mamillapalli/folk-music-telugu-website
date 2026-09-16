@@ -2,8 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const { Readable } = require("stream");
+const { Readable, pipeline } = require("stream");
 require("dotenv").config();
+const { Song, Category, AdminUser, slugify, escapeRegex, normalizeAudioUrl } = require("./models");
 
 const app = express();
 const ROOT = __dirname;
@@ -19,58 +20,6 @@ if (!MONGODB_URI) {
   process.exit(1);
 }
 
-const songSchema = new mongoose.Schema(
-  {
-    slug: { type: String, required: true, unique: true, index: true },
-    titleTe: { type: String, required: true },
-    titleEn: { type: String, required: true },
-    region: { type: String, required: true },
-    category: { type: String, required: true },
-    artist: { type: String, required: true },
-    lyrics: { type: String, required: true },
-    audioVersions: [
-      {
-        label: { type: String, required: true },
-        url: { type: String, required: true }
-      }
-    ],
-    links: [
-      {
-        label: { type: String, required: true },
-        url: { type: String, required: true }
-      }
-    ]
-  },
-  { timestamps: true }
-);
-
-const categorySchema = new mongoose.Schema(
-  {
-    name: { type: String, required: true, unique: true, trim: true }
-  },
-  { timestamps: true }
-);
-
-const adminUserSchema = new mongoose.Schema(
-  {
-    email: { type: String, required: true, unique: true, lowercase: true, trim: true },
-    passwordHash: { type: String, required: true }
-  },
-  { timestamps: true }
-);
-
-const Song = mongoose.model("Song", songSchema);
-const Category = mongoose.model("Category", categorySchema);
-const AdminUser = mongoose.model("AdminUser", adminUserSchema);
-
-function slugify(value) {
-  return String(value || "")
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
-
 function mapSong(songDoc) {
   return {
     id: songDoc.slug,
@@ -79,7 +28,13 @@ function mapSong(songDoc) {
     region: songDoc.region,
     category: songDoc.category,
     artist: songDoc.artist,
+    album: songDoc.album || "",
+    year: songDoc.year || "",
     lyrics: songDoc.lyrics,
+    lyricsTransliteration: songDoc.lyricsTransliteration || "",
+    lyricsTranslation: songDoc.lyricsTranslation || "",
+    summaryEn: songDoc.summaryEn || "",
+    summaryTe: songDoc.summaryTe || "",
     audioVersions: songDoc.audioVersions || [],
     links: songDoc.links || [],
     addedAt: songDoc.createdAt ? new Date(songDoc.createdAt).toISOString().slice(0, 10) : ""
@@ -130,47 +85,15 @@ function normalizeLinkList(list) {
     .map((item) => ({ label: String(item.label || "External Link").trim(), url: String(item.url).trim() }));
 }
 
-function getGoogleDriveFileId(urlValue) {
-  const value = String(urlValue || "").trim();
-  if (!value) {
-    return "";
-  }
+// Optional text fields: on create, missing means empty; on update, missing means "keep current value".
+const OPTIONAL_TEXT_FIELDS = ["album", "year", "lyricsTransliteration", "lyricsTranslation", "summaryEn", "summaryTe"];
 
-  try {
-    const parsed = new URL(value);
-    const host = parsed.hostname.toLowerCase();
-    if (!host.includes("drive.google.com") && !host.includes("docs.google.com")) {
-      return "";
-    }
-
-    const idFromQuery = parsed.searchParams.get("id");
-    if (idFromQuery) {
-      return idFromQuery;
-    }
-
-    const fileMatch = parsed.pathname.match(/\/file\/d\/([^/]+)/i);
-    if (fileMatch && fileMatch[1]) {
-      return fileMatch[1];
-    }
-  } catch {
-    return "";
-  }
-
-  return "";
-}
-
-function normalizeAudioUrl(audioUrl) {
-  const value = String(audioUrl || "").trim();
-  if (!value) {
-    return "";
-  }
-
-  const driveFileId = getGoogleDriveFileId(value);
-  if (!driveFileId) {
-    return value;
-  }
-
-  return `https://docs.google.com/uc?export=download&id=${encodeURIComponent(driveFileId)}`;
+function readOptionalText(body, existing = {}) {
+  const result = {};
+  OPTIONAL_TEXT_FIELDS.forEach((key) => {
+    result[key] = body[key] !== undefined ? String(body[key] || "").trim() : existing[key] || "";
+  });
+  return result;
 }
 
 const ALLOWED_ORIGINS = [
@@ -263,17 +186,14 @@ app.get("/api/songs", async (req, res) => {
     filter.category = category;
   }
   if (artist && artist !== "All") {
-    filter.artist = artist;
+    // A song can list several artists ("A, B, C"); match one whole name in that list.
+    filter.artist = { $regex: `(^|,\\s*)${escapeRegex(artist)}(\\s*,|$)`, $options: "i" };
   }
   if (search) {
-    filter.$or = [
-      { titleTe: { $regex: search, $options: "i" } },
-      { titleEn: { $regex: search, $options: "i" } },
-      { lyrics: { $regex: search, $options: "i" } },
-      { category: { $regex: search, $options: "i" } },
-      { artist: { $regex: search, $options: "i" } },
-      { region: { $regex: search, $options: "i" } }
-    ];
+    const pattern = escapeRegex(search);
+    filter.$or = ["titleTe", "titleEn", "lyrics", "lyricsTransliteration", "lyricsTranslation", "category", "artist", "album", "region"].map(
+      (field) => ({ [field]: { $regex: pattern, $options: "i" } })
+    );
   }
 
   const sortObj = sort === "alphabetical" ? { titleEn: 1 } : { createdAt: -1 };
@@ -289,6 +209,32 @@ app.get("/api/songs/:id", async (req, res) => {
   }
   res.json(mapSong(song));
 });
+
+// Google Drive labels files by their name, so an AAC/M4A file named ".mp3" arrives as
+// audio/mpeg, which Safari/iOS refuse to play. Detect the real format from the first bytes.
+const AUDIO_SIGNATURES = [
+  { type: "audio/mp4", test: (b) => b.length >= 8 && b.toString("latin1", 4, 8) === "ftyp" },
+  { type: "audio/mpeg", test: (b) => b.toString("latin1", 0, 3) === "ID3" || (b[0] === 0xff && (b[1] & 0xe0) === 0xe0) },
+  { type: "audio/ogg", test: (b) => b.toString("latin1", 0, 4) === "OggS" },
+  { type: "audio/wav", test: (b) => b.toString("latin1", 0, 4) === "RIFF" },
+  { type: "audio/flac", test: (b) => b.toString("latin1", 0, 4) === "fLaC" }
+];
+const audioTypeCache = new Map();
+
+function detectAudioType(bytes) {
+  const match = AUDIO_SIGNATURES.find((sig) => sig.test(bytes));
+  return match ? match.type : "";
+}
+
+function rememberAudioType(url, type) {
+  if (!type) {
+    return;
+  }
+  if (audioTypeCache.size > 1000) {
+    audioTypeCache.clear();
+  }
+  audioTypeCache.set(url, type);
+}
 
 app.get("/api/audio", async (req, res) => {
   const sourceUrl = String(req.query.url || "").trim();
@@ -347,18 +293,65 @@ app.get("/api/audio", async (req, res) => {
     }
   });
 
-  if (!res.getHeader("content-type")) {
-    res.setHeader("content-type", "audio/mpeg");
+  const cacheKey = parsedUrl.toString();
+  const reader = upstream.body ? upstream.body.getReader() : null;
+  let firstChunk = null;
+  let audioType = audioTypeCache.get(cacheKey) || "";
+
+  if (reader) {
+    const startsAtZero = !req.headers.range || /^bytes=0-/.test(req.headers.range);
+    try {
+      const first = await reader.read();
+      firstChunk = first.done ? null : Buffer.from(first.value);
+      if (!audioType && startsAtZero && firstChunk) {
+        audioType = detectAudioType(firstChunk);
+        rememberAudioType(cacheKey, audioType);
+      }
+    } catch {
+      res.status(502).json({ error: "Failed to read audio source" });
+      return;
+    }
   }
 
+  if (!audioType && req.headers.range && !/^bytes=0-/.test(req.headers.range)) {
+    // A seek into the middle of a file we haven't seen yet: peek at its first bytes.
+    try {
+      const probe = await fetch(cacheKey, { redirect: "follow", headers: { Range: "bytes=0-11" } });
+      audioType = detectAudioType(Buffer.from(await probe.arrayBuffer()));
+      rememberAudioType(cacheKey, audioType);
+    } catch {
+      // Fall back to the upstream content type.
+    }
+  }
+
+  const upstreamType = upstream.headers.get("content-type") || "";
+  res.setHeader("content-type", audioType || (upstreamType.startsWith("audio/") ? upstreamType : "audio/mpeg"));
   res.status(upstream.status === 206 ? 206 : 200);
 
-  if (!upstream.body) {
+  if (!reader) {
     res.end();
     return;
   }
 
-  Readable.fromWeb(upstream.body).pipe(res);
+  async function* body() {
+    try {
+      if (firstChunk) {
+        yield firstChunk;
+      }
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) {
+          return;
+        }
+        yield Buffer.from(value);
+      }
+    } finally {
+      // Runs when the listener leaves early too, so the Drive download is not left running.
+      reader.cancel().catch(() => {});
+    }
+  }
+
+  pipeline(Readable.from(body()), res, () => {});
 });
 
 app.post("/api/songs", requireAuth, async (req, res) => {
@@ -399,6 +392,7 @@ app.post("/api/songs", requireAuth, async (req, res) => {
     category,
     artist,
     lyrics,
+    ...readOptionalText(req.body),
     audioVersions: [{ label: "Primary Audio", url: audioUrl }],
     links
   });
@@ -435,6 +429,7 @@ app.put("/api/songs/:id", requireAuth, async (req, res) => {
   song.category = category;
   song.artist = artist;
   song.lyrics = lyrics;
+  Object.assign(song, readOptionalText(req.body, song));
   song.audioVersions = audioUrl ? [{ label: "Primary Audio", url: audioUrl }] : [];
   song.links = links;
   await song.save();

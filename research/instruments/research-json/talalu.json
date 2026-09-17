@@ -1,0 +1,182 @@
+{
+  "id": "talalu",
+  "nameEn": "Talalu",
+  "nameTe": "తాళాలు",
+  "otherNames": [
+    {
+      "en": "Talam (singular)",
+      "te": "తాళం"
+    },
+    {
+      "en": "Chetalalu (hand cymbals)",
+      "te": "చేతాళాలు"
+    },
+    {
+      "en": "Karatalalu",
+      "te": "కరతాళాలు"
+    },
+    {
+      "en": "Manjira / jalra / gini",
+      "te": "మంజీర / జల్రా / గిని"
+    },
+    {
+      "en": "Pedda talalu (large cymbals)",
+      "te": "పెద్ద తాళాలు"
+    }
+  ],
+  "category": "idiophone",
+  "classification": "Concussion idiophone: a pair of small hand cymbals of bell metal, joined by a cord and struck together",
+  "regions": [
+    "Telangana",
+    "Andhra"
+  ],
+  "communities": [
+    "Kuruma and Golla storytellers (Oggu Katha)",
+    "Chindu Bhagavatam troupes",
+    "Telaga Dasari street-play troupes (Gante Bhagavatulu)",
+    "Village bhajana and Kolatam groups"
+  ],
+  "summary": "Talalu are small cymbals of bronze or other bell metal, joined by a cord and clashed together to mark the beat. They keep time in village bhajanas and in Telangana's Oggu Katha and Chindu Bhagavatam, and larger talalu ring out in forms such as the Kola Sambaram of the Godavari districts.",
+  "sections": {
+    "about": [
+      "Talalu (singular talam) are a pair of metal cymbals struck against each other to keep rhythm. Telugu Wikipedia describes them as two bronze discs, also called manjira, jalra or gini, notes that the word is connected with clapping, and says that in Hindu devotional use they are also called karatalalu, 'hand cymbals' [1]. C. P. Brown's Telugu-English Dictionary (1903) gives tāḷamu both as 'time or measure in music' and as 'a cymbal, because used to keep time with', and records tāḷagiri for a cymbal player [2].",
+      "Because they mark the tala (rhythmic cycle), talalu appear in a very wide range of Telugu devotional and folk ensembles: seated bhajanas, dance bhajanas, Kolatam, and the long narrative performances of Telangana such as Oggu Katha [3][4][5]."
+    ],
+    "construction": [
+      "According to Telugu Wikipedia, talalu are made of bell metal, for which the article lists brass, bronze, copper, zinc and similar materials. A cord is tied through the hole in the middle of the cymbals, each cymbal is held together with its cord while playing, and the pitch of the sound depends on the size and weight of the cymbals [1]. Brown's dictionary likewise mentions the cymbal as a kanchu vadyamu, an instrument of bell metal [6].",
+      "Sizes vary between traditions. The talalu used in Oggu Katha are described as about twice the size of a palm, and smaller talalu are also used alongside them [4]. The Kola Sambaram storytellers of the Godavari districts use large talalu that give a loud sound [7], and Telangana Yadava storytellers of the Golla Suddulu tradition are described performing with a large drum and large talalu [8]."
+    ],
+    "playing": [
+      "The player holds one cymbal in each hand by its cord and strikes the pair together on the beats [1]. In an Oggu Katha troupe, which needs at least five members, the main narrator and his assistant stand in front and three musicians behind them play the dolu drum, the talam and the kanjira, also singing the chorus; the talam player takes up the kanjira when needed [4]. Mikkilineni notes that the talalu and dolu are played from the beginning to the end of an Oggu Katha performance [9], and Telugu Wikipedia lists rhythmic patterns used in Oggu Katha such as mendu talam, duyyara, adi talam and mendu bhairavi [4].",
+      "In the Chindu Bhagavatam troupes of Nizamabad district, the actors sing their own songs and verses while women of the troupe play the talalu; mridangam, harmonium and ankle bells are also used [10].",
+      "In the Kola Sambaram, a night-long storytelling performance about Lord Venkateswara, two men at the front swing burning torches (kolalu) while two singers at the back play large talalu and sing the refrain for the narrator [7]. In Adilabad district, Kolatam songs sung by elders are accompanied by harmonium and talalu [5]."
+    ],
+    "cultural": [
+      "Singing with talalu is a communal act of devotion. Mikkilineni describes villagers singing bhajanas together while sounding talalu in rhythm; energetic young men perform 'savamulla' bhajanas, which he explains as talala bhajanas (cymbal bhajanas) that involve dancing, while older men sit and sing Hari and Pandari bhajanas with hand cymbals and chirutalu. At Sri Rama Navami and Dasara, bhajana groups also stage plays in bhajana style through the night [3].",
+      "Oggu Katha, in which talalu are central, is a hereditary storytelling tradition of the Kuruma and Golla communities, who tell the stories of Beerappa and Mallanna. Telugu Wikipedia describes an 'Oggu deeksha' initiation: with the permission of caste elders, a trainee goes to a Shaiva shrine, meditates on Mallanna, receives a mantra and blessing from the Oggu elders and wears a necklace of seven cowries associated with Yellamma before becoming an Oggu performer [4]. Performances begin with praise of Ujjaini Mahankali followed by prayers to Ganapati and Sarada [9].",
+      "The Kola Sambaram with its large talalu is itself a devotional event: it is held at night on the day of deeparadhana by those who have returned from a pilgrimage to Tirupati, and tells a folk version of the love story of Venkateswara, Alamelu Manga and Bibi Nanchari; one of the performers becomes possessed during the performance, and in the past a bull was brought and set free afterwards [7]."
+    ],
+    "usage": [
+      "Talalu are used in Oggu Katha across Telangana [4][11], in Chindu Bhagavatam (Mikkilineni counted about fifty troupes in Nizamabad district) [10], and in the street plays of the Telaga Dasaris or Gante Bhagavatulu of Nalgonda, Khammam, Warangal and Hyderabad districts, where actors sing to harmonium, maddela and talalu [12]. Budige Jangams performing daytime pagati veshalu (disguise performances) go from house to house with harmonium, tabla and talalu [13].",
+      "In Karimnagar district, street plays (veedhi bhagotham) are accompanied by maddela, talam and harmonium [14]. Talalu also accompany Pandari bhajanas [15], Kolatam in Adilabad [5], and the Kola Sambaram, which is performed mostly in the East and West Godavari districts [7]."
+    ]
+  },
+  "traditions": [
+    "Oggu Katha",
+    "Chindu Bhagavatam",
+    "Bhajana (Hari, Pandari and savamulla bhajanas)",
+    "Kolatam",
+    "Kola Sambaram",
+    "Veedhi Bhagavatam (street plays)",
+    "Pagati Veshalu"
+  ],
+  "facts": [
+    {
+      "label": "Type",
+      "value": "Pair of hand cymbals"
+    },
+    {
+      "label": "Materials",
+      "value": "Bell metal (brass, bronze, copper, zinc and similar), with a cord through the centre"
+    },
+    {
+      "label": "Size",
+      "value": "Small hand cymbals; Oggu Katha talalu about twice the size of a palm"
+    },
+    {
+      "label": "Played with",
+      "value": "Both hands, one cymbal in each, held by the cord"
+    },
+    {
+      "label": "Heard in",
+      "value": "Oggu Katha, Chindu Bhagavatam, bhajanas, Kolatam, Kola Sambaram"
+    }
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "sources": [
+    {
+      "title": "తాళాలు (Talalu)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%A4%E0%B0%BE%E0%B0%B3%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "A Telugu-English Dictionary (1903), entry 'తాళము' (tāḷamu), p. 526",
+      "publisher": "Charles Philip Brown; Digital Dictionaries of South Asia, University of Chicago",
+      "url": "https://dsal.uchicago.edu/cgi-bin/app/brown_query.py?qs=%E0%B0%A4%E0%B0%BE%E0%B0%B3%E0%B0%AE%E0%B1%81&searchhws=yes"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'భజనలు, రామ భజనలు' (Bhajanas and Rama bhajanas)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AD%E0%B0%9C%E0%B0%A8%E0%B0%B2%E0%B1%81%2C_%E0%B0%B0%E0%B0%BE%E0%B0%AE_%E0%B0%AD%E0%B0%9C%E0%B0%A8%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "ఒగ్గు కథ (Oggu Katha)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%92%E0%B0%97%E0%B1%8D%E0%B0%97%E0%B1%81_%E0%B0%95%E0%B0%A5"
+    },
+    {
+      "title": "Kolatam unique to Telangana (DC Correspondent, 1 October 2014)",
+      "publisher": "Deccan Chronicle",
+      "url": "https://www.deccanchronicle.com/141001/nation-current-affairs/article/kolatam-unique-telangana"
+    },
+    {
+      "title": "A Telugu-English Dictionary (1903), full-text search for 'cymbal' (entries కంచరవాడు/కంచువాద్యము, కరతాళము, లట్టువ, గిరగిటలు)",
+      "publisher": "Charles Philip Brown; Digital Dictionaries of South Asia, University of Chicago",
+      "url": "https://dsal.uchicago.edu/cgi-bin/app/brown_query.py?qs=cymbal"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'కోనసీమ కోలసంబరం' (Kola Sambaram of Konaseema)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%95%E0%B1%8B%E0%B0%A8%E0%B0%B8%E0%B1%80%E0%B0%AE_%E0%B0%95%E0%B1%8B%E0%B0%B2%E0%B0%B8%E0%B0%82%E0%B0%AC%E0%B0%B0%E0%B0%82"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'సుద్దులు చెప్పే గొల్లసుద్దులు' (Golla Suddulu)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%B8%E0%B1%81%E0%B0%A6%E0%B1%8D%E0%B0%A6%E0%B1%81%E0%B0%B2%E0%B1%81_%E0%B0%9A%E0%B1%86%E0%B0%AA%E0%B1%8D%E0%B0%AA%E0%B1%87_%E0%B0%97%E0%B1%8A%E0%B0%B2%E0%B1%8D%E0%B0%B2%E0%B0%B8%E0%B1%81%E0%B0%A6%E0%B1%8D%E0%B0%A6%E0%B1%81%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'బగ్గు గొల్లల ఒగ్గు కథలు' (Oggu Katha)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AC%E0%B0%97%E0%B1%8D%E0%B0%97%E0%B1%81_%E0%B0%97%E0%B1%8A%E0%B0%B2%E0%B1%8D%E0%B0%B2%E0%B0%B2_%E0%B0%92%E0%B0%97%E0%B1%8D%E0%B0%97%E0%B1%81_%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'చిందులు తొక్కే చిందు భాగవతం' (Chindu Bhagavatam)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%9A%E0%B0%BF%E0%B0%82%E0%B0%A6%E0%B1%81%E0%B0%B2%E0%B1%81_%E0%B0%A4%E0%B1%8A%E0%B0%95%E0%B1%8D%E0%B0%95%E0%B1%87_%E0%B0%9A%E0%B0%BF%E0%B0%82%E0%B0%A6%E0%B1%81_%E0%B0%AD%E0%B0%BE%E0%B0%97%E0%B0%B5%E0%B0%A4%E0%B0%82"
+    },
+    {
+      "title": "Oggu Katha",
+      "publisher": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Oggu_Katha"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'తెలగ దాసరులే, గంటె భాగవతులు' (Telaga Dasaris / Gante Bhagavatulu)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B0%97_%E0%B0%A6%E0%B0%BE%E0%B0%B8%E0%B0%B0%E0%B1%81%E0%B0%B2%E0%B1%87%2C_%E0%B0%97%E0%B0%82%E0%B0%9F%E0%B1%86_%E0%B0%AD%E0%B0%BE%E0%B0%97%E0%B0%B5%E0%B0%A4%E0%B1%81%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'బుడిగె వాయిద్యకారులే బుడిగె జంగాలు' (Budige Jangams)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AC%E0%B1%81%E0%B0%A1%E0%B0%BF%E0%B0%97%E0%B1%86_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%95%E0%B0%BE%E0%B0%B0%E0%B1%81%E0%B0%B2%E0%B1%87_%E0%B0%AC%E0%B1%81%E0%B0%A1%E0%B0%BF%E0%B0%97%E0%B1%86_%E0%B0%9C%E0%B0%82%E0%B0%97%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Naluvala Srinivas, 'The Folk Arts (Janapada Kalalu) of Karimnagar District - Telangana: An Overview', IJRRSSH Vol. 3, Issue 4, Oct-Dec 2016, pp. 13-22",
+      "publisher": "International Journal of Recent Research in Social Sciences and Humanities (Paper Publications)",
+      "url": "https://www.paperpublications.org/upload/book/THE%20FOLK%20ARTS-835.pdf"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'పండరి భజనలు' (Pandari bhajanas)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AA%E0%B0%82%E0%B0%A1%E0%B0%B0%E0%B0%BF_%E0%B0%AD%E0%B0%9C%E0%B0%A8%E0%B0%B2%E0%B1%81"
+    }
+  ],
+  "uncertain": [
+    "The Telugu word talam also means the rhythmic cycle (tala), so some mentions of 'talam' in sources may refer to rhythm rather than the instrument.",
+    "The list of metals comes from Telugu Wikipedia's general article; no source describing the alloy or the makers of the talalu used by folk troupes was found.",
+    "Mikkilineni's instrument list for Chindu Bhagavatam also includes 'chippalu', which could not be identified.",
+    "No beliefs, taboos or making rituals specific to talalu were found; the rituals described relate to the art forms in which they are played.",
+    "The fifty Chindu Bhagavatam troupes and other details from Mikkilineni's book date from 1992."
+  ]
+}

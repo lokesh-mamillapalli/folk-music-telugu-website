@@ -1,0 +1,137 @@
+{
+  "id": "chekkalu",
+  "nameEn": "Chekkalu (Chekka Bhajana clappers)",
+  "nameTe": "చెక్కలు",
+  "otherNames": [
+    {
+      "en": "Chekka",
+      "te": "చెక్క"
+    },
+    {
+      "en": "Talapu chekkalu",
+      "te": "తాళపు చెక్కలు"
+    },
+    {
+      "en": "Chirutalu (large type)",
+      "te": "చిరుతలు"
+    }
+  ],
+  "category": "idiophone",
+  "classification": "Concussion idiophone: a pair of long, carved wooden clappers fitted with ringing metal discs",
+  "regions": [
+    "Andhra"
+  ],
+  "communities": [
+    "Village Chekka Bhajana troupes (traditionally young men; women's troupes today)"
+  ],
+  "summary": "Chekkalu are the pair of foot-long, carved wooden clappers with ringing metal discs that give Chekka Bhajana its name. Dancers moving in a circle clap them in one hand while singing devotional songs and Ramayana stories, a tradition especially associated with Rayalaseema.",
+  "sections": {
+    "about": [
+      "Chekka means wood or a piece of wood in Telugu [1], and Chekka Bhajana takes its name from the wooden clappers its dancers play [2]. It is a devotional group dance in which the members move in a circle, singing and playing the clappers in rhythm [3][4].",
+      "Telugu Wikipedia describes the Chekka Bhajana clapper as a larger form of the chirutalu used by Harikatha performers [5], and Mikkilineni Radhakrishna Murthy uses both names, chekkalu and chirutalu, for it [3]. Summarising the book Janapada Kalarupam Chekka Bhajana by Dr. Chigicherla Krishna Reddy, a lecturer in Telugu University's folk arts department, Mikkilineni reports that Chekka Bhajana arose in Kadapa district of Rayalaseema and spread across the Telugu country; the evidence given is the gurus' own accounts of its origin and the presence of Chekka Bhajana troupes in every village of the district [3]."
+    ],
+    "construction": [
+      "Mikkilineni describes the clappers as pieces of wood about a foot long, fitted on both sides with pairs of round iron or brass discs that give a pleasant sound when the clappers are struck in time; the wood is decorated with carving [3]. A 2022 report from Chittoor district similarly describes a pair of wooden instruments about a foot long each, with hollowed-out spaces for bells on each side [2], and TeluguISM describes tala-chekkalu about a forearm's length (muru) long [6].",
+      "When the whole troupe plays together, the discs sound as one deep sound at a single pitch, which Mikkilineni says spurs on the singers [3]. Telugu Wikipedia describes the performers holding clappers with brass discs in one hand and shaking them as they play [4]."
+    ],
+    "playing": [
+      "The players hold the clappers in one hand and strike and shake them in time with the tala while stepping forward and back and turning in a circle. A guru stands in the middle and sings, and the members take up his lines as they play; tabla and flute may accompany them [4]. Everyone must step, turn, stop, jump, sit and rise together, and both the dance and the tala change with every song [3].",
+      "Mikkilineni lists many named steps, among them adi adugu, rendu potlu, mudu melika, kulukudu, kuppidugu, padma vyuham and parnasala, taught by the guru one by one. At times the guru stops suddenly and the whole troupe stops with him in silence; these pauses, called nilupulu, show the group's unity and discipline [3].",
+      "A performance usually ends with jada kopulu (braid figures). A round, moon-shaped board with holes is hung from a high beam or a tree in the village centre with coloured ropes through the holes; each member holds a rope in the left hand and the clappers in the right, and the dancers weave the ropes into braid patterns such as sada jada, nugaya jada, pachala jada and vala jada while singing. If one person makes a mistake, the braid tangles [3]."
+    ],
+    "cultural": [
+      "Chekka Bhajana is performed as devotion. Before starting, the troupe worships pictures of the gods, breaks a coconut, and holds their clappers while making a full prostration (sashtanga namaskaram) [3]. Young men who want to learn choose a guru and begin with guru puja, practising strictly at night; a troupe takes about three months to become ready, and each guru teaches in his own style [3].",
+      "Songs begin with a prayer to Vighneshwara and include devotional songs, episodes from the Ramayana, Mahabharata and Bhagavata such as the dialogue of Krishna and the gopikas, songs teaching morals, and ballads such as that of the benefactor Budda Vengala Reddy; members step into the circle to act characters and then rejoin the group [3]. Troupes of twenty to thirty in even numbers, aged about twelve to twenty-five, wear matching headcloths, with some members dressed in women's costume for female roles [3].",
+      "In the past many villages had troupes, and farm workers gathered at Rama temples after the day's work to chant Rama's name in Chekka Bhajana; television and cinema later reduced its popularity [4]. Performances take place in leisure time and in dry weather, at festivals, at the weddings of deities, at tirunallu fairs, chariot festivals and jataras [3][6]."
+    ],
+    "usage": [
+      "The tradition is strongest in Rayalaseema. Chigicherla Krishna Reddy's study, as summarised by Mikkilineni, drew on songs and dance postures collected from bhajana gurus of Pulivendula taluk in Kadapa district, and once a troupe is trained it travels to nearby villages and pilgrimage places [3]. Telugu Wikipedia lists troupe leaders from many villages of Kadapa district [4]. In Chittoor district, a troupe from Kanipakam in Irala mandal led by Mohandas, whose family has practised the art for generations, performs at Vinayaka Chaturthi, Sri Rama Navami and Krishna Jayanti and travels to villages between Tirupati and Aragonda [2].",
+      "Chekka Bhajana is also found in north coastal Andhra: Doordarshan's DD Saptagiri broadcast a Chekka Bhajana on Seetarama Vanavasam by the J. Apparao troupe of Vizianagaram [7].",
+      "Its survival is a concern. Mikkilineni (1992) wrote that support had declined but that villagers were keeping the art alive and that Telugu University was reviving it through training camps [3]. A 2022 report called it a declining art form that has sometimes been showcased at the Republic Day parade in Delhi, and described a project in Chittoor using Chekka Bhajana songs with new lyrics to teach hygiene in schools [2]."
+    ]
+  },
+  "traditions": [
+    "Chekka Bhajana",
+    "Jada kopulu (braid figures)",
+    "Rama bhajana",
+    "Sri Rama Navami",
+    "Vinayaka Chaturthi",
+    "Krishna Jayanti",
+    "Temple festivals and jataras"
+  ],
+  "facts": [
+    {
+      "label": "Type",
+      "value": "Pair of long wooden clappers with jingles"
+    },
+    {
+      "label": "Materials",
+      "value": "Carved wood with round iron or brass discs"
+    },
+    {
+      "label": "Size",
+      "value": "About one foot (30 cm) long"
+    },
+    {
+      "label": "Played with",
+      "value": "One hand, struck and shaken in rhythm while dancing"
+    },
+    {
+      "label": "Troupe",
+      "value": "About 16 to 30 members with a guru who leads the singing"
+    },
+    {
+      "label": "Region",
+      "value": "Rayalaseema (especially Kadapa), also Chittoor and Vizianagaram"
+    }
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "sources": [
+    {
+      "title": "A Telugu-English Dictionary (1903), entry 'చెక్క' (chekka), p. 427",
+      "publisher": "Charles Philip Brown; Digital Dictionaries of South Asia, University of Chicago",
+      "url": "https://dsal.uchicago.edu/cgi-bin/app/brown_query.py?qs=%E0%B0%9A%E0%B1%86%E0%B0%95%E0%B1%8D%E0%B0%95&searchhws=yes"
+    },
+    {
+      "title": "Andhra's dying artform of chekka bhajana is now being used to spread hygiene messages in schools (Special Correspondent, 28 June 2022)",
+      "publisher": "Total Health, Apollo Foundation",
+      "url": "https://www.apollototalhealth.org/andhras-dying-artform-of-chekka-bhajana-is-now-being-used-to-spread-hygiene-messages-in-schools/"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'చకితుల్ని చేసే చెక్క భజనలు' (Chekka Bhajana)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%9A%E0%B0%95%E0%B0%BF%E0%B0%A4%E0%B1%81%E0%B0%B2%E0%B1%8D%E0%B0%A8%E0%B0%BF_%E0%B0%9A%E0%B1%87%E0%B0%B8%E0%B1%87_%E0%B0%9A%E0%B1%86%E0%B0%95%E0%B1%8D%E0%B0%95_%E0%B0%AD%E0%B0%9C%E0%B0%A8%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "చెక్క భజన (Chekka Bhajana)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%9A%E0%B1%86%E0%B0%95%E0%B1%8D%E0%B0%95_%E0%B0%AD%E0%B0%9C%E0%B0%A8"
+    },
+    {
+      "title": "చిరుతలు (Chirutalu)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%9A%E0%B0%BF%E0%B0%B0%E0%B1%81%E0%B0%A4%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Chekka Bhajanalu (చెక్క భజనలు), 2 March 2022",
+      "publisher": "TeluguISM Traditions",
+      "url": "https://traditions.teluguism.com/chekka-bhajanalu/"
+    },
+    {
+      "title": "DDS-Folk Arts-Chekka bajana (programme description: Chekka Bhajana on Seetarama Vanavasam by J. Apparao Brindam, Vizianagaram, 2018)",
+      "publisher": "DD Saptagiri, Doordarshan (YouTube)",
+      "url": "https://www.youtube.com/watch?v=k6HotRqLod8"
+    }
+  ],
+  "uncertain": [
+    "Relationship to chirutalu: sources call these clappers both chekkalu and chirutalu, and the large carved clappers of Telangana's Chirutala Bhajana appear similar. They are kept as a separate page because Chekka Bhajana is a distinct named tradition; see chirutalu.json.",
+    "Descriptions of the jingles differ: fixed iron or brass discs (Mikkilineni) versus hollowed-out spaces for bells (Apollo Total Health, 2022). Designs probably vary between troupes.",
+    "Troupe size differs between sources: 16 to 20 (Telugu Wikipedia) and 20 to 30 in even numbers (Mikkilineni).",
+    "Telangana: some online videos label Chekka Bhajana performances from Siddipet in Telangana, but no written source confirming a Telangana Chekka Bhajana tradition was found, so only Andhra is listed.",
+    "No source was found describing who makes the clappers (for example village carpenters) or which wood is used.",
+    "A Times of India report (26 January 2020) on Chekka Bhajana at the Republic Day parade, cited by Telugu Wikipedia, could not be accessed.",
+    "Troupe and guru lists in Telugu Wikipedia and Mikkilineni's book date from around 1992 and may be out of date."
+  ]
+}

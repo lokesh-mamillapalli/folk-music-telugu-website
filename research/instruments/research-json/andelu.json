@@ -1,0 +1,175 @@
+{
+  "id": "andelu",
+  "nameEn": "Andelu",
+  "nameTe": "అందెలు",
+  "otherNames": [
+    {
+      "en": "Ande (singular)",
+      "te": "అందె"
+    },
+    {
+      "en": "Vreli andelu (finger andelu)",
+      "te": "వ్రేలి అందెలు"
+    },
+    {
+      "en": "Cheti andelu (hand andelu)",
+      "te": "చేతి అందెలు"
+    },
+    {
+      "en": "Gumbilu",
+      "te": "గుంబీలు"
+    },
+    {
+      "en": "Jantara",
+      "te": "జంతర"
+    },
+    {
+      "en": "Andellu / andalu (other spellings)",
+      "te": ""
+    }
+  ],
+  "category": "idiophone",
+  "classification": "Rattle and concussion idiophone: hollow brass rings containing loose metal balls, worn on the thumb and fingers and struck together",
+  "regions": [
+    "Andhra",
+    "Telangana"
+  ],
+  "communities": [
+    "Jangam storytellers (Budige / Beda Jangams, Mala Jangams)",
+    "Burrakatha troupes",
+    "Kuruma and Golla Oggu Katha narrators"
+  ],
+  "summary": "Andelu are hollow brass rings with small metal balls inside, worn on the thumb and fingers of a storyteller's hand. The Burrakatha narrator clinks them in time while strumming his tambura, and Jangam and Oggu Katha storytellers use them the same way to keep the beat.",
+  "sections": {
+    "about": [
+      "In Telugu storytelling traditions, andelu are jingling metal rings worn on the hand and used to keep time. English Wikipedia's Burrakatha article describes the main storyteller wearing a metal ring called andelu on his right thumb and holding another ring in his other hand, striking them together as percussion [1]. The folklorist Tirumala Ramachandra, quoted by Prof. S. Gangappa, describes the narrator strumming the tambura with one hand and keeping tala with the other, wearing on his thumb a 'jantara' to which a cloth like a handkerchief is tied; this time-keeping jantara is also called gumbilu or andelu [2].",
+      "In general Telugu usage andelu are jingling ankle ornaments: C. P. Brown's dictionary (1903) defines ande as a silver foot ornament filled with small pebbles so that it sounds, worn by women on their ankles [3]. Besides the hand-worn rings described above, the name is also used for the jingling rings fitted at the grip of Kolatam sticks [4]."
+    ],
+    "construction": [
+      "Musician and writer David Courtney describes Burrakatha andelu as a pair of brass rings (toroids) about one and a half to two inches across. Each ring is hollow but split around the rim, and a number of metal balls inside rattle and ring to give a sound like jingle bells [5].",
+      "Mikkilineni Radhakrishna Murthy lists three andelu among the few things a Jangam Katha storyteller needs, together with a tambura, bells for both ankles, two gummeta drums for the accompanists, and three gowns and three headcloths for the troupe [6]. Tirumala Ramachandra's description mentions a piece of cloth tied to the thumb ring [2].",
+      "Courtney also notes that andelu are used in rural life on bullock carts, where their steady 'ching, ching, ching' sound is said to keep the bullocks calm and less easily startled by outside noises [5]."
+    ],
+    "playing": [
+      "The storyteller plays the andelu with the hand that is not strumming the tambura. Courtney describes two techniques: one ring slipped over the left thumb and the other on one or more of the other fingers, the two being struck together; or both rings slipped over the left thumb and struck with the fingers [5]. Gangappa describes the main Burrakatha narrator strumming the tambura on his shoulder while sounding the andelu on the fingers of his left hand and singing to the drone of the tambura [2].",
+      "In Jangam Katha, the older form from which Burrakatha grew, the narrator holds the tambura, keeps tala with the andelu on his hand and dances, while two accompanists (vantalu) with gummeta drums slung from their shoulders drum and sing the refrain; when the accompanists take up the song, the narrator waves a handkerchief along with the andelu [6]. Budige Jangam storytellers wear andelu on a finger and tap them against the tambura while plucking its string with the other hand [7][8], and Mala Jangam storytellers strike the gourd of the tambura in time with rings on their hands [9].",
+      "In Oggu Katha, after the opening praise of Ujjaini Mahankali and prayers to Ganapati and Sarada, the narrator takes up his finger andelu before beginning the story [10][11]."
+    ],
+    "cultural": [
+      "Andelu belong to storytelling traditions rooted in devotional communities. The Jangams who told Jangam Kathas were Shaiva devotees [6], and their Jangam Kathas are described as the forerunners of today's Burrakatha [2][8]. An old verse from Dhenuvakonda Venkayya's Virataparvam Jangam Katha, quoted by Gangappa, pictures Jangam performers with sacred ash marks, long gowns and turbans, with gajjelu, muvvalu and andelu jingling on their feet as they dance and strum the tambura [2].",
+      "In Oggu Katha, putting on the finger andelu marks the start of the story after the invocations [10]. The narrators are Kuruma and Golla storytellers who tell the stories of their deities Beerappa and Mallanna, and entry into the tradition involves an initiation (Oggu deeksha) at a Shaiva shrine [11].",
+      "Burrakatha became a powerful medium of public awareness. It spread patriotic messages during the national movement and was used by the Praja Natya Mandali to rouse people during the Telangana liberation struggle; governments and voluntary organisations have since used it for messages on health, literacy and social problems [2][8]."
+    ],
+    "usage": [
+      "Andelu are a standard part of Burrakatha in Andhra Pradesh and Telangana, where the three-member troupe consists of a narrator with tambura and andelu flanked by two drummers [1][2][12]. They are also used in Jangam Kathas and Budige Jangam storytelling, including in Karimnagar district [6][7][8], in Oggu Katha of Telangana [10], and, according to Courtney, in the less common Sarada Kathalu and other Andhra folk forms [5].",
+      "Separate jingling rings called andelu are fixed near the grip of traditional Kolatam sticks, with small bells at the tip, so that the sticks jingle as they are struck [4]."
+    ]
+  },
+  "traditions": [
+    "Burrakatha",
+    "Jangam Katha",
+    "Budige Jangam stories",
+    "Oggu Katha",
+    "Sarada Katha",
+    "Mala Jangam stories",
+    "Kolatam"
+  ],
+  "facts": [
+    {
+      "label": "Type",
+      "value": "Hollow ring rattles struck together"
+    },
+    {
+      "label": "Materials",
+      "value": "Brass rings with loose metal balls inside"
+    },
+    {
+      "label": "Size",
+      "value": "About 1.5 to 2 inches (4 to 5 cm) across"
+    },
+    {
+      "label": "Worn on",
+      "value": "Thumb and fingers of the hand not strumming the tambura (often the left)"
+    },
+    {
+      "label": "Played with",
+      "value": "Rings struck together, or tapped against the tambura"
+    },
+    {
+      "label": "Heard in",
+      "value": "Burrakatha, Jangam Katha, Oggu Katha"
+    }
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "sources": [
+    {
+      "title": "Burra katha",
+      "publisher": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Burra_katha"
+    },
+    {
+      "title": "బుర్రకథ - సామాజిక ప్రయోజనం (Burrakatha: its social purpose), essay by Prof. S. Gangappa, TANA Chaitanya Sravanti 2006",
+      "publisher": "AndhraBharati",
+      "url": "https://andhrabharati.com/vachana/vyAsamulu/tAnA06_cs_02.html"
+    },
+    {
+      "title": "A Telugu-English Dictionary (1903), entry 'అందె' (ande), p. 15",
+      "publisher": "Charles Philip Brown; Digital Dictionaries of South Asia, University of Chicago",
+      "url": "https://dsal.uchicago.edu/cgi-bin/app/brown_query.py?qs=%E0%B0%85%E0%B0%82%E0%B0%A6%E0%B1%86&searchhws=yes"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'కోకొల్లలుగా కోలాట నృత్యాలు' (Kolatam dances)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%95%E0%B1%8B%E0%B0%95%E0%B1%8A%E0%B0%B2%E0%B1%8D%E0%B0%B2%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B0%BE_%E0%B0%95%E0%B1%8B%E0%B0%B2%E0%B0%BE%E0%B0%9F_%E0%B0%A8%E0%B1%83%E0%B0%A4%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Andelu, by David Courtney",
+      "publisher": "chandrakantha.com",
+      "url": "https://chandrakantha.com/music-and-dance/instrumental-music/indian-instruments/andelu/"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'ప్రజల నుర్రూతలూగించిన జంగం కథలు, బుర్ర కథలు' (Jangam Kathas and Burrakathas)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AA%E0%B1%8D%E0%B0%B0%E0%B0%9C%E0%B0%B2_%E0%B0%A8%E0%B1%81%E0%B0%B0%E0%B1%8D%E0%B0%B0%E0%B1%82%E0%B0%A4%E0%B0%B2%E0%B1%82%E0%B0%97%E0%B0%BF%E0%B0%82%E0%B0%9A%E0%B0%BF%E0%B0%A8_%E0%B0%9C%E0%B0%82%E0%B0%97%E0%B0%82_%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81%2C_%E0%B0%AC%E0%B1%81%E0%B0%B0%E0%B1%8D%E0%B0%B0_%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'బుడిగె వాయిద్యకారులే బుడిగె జంగాలు' (Budige Jangams)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AC%E0%B1%81%E0%B0%A1%E0%B0%BF%E0%B0%97%E0%B1%86_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%95%E0%B0%BE%E0%B0%B0%E0%B1%81%E0%B0%B2%E0%B1%87_%E0%B0%AC%E0%B1%81%E0%B0%A1%E0%B0%BF%E0%B0%97%E0%B1%86_%E0%B0%9C%E0%B0%82%E0%B0%97%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Naluvala Srinivas, 'The Folk Arts (Janapada Kalalu) of Karimnagar District - Telangana: An Overview', IJRRSSH Vol. 3, Issue 4, Oct-Dec 2016, pp. 13-22",
+      "publisher": "International Journal of Recent Research in Social Sciences and Humanities (Paper Publications)",
+      "url": "https://www.paperpublications.org/upload/book/THE%20FOLK%20ARTS-835.pdf"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'మాల జంగాలు' (Mala Jangams)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AE%E0%B0%BE%E0%B0%B2_%E0%B0%9C%E0%B0%82%E0%B0%97%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (తెలుగువారి జానపద కళారూపాలు), chapter 'బగ్గు గొల్లల ఒగ్గు కథలు' (Oggu Katha)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University, Hyderabad, 1992 (digitised on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AC%E0%B0%97%E0%B1%8D%E0%B0%97%E0%B1%81_%E0%B0%97%E0%B1%8A%E0%B0%B2%E0%B1%8D%E0%B0%B2%E0%B0%B2_%E0%B0%92%E0%B0%97%E0%B1%8D%E0%B0%97%E0%B1%81_%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "ఒగ్గు కథ (Oggu Katha)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%92%E0%B0%97%E0%B1%8D%E0%B0%97%E0%B1%81_%E0%B0%95%E0%B0%A5"
+    },
+    {
+      "title": "Skandgupta, 'Dalit Voices in Burrakatha (An Oral Narrative): A Case Study of Kannada and Telugu', Language in India 18:6, June 2018",
+      "publisher": "Language in India",
+      "url": "https://www.languageinindia.com/june2018/skandguptaburrakathaperformance.pdf"
+    }
+  ],
+  "uncertain": [
+    "Which hand: English Wikipedia places the andelu on the right thumb, while Gangappa and Courtney describe them on the left hand; practice may vary with the performer.",
+    "Naming overlaps: andelu also means ankle ornaments (Brown), the Virataparvam verse places andelu on the feet, and a 2018 Language in India paper calls the Burrakatha anklets 'andelu or gajjelu' while calling the hand ring 'gajjelu'. Tirumala Ramachandra (via Gangappa) gives jantara and gumbilu as other names for the thumb rattle.",
+    "Number of rings: Mikkilineni lists three andelu in a Jangam storyteller's kit, and Courtney describes a pair; performers may wear several.",
+    "No source was found on who makes andelu or on beliefs or rituals specific to them.",
+    "The claim about bullock carts comes only from Courtney's article."
+  ]
+}

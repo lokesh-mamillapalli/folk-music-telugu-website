@@ -1,0 +1,142 @@
+{
+  "id": "tudumu",
+  "nameEn": "Tudumu",
+  "nameTe": "తుడుము",
+  "otherNames": [
+    {
+      "en": "Tudum / Thudem (spellings used for the Gond drum)",
+      "te": ""
+    },
+    {
+      "en": "Kadavateetu (synonym given in G. N. Reddy's dictionary of synonyms)",
+      "te": "కడవతీటు"
+    }
+  ],
+  "category": "drum",
+  "classification": "Kettle drum (membranophone): a hemispherical clay body with a single skin head",
+  "regions": [
+    "Andhra",
+    "Telangana"
+  ],
+  "communities": [
+    "Tribal communities of the Araku valley (Dhimsa dance)",
+    "Raj Gond and Kolam (Adilabad)",
+    "Samantha tribe (as named by M. A. Rauf)"
+  ],
+  "summary": "A kettle drum of the tribal communities of Andhra Pradesh and Telangana, described as a hemispherical clay bowl with goat skin stretched over the top and beaten with leather straps. It accompanies the Dhimsa dance of the Araku valley and the Gussadi dances of the Raj Gonds of Adilabad.",
+  "sections": {
+    "about": [
+      "Tudumu (తుడుము) is an old Telugu word for a drum. Dictionaries gloss it as 'a kind of drum' or 'tom-tom' (Brown's dictionary also gives tudumuvadu, 'a drummer'), and the Sabdaratnakaram (1912) cites it from a verse of the Accha Telugu Ramayanam that names bugles (buralu) and tudumus together. [1][2]",
+      "Several dictionary entries point to a kettle drum. The Andhra Pradesh Sahitya Akademi's dialect dictionary (1970) defines tudumu as a small nagara (kettle drum) played with leather strips, recorded from Nellore and Warangal, with the example 'they announced it with the tudumu'. The Telugu Akademi's regional dictionary (2004) gives tudumu as the North Coastal Andhra (Kalinga) dialect word for the drum called ḍhaṅkā, and G. N. Reddy's dictionary of synonyms (1990) lists kadavateetu and gummeta as its synonyms. [1]",
+      "The word is shared with neighbouring tribal languages. The Dravidian Etymological Dictionary records Telugu tuḍumu 'a kind of drum, tomtom' with Gondi tuḍum 'drum' (and turam 'kettle drum' in Grigson's Gondi vocabulary) and Kui ṭuḍumi 'a kind of drum', and compares Marathi tuḍūm, a kind of kettle-drum. [3]"
+    ],
+    "construction": [
+      "M. A. Rauf, writing on tribal musical instruments as part of the documentation work of the state's Tribal Cultural Research and Training Institute, and quoted by Mikkilineni Radhakrishna Murthy, describes the tudumu as an instrument made of clay in a hemispherical shape. Goat skin is stretched tightly over the top, and leather straps running over the rim of the hemisphere hold the skin taut. [4]"
+    ],
+    "playing": [
+      "The drum is set on a ring of rope and beaten with leather straps, a method also recorded in the 1970 dialect dictionary's definition of the tudumu as a small kettle drum played with leather strips. [4][1]",
+      "In the Araku valley, the Dhimsa dance moves to an ensemble of tundi, mori, kiridi, tudumu and dappu, and pairs of horns (jodu kommu) are blown now and then to excite the dancers; a 2024 report likewise names the dappu, tudumu, mori, kiridi and jodukommu as the instruments that give Dhimsa its rhythm. [5][6]"
+    ],
+    "cultural": [
+      "Among the Raj Gonds of Adilabad, the instruments of the Gussadi dance, including the dappu, tudumu, pipre, baka and kalikoy, are considered sacred, and they are worshipped before the dance begins. Telangana Today reported in 2025 that Raj Gonds and Kolams mark the start of the dance season by worshipping peacock-feather crowns and the musical instruments used by the dance troupes. [7][8]",
+      "The Hans India reported in 2021 that during Dandari-Gussadi the Gonds and Kolams revere the goddess Jangubai by playing dappu, ghumela, dhol, vetti, karra and 'thudem' before the deity, and that these instruments are now almost extinct from the markets. [9]",
+      "In the Araku valley, Dhimsa is danced at the Chaitra festival (also called itela panduga, the festival of spears), at weddings and on festival days. One form, Bode Dhimsa, is danced during the worship of the village goddess Nisani Devata and begins with all the instruments playing loudly. [5]"
+    ],
+    "usage": [
+      "Rauf notes that the tudumu is used mainly in Dhimsa dances and that the Samantha tribe and the Gonds use it most. [4]",
+      "Dhimsa is performed by communities of the Araku valley in the Visakhapatnam agency, where Mikkilineni names the Valmiki, Bagata, Kondadora and Kotia among the main tribes. A 2024 Deccan Chronicle report on Dhimsa dancers from the agency areas along the Andhra Pradesh-Odisha border, naming dancer Korra Dhana Lakshmi and troupe leader Pangi Arjun, says a traditional performance needs at least eight women and six men, and that the dancers were seeking recognition as artists. [5][6]",
+      "In Telangana the tudumu is part of the Gussadi and Dandari dances of the Raj Gonds of Adilabad, held around Diwali. [7][9]"
+    ]
+  },
+  "traditions": [
+    "Dhimsa dance",
+    "Gussadi dance",
+    "Dandari festival",
+    "Chaitra parvam (Araku valley)"
+  ],
+  "facts": [
+    {
+      "label": "Type",
+      "value": "Kettle drum"
+    },
+    {
+      "label": "Body",
+      "value": "Hemispherical, of clay"
+    },
+    {
+      "label": "Head",
+      "value": "Goat skin, held taut by leather straps"
+    },
+    {
+      "label": "Played with",
+      "value": "Leather straps; the drum rests on a ring of rope"
+    },
+    {
+      "label": "Used in",
+      "value": "Dhimsa (Araku valley); Gussadi and Dandari (Adilabad)"
+    },
+    {
+      "label": "Related words",
+      "value": "Gondi tuḍum, Kui ṭuḍumi, Marathi tuḍūm"
+    }
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "uncertain": [
+    "The detailed physical description (hemispherical clay body, goat skin, leather straps, played on a rope ring) comes from a single account, M. A. Rauf's, as quoted by Mikkilineni (1992). It fits the dictionary definition of tudumu as a small kettle drum played with leather strips, but it was not confirmed by fieldwork photographs or other ethnographic sources.",
+    "It is not confirmed that the drum called 'thudem' or 'tudum' by the Gonds of Adilabad today is the same clay kettle drum Rauf describes. Photographs published by Telangana's Department of Language and Culture with 'Tudum' in the file title show a large cylindrical drum played with sticks, which does not match Rauf's description.",
+    "Some websites (including an AI-generated encyclopedia) describe the tudumu as a cylindrical drum of tamarind or neem wood with goat or buffalo hide; this is not supported by any source read and conflicts with the dictionary and Rauf descriptions.",
+    "Use of the tudumu by the Koya tribe could not be confirmed: sources on the Koya Kommu Koya dance name their drum dolu.",
+    "Dictionaries overlap: G. N. Reddy (1979) also glosses tudumu as 'tappeta', and the Sabdaratnakaram glosses gummeta as 'tudumu', so the word has been used loosely for several kinds of drum.",
+    "The 'Samantha' tribe is named as in Mikkilineni's Telugu text (సామంత జాతి); the modern English name of this community was not checked.",
+    "Mikkilineni's chapter on the Mala Jangalu mentions a 'tudum kommu'; it is unclear whether this is a drum, a horn or a combination."
+  ],
+  "sources": [
+    {
+      "title": "తుడుము (tudumu): entries in Sabdaratnakaram (1912), C. P. Brown (1903), Sankaranarayana (1953), G. N. Reddy (1979, 1990), AP Sahitya Akademi Mandalika Padakosamu (1970), Telugu Akademi Prantiya Mandalika Padakosam (2004) and Vavilla Nighantuvu (1949)",
+      "publisher": "AndhraBharati online Telugu dictionaries",
+      "url": "https://andhrabharati.com/dictionary/index.php?w=%E0%B0%A4%E0%B1%81%E0%B0%A1%E0%B1%81%E0%B0%AE%E0%B1%81"
+    },
+    {
+      "title": "A Telugu-English Dictionary (C. P. Brown, 1903), entry 'tuḍumu', p. 538",
+      "publisher": "Digital Dictionaries of South Asia, University of Chicago",
+      "url": "https://dsal.uchicago.edu/cgi-bin/app/brown_query.py?qs=%E0%B0%A4%E0%B1%81%E0%B0%A1%E0%B1%81%E0%B0%AE%E0%B1%81&searchhws=yes&matchtype=exact"
+    },
+    {
+      "title": "A Dravidian Etymological Dictionary (Burrow & Emeneau, 2nd ed. 1984), entry 3297 (Ta. tuṭi, Te. tuḍumu, Go. tuḍum)",
+      "publisher": "Digital Dictionaries of South Asia, University of Chicago",
+      "url": "https://dsal.uchicago.edu/cgi-bin/app/burrow_query.py?qs=tu%E1%B9%ADi&searchhws=yes&matchtype=exact"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (1992), chapter 'Girijanula sangita vayidyalu' (గిరిజనుల సంగీత వాయిద్యాలు)",
+      "publisher": "Mikkilineni Radhakrishna Murthy; Telugu University, Hyderabad (text on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%97%E0%B0%BF%E0%B0%B0%E0%B0%BF%E0%B0%9C%E0%B0%A8%E0%B1%81%E0%B0%B2_%E0%B0%B8%E0%B0%82%E0%B0%97%E0%B1%80%E0%B0%A4_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (1992), chapter 'Arakuloyalo, adimavasula nrityalu' (అరకులోయలో, ఆదిమవాసుల నృత్యాలు)",
+      "publisher": "Mikkilineni Radhakrishna Murthy; Telugu University, Hyderabad (text on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%85%E0%B0%B0%E0%B0%95%E0%B1%81%E0%B0%B2%E0%B1%8B%E0%B0%AF%E0%B0%B2%E0%B1%8B%2C_%E0%B0%86%E0%B0%A6%E0%B0%BF%E0%B0%AE%E0%B0%B5%E0%B0%BE%E0%B0%B8%E0%B1%81%E0%B0%B2_%E0%B0%A8%E0%B1%83%E0%B0%A4%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Dhimsa dancers seek recognition as artists (Aruna, 2 December 2024)",
+      "publisher": "Deccan Chronicle",
+      "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/dhimsa-dancers-seek-recognition-as-artists-1843171"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (1992), chapter 'Adima vasulaku addam patte girijana kalarupalu' (ఆదిమ వాసులకు అద్దం పట్టే గిరిజన కళారూపాలు)",
+      "publisher": "Mikkilineni Radhakrishna Murthy; Telugu University, Hyderabad (text on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%86%E0%B0%A6%E0%B0%BF%E0%B0%AE_%E0%B0%B5%E0%B0%BE%E0%B0%B8%E0%B1%81%E0%B0%B2%E0%B0%95%E0%B1%81_%E0%B0%85%E0%B0%A6%E0%B1%8D%E0%B0%A6%E0%B0%82_%E0%B0%AA%E0%B0%9F%E0%B1%8D%E0%B0%9F%E0%B1%87_%E0%B0%97%E0%B0%BF%E0%B0%B0%E0%B0%BF%E0%B0%9C%E0%B0%A8_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Dandari-Gussadi, Adilabad's tribal festival, blends culture and matrimonial traditions (Padala Santosh, 18 October 2025)",
+      "publisher": "Telangana Today",
+      "url": "https://telanganatoday.com/dandari-gussadi-adilabads-tribal-festival-blends-culture-and-matrimonial-traditions"
+    },
+    {
+      "title": "Adilabad: Gonds get ready for Dandari-Gussadi fete (Akula Srinivas Prasad, 19 October 2021)",
+      "publisher": "The Hans India",
+      "url": "https://www.thehansindia.com/telangana/adilabad-gonds-get-ready-for-dandari-gussadi-fete-711606"
+    }
+  ]
+}

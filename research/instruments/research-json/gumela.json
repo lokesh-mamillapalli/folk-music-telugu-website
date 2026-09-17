@@ -1,0 +1,71 @@
+{
+  "id": "gumela",
+  "nameEn": "Gumela",
+  "nameTe": "గుమేళా",
+  "otherNames": [
+    {"en": "Gummela", "te": "గుమ్మెళ"},
+    {"en": "Ghumela", "te": "గుమేల"}
+  ],
+  "category": "drum",
+  "classification": "Single-headed clay pot drum (membranophone)",
+  "regions": ["Telangana"],
+  "communities": ["Raj Gond"],
+  "summary": "An earthen drum of the Raj Gonds of the Adilabad region, bought from local potters and covered with goat skin. Played in pairs with the palm, it has a soft, mellow tone and accompanies the dance songs of the Dandari festival season before Diwali.",
+  "sections": {
+    "about": [
+      "The gumela (also written gummela or ghumela) is a clay drum played by the Raj Gonds of the Adilabad region of northern Telangana, above all during the Dandari festival season that leads up to Diwali [1][2][3]. The anthropologist Christoph von Fürer-Haimendorf, writing in 1948, described gumela as bulbous 'bottle-drums' of burnt clay with a single membrane over the open base, and noted their 'extremely soft tone' [1].",
+      "It is one of the core Dandari instruments. With the parra and vette drums it is worshipped at the start of the festival and stored away again at its end, and newspaper and other accounts list it among the instruments heard during the Dandari–Gussadi celebrations [2][4][5][7]."
+    ],
+    "construction": [
+      "The body of the gumela is made of potter's clay and is hollow inside [1][6]. Haimendorf reported that the Gonds ordered their gumela drums from Telugu potters; the traditional payment for a pair of drums was one fowl and one or two seers of rice, and by the 1940s buyers gave the potter a chicken, some grain and often cash as well [1].",
+      "A goat-skin membrane is stretched over the open end. Haimendorf wrote that the membranes are attached with iron hoops and leather thongs, and his drawing shows a gumela with a flask-shaped body of potter's clay and a membrane of goat hide [1]. The Telugu writer Mikkilineni Radhakrishna Murthy, drawing on M. A. Rauf's survey of tribal instruments, describes the gumela as made of potter's clay, hollow, cylindrical in shape and tightly covered with goat skin [6]."
+    ],
+    "playing": [
+      "Gumela are always played in pairs. The player beats the membrane with the palm of the right hand, while the left hand alternately opens and closes the narrow neck of the drum [1].",
+      "The sound is soft and mellow. Haimendorf described young people in the rainy season dancing at night 'to the mellow tone of the earthen gumela drums or the small handy para, beaten caressingly with gentle fingers', and contrasted the melodious gumela dances with the livelier dances accompanied by the para drum [1].",
+      "In the Dandari ensemble each pair of gumela goes with one or two vette (turbuli) drums [1]. Haimendorf saw young men carry gumela drums with a visiting Dandari troupe, and his photographs include gumela players accompanying the Dandari dancing [1]."
+    ],
+    "cultural": [
+      "Owning Dandari drums was traditionally a matter of inherited right. Haimendorf reported that anyone may play them, but only men with a hereditary right could own gumela or para drums. Tradition said that gumela were first owned only by men of the four-brother clans and later also by the seven-brother clans, although by the 1940s men of any phratry owned them, and he knew of no man who owned both a para and gumela [1].",
+      "A legend recited by the Pardhan bards, known to most Gonds, tells how the ancestor Dundria Raur and Manko (now revered as a deity) began the making of dance drums and the custom of Dandari troupes visiting friendly villages; in it the gumela are brought by the four-brother clans from Bamni. Because of this legend, Gonds see Dandari dancing as a religious duty as well as entertainment, and they revere Dundria Raur and his brother Sipiserma Raur as dance gods (Yetmasar Pen) [1].",
+      "A new gumela must be consecrated before it is played. No ceremony is needed while the drum is being made, but before its first playing a chicken is sacrificed in honour of Dundria Raur, patron of dance and song, and the drum must be touched by a menstruating woman. The new drums are laid on a white cloth behind a screen, sprinkled with water, vermilion and turmeric and then with the chicken's blood; afterwards the owner and the dancers each spin on one heel over a peg driven into the ground where the offerings are buried, which is believed to give swiftness and vigour in dancing [1].",
+      "At the start of the Dandari festival, on Bhogi day, the gummela is worshipped together with the parra and vette drums and the kodal dance sticks before the Gussadi costumes are put on [4]. At the closing Kolabodi rite the Dandari instruments are taken to the mahua tree of the god Chenchi Bhimanna outside the village, sacrifices and worship are offered before them, and drums such as the gumela, parra and vette are then put away until the next Akadi festival [7]."
+    ],
+    "usage": [
+      "The gumela is played during the Dandari season: Haimendorf recorded that the dance drums are taken out after the Akadi rite and may then be played every night until the end of Dandari, when troupes of young men travel to friendly villages to dance [1][7].",
+      "Gumela songs are dance songs. Haimendorf found that many simply list the gods worshipped, the crops in a man's field or the ornaments worn by a beautiful girl, while others sketch a meeting between a boy and a girl; in one such song a girl is teased with the words 'waist like a gumela' [1]. Boys also gathered round fires at night with para and gumela drums before the first-fruits rite (Nowon), singing songs that listed the vegetables they were not yet allowed to eat [1].",
+      "The Dandari–Gussadi festival is celebrated in tribal villages of Adilabad and Kumuram Bheem Asifabad districts and parts of Mancherial and Nirmal districts. During the festival the Gonds revere the goddess Jangubai by playing instruments before her, and the ghumela is named among the instruments used, together with the dappu, dhol, vette, karra and tudum [2][5].",
+      "In 2021 The Hans India reported that these Dandari instruments were almost extinct from the markets and that some tribal groups were starting to use DJ sound systems during the festival [2]."
+    ]
+  },
+  "traditions": ["Dandari–Gussadi festival", "Gumela songs (Dandari dance songs)", "Bhogi worship of Dandari instruments", "Kolabodi closing rite", "Akadi festival"],
+  "facts": [
+    {"label": "Type", "value": "Single-headed clay pot drum"},
+    {"label": "Materials", "value": "Fired potter's clay body; goat-skin membrane held with an iron hoop and leather thongs"},
+    {"label": "Made by", "value": "Local (Telugu) potters, to order"},
+    {"label": "Played with", "value": "Right palm on the skin; left hand opening and closing the narrow neck"},
+    {"label": "Played in", "value": "Pairs, with one or two vette drums"},
+    {"label": "Sound", "value": "Soft and mellow"},
+    {"label": "Season", "value": "Dandari festival season, from the Akadi rite to Diwali"}
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "sources": [
+    {"title": "The Raj Gonds of Adilabad: A Peasant Culture of the Deccan, Book I: Myth and Ritual (1948), full text", "publisher": "Christoph von Fürer-Haimendorf with Elizabeth von Fürer-Haimendorf; Macmillan, London (Internet Archive)", "url": "https://archive.org/details/in.ernet.dli.2015.123358"},
+    {"title": "Adilabad: Gonds get ready for Dandari-Gussadi fete", "publisher": "Akula Srinivas Prasad, The Hans India, 19 October 2021", "url": "https://www.thehansindia.com/telangana/adilabad-gonds-get-ready-for-dandari-gussadi-fete-711606"},
+    {"title": "Gussadi dance", "publisher": "English Wikipedia", "url": "https://en.wikipedia.org/wiki/Gussadi_dance"},
+    {"title": "గుస్సాడీ నృత్యం [Gussadi dance]", "publisher": "Telugu Wikipedia", "url": "https://te.wikipedia.org/wiki/%E0%B0%97%E0%B1%81%E0%B0%B8%E0%B1%8D%E0%B0%B8%E0%B0%BE%E0%B0%A1%E0%B1%80_%E0%B0%A8%E0%B1%83%E0%B0%A4%E0%B1%8D%E0%B0%AF%E0%B0%82"},
+    {"title": "Have you heard these rural Indian musical instruments yet?", "publisher": "Village Square, April 2024", "url": "https://villagesquare.in/have-you-heard-these-rural-indian-musical-instruments-yet/"},
+    {"title": "తెలుగువారి జానపద కళారూపాలు: గిరిజనుల సంగీత వాయిద్యాలు [Telugu folk art forms: musical instruments of the tribes] (1992)", "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University (text on Telugu Wikisource)", "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%97%E0%B0%BF%E0%B0%B0%E0%B0%BF%E0%B0%9C%E0%B0%A8%E0%B1%81%E0%B0%B2_%E0%B0%B8%E0%B0%82%E0%B0%97%E0%B1%80%E0%B0%A4_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81"},
+    {"title": "దండారి పండుగ [Dandari festival]", "publisher": "Telugu Wikipedia", "url": "https://te.wikipedia.org/wiki/%E0%B0%A6%E0%B0%82%E0%B0%A1%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%AA%E0%B0%82%E0%B0%A1%E0%B1%81%E0%B0%97"}
+  ],
+  "uncertain": [
+    "Spelling varies: gumela, gummela and ghumela in English; గుమేళా (Mikkilineni), గుమ్మెళ (Telugu Wikipedia, Gussadi) and గుమేల (Telugu Wikipedia, Dandari) in Telugu.",
+    "Shape: Haimendorf (1948) describes a bulbous, flask-shaped clay body with a narrow neck, while Mikkilineni (1992) calls it cylindrical. Photographs online labelled 'gummela' show a leather-laced drum lying across the player's lap; the current form was not confirmed from a written source.",
+    "Kolams also celebrate Dandari, and a drum labelled 'Kolami Gumela' is displayed at the Kumuram Bheem Tribal Museum, Jodeghat (according to its Wikimedia Commons description), but no written source confirming Kolam use of the gumela was found.",
+    "The ownership rules and the payment to potters are from Haimendorf's fieldwork in the 1940s; present-day practice was not confirmed.",
+    "The English Wikipedia table of Gussadi instruments ('a drum made of clay and animal skin') gives no citation.",
+    "The name is close to the Telugu clay drum gummeta, and Haimendorf says Gonds bought gumela from Telugu potters; whether the two are the same instrument type was not researched here."
+  ]
+}

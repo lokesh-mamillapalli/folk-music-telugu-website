@@ -1,0 +1,196 @@
+{
+  "id": "tambura",
+  "nameEn": "Tambura",
+  "nameTe": "తంబుర",
+  "otherNames": [
+    {
+      "en": "Burra (Burrakatha tambura)",
+      "te": "బుర్ర"
+    },
+    {
+      "en": "Sarada",
+      "te": "శారద"
+    },
+    {
+      "en": "Tamboora / Tambura",
+      "te": "తంబురా / తంబూర"
+    }
+  ],
+  "category": "string",
+  "classification": "Long-necked plucked string drone instrument carried on the shoulder (chordophone)",
+  "regions": [
+    "Andhra",
+    "Telangana"
+  ],
+  "communities": [
+    "Budiga Jangam",
+    "Sarada singers (Saradakandru)",
+    "Mala Jangam",
+    "Dasari / Haridasu",
+    "Pichhukuntla"
+  ],
+  "summary": "The shoulder-held string drone of Telugu storytellers: the Burrakatha narrator plucks it while keeping time with metal rings (andelu), and the Sarada singers of Telangana call the same instrument 'Sarada'. It gave Burrakatha its name, from the burra or gourd shell of the tambura.",
+  "sections": {
+    "about": [
+      "In Telugu folk storytelling the tambura (తంబుర, also written తంబురా or తంబూర) is the long-necked string instrument that the lead narrator (kathakudu) carries on the shoulder and plucks for the drone (sruti) while singing, dancing and telling the story [1][9]. It gave Burrakatha its name: the art form is said to be named after the burra, the gourd shell of the narrator's tambura, and the Telugu dictionaries Sabdaratnakaram and Suryarayandhra Nighantuvu explain the word tambura itself as tantri (string) plus burra [1][9][14].",
+      "The same instrument appears under local names in related traditions. The Sarada storytellers (Saradakandru) of Telangana call their shoulder tambura 'Sarada', a name of the goddess Saraswati, and a 1992 survey of Telugu folk arts states that it is no different from the tambura used in Burrakatha [1][2][15]. In the narratives of the Budiga Jangams, the lead singer's string instrument is called tambura and is also known as sarada or veena [10].",
+      "Because these sources treat them as one instrument, this page covers the Burrakatha tambura, the Sarada of the Sarada singers and the tambura of other wandering Telugu singers together [1][2][10]."
+    ],
+    "construction": [
+      "Folk tamburas are built on a hollow resonator. Writing on Burrakatha, S. Gangappa quotes a description of the narrator holding instruments such as the tambura or sarada made from the shell of a bottle gourd (sora burra) or a pumpkin (gummadi burra) [9]. Telugu Wikipedia distinguishes gourd-bodied tamburas with only one or two strings, used mostly by singers of tatvalu (philosophical songs) with just cymbals for accompaniment, from wooden tamburas with several strings used by Burrakatha narrators together with the gummeta drum [12].",
+      "Performers often make and decorate their own instruments. A 2011 account of the Sarada singers says that children of the community learn to make the sarada by hand, because village carpenters would not make instruments for a community treated as untouchable [11]. The Mala Jangams decorate their tambura with peacock feathers [4].",
+      "The narrator's kit is small and portable. For a Jangam katha or Burrakatha the narrator needs a tambura, three andelu (metal rings) and ankle bells for both legs, while the two accompanists need two gummeta drums; troupes carry their own instruments on their shoulders from village to village [1]."
+    ],
+    "playing": [
+      "The narrator holds the tambura on the shoulder and plucks its string for the drone, keeps time with andelu worn on the thumb or finger, and dances with bells on the ankles [1][3][9]. A Budiga Jangam narrator taps the rings against the tambura and plucks the string with the other hand, while a Sarada singer wears the andelu on his left thumb and plucks the tambura on his shoulder with his right hand [3][2]. One description adds that the Burrakatha narrator holds a second ring in the other hand and strikes the two together [16].",
+      "S. Gangappa describes the lead narrator plucking the tambura with one hand for sruti and keeping time with the other, on whose thumb he wears a ring (jantara) with a handkerchief-like piece of cloth tied to it; these rings are also called gumbeelu or andelu [9]. Mala Jangam narrators strike the gourd of the tambura with their finger rings in time with the story [4].",
+      "The tambura is seldom played alone. In Burrakatha two accompanists (vantalu) play gummeta drums, repeat the refrains and banter with the narrator, and in Sarada storytelling the narrator's wife or wives sing the refrain and play the dakki drum [1][2][11]."
+    ],
+    "cultural": [
+      "The name Sarada links the instrument to the goddess of learning. The Sarada singers named their tambura after Saraswati, begin their stories with a hymn to Sarada Devi, and sing refrains such as 'O Bharati, karunamati' and 'Bhali Sarada, karunanidhi' [2][15].",
+      "Sarada storytelling is a family occupation. Troupes are usually a husband with his wife or two wives, or other close relatives, who tour a fixed circuit of about forty villages called a patti. They are invited for marriages, harvests and festivals, and also at times of mourning, when they sing the life of the deceased and console the family [11][2].",
+      "According to the 1992 survey, the Saradakandru are Saivas whose gurus are Jangams, though they do not wear the linga, and they worship goddesses such as Yellamma and Pochamma [2]. The Jangam storytellers, whose tales spread Saivism, are said to have been singing them by about 1150 CE [1].",
+      "The Ganayata Jangams, who perform for a living, traditionally leave their settlements around Ashada (June–July), tour villages as performers and mendicants, and return home in Chaitra (March–April) for marriages and family events [10].",
+      "During Dhanurmasam, the month leading up to Sankranti, Haridasus go from house to house early in the morning with an akshaya patra (alms vessel) on the head, plucking a tambura on the shoulder, keeping time with chirutalu (clappers) and singing and dancing; they bless each household that offers rice [5]."
+    ],
+    "usage": [
+      "Burrakatha, performed in the villages of Andhra Pradesh and Telangana, grew out of the older Jangam kathalu and is also called tambura katha, tandana katha or gummetla katha in different regions [1][16]. Its stories range from Palnati Veera Charitra, Bobbili Yuddham and Balanagamma to modern social and political themes, and twentieth-century narrators include Shaik Nazar [1].",
+      "Sarada kathalu belong to Telangana. The 1992 survey found most Sarada storytellers around Warangal, and the Sirishala family of Thondlayi village in Narketpally mandal, Nalgonda district, is known for the form [2][13]. Their stories include Sarvai Papadu, Sadasiva Reddy, Balanagamma, Bobbili and the Palnadu war, as well as a Sarada Ramayanam [2].",
+      "The tambura is also used by the Budiga Jangams, by the Mala Jangams (Panchalavaru), who tell Burrakatha-style stories through the night, and by the Pichhukuntla storytellers of Rayalaseema, who took up the tambura and gummetas under Jangam influence [3][4][6]. Haridasus at Sankranti, bhajana groups, and the Erukala fortune-teller (sodemma) also carry tamburas [5][7][8].",
+      "Patronage has declined. The 1992 survey noted that support for Sarada kathalu was shrinking day by day, and a 2011 account reported that schooling and other occupations were drawing young Sarada singers away from learning the ballads [2][11]."
+    ]
+  },
+  "traditions": [
+    "Burrakatha",
+    "Jangam kathalu",
+    "Sarada kathalu",
+    "Budiga Jangam kathalu",
+    "Haridasu songs at Sankranti",
+    "Bhajana"
+  ],
+  "facts": [
+    {
+      "label": "Type",
+      "value": "Plucked string drone instrument, carried on the shoulder"
+    },
+    {
+      "label": "Other names",
+      "value": "Burra, Sarada, tamboora"
+    },
+    {
+      "label": "Body",
+      "value": "Hollow bottle-gourd or pumpkin shell, or carved wood"
+    },
+    {
+      "label": "Played with",
+      "value": "Fingers of one hand; metal rings (andelu) on the other hand keep time"
+    },
+    {
+      "label": "Played alongside",
+      "value": "Gummeta, budiga or dakki drums; ankle bells (gajjelu)"
+    },
+    {
+      "label": "Used by",
+      "value": "Burrakatha narrators, Budiga and Mala Jangams, Sarada singers, Haridasus, bhajana groups"
+    },
+    {
+      "label": "Region",
+      "value": "Andhra Pradesh and Telangana"
+    }
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "sources": [
+    {
+      "title": "Mikkilineni Radhakrishna Murthy, Teluguvari Janapada Kalarupalu (1992), chapter 'ప్రజల నుర్రూతలూగించిన జంగం కథలు, బుర్ర కథలు' (Jangam kathalu and Burrakathalu)",
+      "publisher": "Telugu University; Telugu Wikisource",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AA%E0%B1%8D%E0%B0%B0%E0%B0%9C%E0%B0%B2_%E0%B0%A8%E0%B1%81%E0%B0%B0%E0%B1%8D%E0%B0%B0%E0%B1%82%E0%B0%A4%E0%B0%B2%E0%B1%82%E0%B0%97%E0%B0%BF%E0%B0%82%E0%B0%9A%E0%B0%BF%E0%B0%A8_%E0%B0%9C%E0%B0%82%E0%B0%97%E0%B0%82_%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81,_%E0%B0%AC%E0%B1%81%E0%B0%B0%E0%B1%8D%E0%B0%B0_%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Mikkilineni Radhakrishna Murthy, Teluguvari Janapada Kalarupalu (1992), chapter 'శారదకాండ్రు' (Saradakandru)",
+      "publisher": "Telugu University; Telugu Wikisource",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%B6%E0%B0%BE%E0%B0%B0%E0%B0%A6%E0%B0%95%E0%B0%BE%E0%B0%82%E0%B0%A1%E0%B1%8D%E0%B0%B0%E0%B1%81"
+    },
+    {
+      "title": "Mikkilineni Radhakrishna Murthy, Teluguvari Janapada Kalarupalu (1992), chapter 'బుడిగె వాయిద్యకారులే బుడిగె జంగాలు' (Budige Jangalu)",
+      "publisher": "Telugu University; Telugu Wikisource",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AC%E0%B1%81%E0%B0%A1%E0%B0%BF%E0%B0%97%E0%B1%86_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%95%E0%B0%BE%E0%B0%B0%E0%B1%81%E0%B0%B2%E0%B1%87_%E0%B0%AC%E0%B1%81%E0%B0%A1%E0%B0%BF%E0%B0%97%E0%B1%86_%E0%B0%9C%E0%B0%82%E0%B0%97%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Mikkilineni Radhakrishna Murthy, Teluguvari Janapada Kalarupalu (1992), chapter 'మాల జంగాలు' (Mala Jangalu)",
+      "publisher": "Telugu University; Telugu Wikisource",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AE%E0%B0%BE%E0%B0%B2_%E0%B0%9C%E0%B0%82%E0%B0%97%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Mikkilineni Radhakrishna Murthy, Teluguvari Janapada Kalarupalu (1992), chapter 'హరిదాసుల సంక్రాంతి విన్యాసాలు' (Haridasus at Sankranti)",
+      "publisher": "Telugu University; Telugu Wikisource",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%B9%E0%B0%B0%E0%B0%BF%E0%B0%A6%E0%B0%BE%E0%B0%B8%E0%B1%81%E0%B0%B2_%E0%B0%B8%E0%B0%82%E0%B0%95%E0%B1%8D%E0%B0%B0%E0%B0%BE%E0%B0%82%E0%B0%A4%E0%B0%BF_%E0%B0%B5%E0%B0%BF%E0%B0%A8%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B8%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Mikkilineni Radhakrishna Murthy, Teluguvari Janapada Kalarupalu (1992), chapter 'ఇంటింటా గోత్రాలు చెప్పే పిచ్చుకుంటులవారు' (Pichhukuntlu)",
+      "publisher": "Telugu University; Telugu Wikisource",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%87%E0%B0%82%E0%B0%9F%E0%B0%BF%E0%B0%82%E0%B0%9F%E0%B0%BE_%E0%B0%97%E0%B1%8B%E0%B0%A4%E0%B1%8D%E0%B0%B0%E0%B0%BE%E0%B0%B2%E0%B1%81_%E0%B0%9A%E0%B1%86%E0%B0%AA%E0%B1%8D%E0%B0%AA%E0%B1%87_%E0%B0%AA%E0%B0%BF%E0%B0%9A%E0%B1%8D%E0%B0%9A%E0%B1%81%E0%B0%95%E0%B1%81%E0%B0%82%E0%B0%9F%E0%B1%81%E0%B0%B2%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B1%81"
+    },
+    {
+      "title": "Mikkilineni Radhakrishna Murthy, Teluguvari Janapada Kalarupalu (1992), chapter 'భజనలు, రామ భజనలు' (Bhajanas)",
+      "publisher": "Telugu University; Telugu Wikisource",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AD%E0%B0%9C%E0%B0%A8%E0%B0%B2%E0%B1%81,_%E0%B0%B0%E0%B0%BE%E0%B0%AE_%E0%B0%AD%E0%B0%9C%E0%B0%A8%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Mikkilineni Radhakrishna Murthy, Teluguvari Janapada Kalarupalu (1992), chapter 'ఎరుకలు చెప్పే ఎరుకోయమ్మ, ఎరుక' (Eruka fortune-tellers)",
+      "publisher": "Telugu University; Telugu Wikisource",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%8E%E0%B0%B0%E0%B1%81%E0%B0%95%E0%B0%B2%E0%B1%81_%E0%B0%9A%E0%B1%86%E0%B0%AA%E0%B1%8D%E0%B0%AA%E0%B1%87_%E0%B0%8E%E0%B0%B0%E0%B1%81%E0%B0%95%E0%B1%8B%E0%B0%AF%E0%B0%AE%E0%B1%8D%E0%B0%AE,_%E0%B0%8E%E0%B0%B0%E0%B1%81%E0%B0%95"
+    },
+    {
+      "title": "ఆచార్య ఎస్. గంగప్ప, 'బుర్రకథ - సామాజిక ప్రయోజనం' (Prof. S. Gangappa, Burrakatha: its social purpose; TANA Chaitanya Sravanti, 2006)",
+      "publisher": "Andhrabharati",
+      "url": "https://andhrabharati.com/vachana/vyAsamulu/tAnA06_cs_02.html"
+    },
+    {
+      "title": "Govindaraju Bharadwaza, 'Jangama the Community and its Tradition', International Journal of Research and Analytical Reviews, vol. 1, no. 4 (October 2014), pp. 488–493",
+      "publisher": "IJRAR",
+      "url": "https://www.ijrar.org/papers/IJRAR19D3200.pdf"
+    },
+    {
+      "title": "Disappearing Folk art of Telangana: Sarada Kala Rupam, oral narrative folk art form of Telangana region (16 October 2011)",
+      "publisher": "Sphoorthi Theatre (STEPARC) blog",
+      "url": "https://sphoorthi-theatre.blogspot.com/2011/10/disappearing-folk-art-of-telangana.html"
+    },
+    {
+      "title": "తంబుర (Tambura)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%A4%E0%B0%82%E0%B0%AC%E0%B1%81%E0%B0%B0"
+    },
+    {
+      "title": "శారద కాండ్రు (Sarada Kandru)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%B6%E0%B0%BE%E0%B0%B0%E0%B0%A6_%E0%B0%95%E0%B0%BE%E0%B0%82%E0%B0%A1%E0%B1%8D%E0%B0%B0%E0%B1%81"
+    },
+    {
+      "title": "బుర్ర కథకు ఆ పేరెలా వచ్చింది? (How did Burrakatha get its name?; Aravind Arya, 3 April 2022)",
+      "publisher": "Namasthe Telangana",
+      "url": "https://www.ntnews.com/sunday/what-is-burra-katha-and-why-we-called-with-that-name-518969"
+    },
+    {
+      "title": "కళలు - కళాకారులు (Arts and artists; Telangana TET study lesson)",
+      "publisher": "Eenadu Pratibha",
+      "url": "https://pratibha.eenadu.net/eligibilityexams/lesson/tet/telangana/telugu-medium/education/2-3-25-48-731-1213-5481-16855-6520-22040000973"
+    },
+    {
+      "title": "Burra katha",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Burra_katha"
+    }
+  ],
+  "uncertain": [
+    "One page or two: the 1992 Mikkilineni survey (Burrakatha and Saradakandru chapters), Telugu Wikipedia and the IJRAR paper all treat the Sarada and the Burrakatha tambura as the same instrument, so a separate 'burra' page was not made. No source describing a 'burra' instrument distinct from the tambura was found.",
+    "Construction is poorly documented. Gangappa quotes gourd or pumpkin shells; Telugu Wikipedia (unsourced) says Burrakatha tamburas are wooden with several strings while gourd tamburas with one or two strings belong to tatvalu singers; English Wikipedia says the shell may be baked clay, dried pumpkin, or brass and copper, but that sentence is marked 'citation needed'. The number of strings on Burrakatha or Sarada tamburas is not stated in a reliable source.",
+    "Etymology of 'burra': most sources derive it from the tambura's gourd; Mikkilineni also records a view that the gummeta drums were called burralu or dakkilu, which would give the same name; English Wikipedia's claim that burra means 'brain'/skull is unsourced.",
+    "Which hand wears the rings varies: left thumb for the Sarada singer (Mikkilineni), right thumb with a second ring in the other hand (English Wikipedia, citing a now-dead vepachedu.org page).",
+    "Telugu Wikipedia says Oggu katha narrators also use the tambura; the 1992 survey's Oggu katha chapter mentions only finger andelu (after a prayer to Sarada) and the form is named after the oggu drum, so this was not confirmed and is left out.",
+    "The same survey says the Telaga Dasarulu (Mittula Ayyavarlu) of Telangana have 'a kind of tambura' played with thin bells that gives both a tambura and a mridangam-like sound; this may be a different instrument (compare the Burra Veena and the kaddi vadyam) and is not described here.",
+    "Names of the Sarada singers vary: Saradakandru, Sarada Jangam, Saradagallu, Sarada Ganalu. Their origins are described differently: from Munnuru, Mutharasi and other Telugu castes (Mikkilineni, citing B. Ramaraju), or as an unrecognised Scheduled Caste sub-group registered as Jangam (Sphoorthi Theatre). The 2011 Sphoorthi account also places them in ten districts of Telangana, whereas the 1992 survey found them mainly around Warangal.",
+    "The claim that Jangam stories were sung by about 1150 CE is from the 1992 survey and was not checked against other historical sources."
+  ]
+}

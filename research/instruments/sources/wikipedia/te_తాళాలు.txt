@@ -1,0 +1,45 @@
+{{Infobox instrument
+| name                  = తాళాలు (సంగీత వాద్యం)
+| names                 =
+| image                 =Khuti taal.jpg
+| image_capt            =
+| background            =
+| classification        =
+| hornbostel_sachs      =
+| hornbostel_sachs_desc =
+| inventors             =
+| developed             =
+| range                 =
+| related               =
+| musicians             =
+| builders              =
+| articles              =
+}}
+[[దస్త్రం:A depiction of Thalam play 1.JPG|thumb|right|250px|వాయిస్తున్న తాళాల చిత్రం]]
+తాళాలు ఇదొక ప్రక్క వాద్య విశేషము. దీనిని మంజీర, జల్రా లేదా గిని అని పిలుస్తారు. ఇవి రెండు [[కంచు]] బిళ్ళలతో కూడిన సాధనం. ఈ రెండు  [[కంచు]] బిళ్ళలను ఒకదానిపై ఒక దానిని తాకించి శబ్దం చేస్తారు. <ref>{{cite web|url=http://www.4to40.com/music/article.asp?p=Musical_Instruments_-_Solids&c=Musical_Instrument&sc=Solid_Instrument|title=Solid Instrument Article, Musical Instruments: Solids, Solid Instrument From New Delhi, Solid Instrument Musical Instrument, Popular Solid Instrument, New Delhi Based Solid Instrument|date=2007-03-14|publisher=4to40.com|access-date=2013-02-28|website=|archive-date=2013-12-03|archive-url=https://web.archive.org/web/20131203005643/http://www.4to40.com/music/article.asp?p=Musical_Instruments_-_Solids&c=Musical_Instrument&sc=Solid_Instrument|url-status=dead}}</ref>
+
+== వివరణ ==
+దాని సరళమైన రూపంలో, ఇది ఒక జత చిన్న చేతితో వాయించే  తాళాలను కలిగి ఉంటుంది.<ref>{{Cite book|url=https://archive.org/details/dictionaryofhind00roya/page/173|title=The Dictionary Of Hindustani Classical Music|author=Caudhurī, Vimalakānta Rôya|publisher=Motilal Banarsidass|year=2007|isbn=978-81-208-1708-1|location=Delhi, India|page=[https://archive.org/details/dictionaryofhind00roya/page/173 173]|url-access=registration}}, originally published in 2000</ref> "తాళ"  అనే పదం "తాల్" అనే సంస్కృత పదం నుండి వచ్చింది, సంస్కృత భాషలో దీని అర్థం చప్పట్లు. ఇది భారతీయ సంగీతం,  సంస్కృతిలో ఒక భాగం, దీనిని వివిధ సాంప్రదాయ ఆచారాలలో ఉపయోగిస్తారు.  ఉదా. బిహు సంగీతం, హరినామ్ మొదలైనవి. ఇవి ఘన వాయిద్యం. 
+
+ఇది పెద్ద సంగీప వాద్య పరికరము కాకున్న ఇది లేకుండ ఏ సంగీతము రక్తి కట్టదు. రాగాన్ని శృతి చేసుకోదానికి ఇది తప్పని సరి. తాళాల యొక్క ప్రాముఖ్యత అన్ని ఆవాయిద్య పరికరాలున్నప్పుడే. అదే విధంగా భజనలు చేసే వారికి ఇది తప్పని సరి వాద్యం. అలాగే సంగీతం నేర్చుకునే విధ్యార్థులు ఈ తాల గతుల ననుసరించి సంగీతం నేర్చుకుంటారు. నాట్యం చేసే వారు కూడ తాళం ఉపయోగిస్తారు.
+
+హిందూ సంస్కృతిలో వీటిని కరతాళాలు ({{lang-sa|करताल}}) అని పిలుస్తారు. కర అనగా చేతి, తాళం అనగా లయబద్ధమైన ధ్వని. ఈ తాళాలను భజనలు, కీర్తనలు పాడేటప్పుడు ఉపయోగిస్తారు. వీటిని హరే కృష్ణ భక్తులు ఎక్కువగా ఉపయోగిస్తారు. 
+
+== తయారుచేసే పదార్థాలు ==
+ఈ తాళాలను బెల్ లోహం అనగా ఇత్తడి, కంచు, రాగి, జింకు మొదలైన పదార్థాలతో తయారుచేస్తారు. రెండు తాళాలకు వాటి మధ్యనున్న రంధ్రంలో తాడును కడతారు. తాడుతో పాటు తాళాన్ని పట్టుకుని వాయిస్తారు. తాళాల పరిమాణం, బరువు ఆధారంగా ఆ  శబ్దం పిచ్ ఉంటుంది. 
+
+== మూలాలు ==
+{{మూలాల జాబితా}}
+
+== బాహ్య లంకెలు ==
+{{Commonscat|Taal (instrument)}}
+
+* [http://krishnastore.com/video-music-lessons-om-39_42.html Instructional DVDs about karatalas]
+* [http://www.shaktishop.com/indianmusic-instruments-c-103.html?language=en where to buy karatala]
+* [http://vedaveda.com/carten/index.php?act=viewProd&productId=110 Medium Karatala] {{Webarchive|url=https://web.archive.org/web/20110717191332/http://vedaveda.com/carten/index.php?act=viewProd&productId=110 |date=2011-07-17 }}
+* [http://gopala.org/node/75 Karatalas as weapons] {{Webarchive|url=https://web.archive.org/web/20100710033422/http://www.gopala.org/node/75 |date=2010-07-10 }}
+* [http://srimadbhagavatam.com/k/karatala karatala in the srimadbhagavatam] {{Webarchive|url=https://web.archive.org/web/20110724092059/http://srimadbhagavatam.com/k/karatala |date=2011-07-24 }}
+* [http://www.krishnastores.com/ Buying different size Karatala Cymbals]
+
+[[వర్గం:సంగీతం]]
+[[వర్గం:సంగీత వాయిద్యాలు]]

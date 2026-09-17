@@ -1,0 +1,137 @@
+{
+  "id": "pamba",
+  "nameEn": "Pamba",
+  "nameTe": "పంబ",
+  "otherNames": [
+    {
+      "en": "Pamba joda / pamba jodu (a pair of pambas)",
+      "te": "పంబ జోడు"
+    },
+    {
+      "en": "Pambalu (plural)",
+      "te": "పంబలు"
+    },
+    {
+      "en": "Pommalu (name given in Telugu Wikipedia captions from Chittoor district)",
+      "te": "పొమ్మలు"
+    }
+  ],
+  "category": "drum",
+  "classification": "Paired drums (membranophone) with brass bodies, beaten with two sticks",
+  "regions": [
+    "Andhra",
+    "Telangana"
+  ],
+  "communities": [
+    "Pambala (a section of the Malas)"
+  ],
+  "summary": "A pair of brass drums beaten with two sticks by the Pambala community, from whom the drum takes its name. It leads village-goddess processions and accompanies the night-long Ankamma stories of the Pambalas; it is used only for worship and ritual, never for concerts.",
+  "sections": {
+    "about": [
+      "The pamba (పంబ) is the drum from which the Pambala community takes its name. C. P. Brown's Telugu-English Dictionary (1903) defines pamba as 'a kind of drum' and the Pambalavandlu as those who play the pamba. [6] Edgar Thurston's Castes and Tribes of Southern India (1909) describes the Pambalas as 'drum (pamba) people', a section of the Malas who act as musicians at Mala weddings and at festivals in honour of their deities. [1]",
+      "The drum is usually spoken of as a pair - pamba joda, 'a pair of pambas'. [3][5] Pamba Katha, the goddess ballads of the Pambalas, is one of the Telugu story-singing forms named after its accompanying instrument, alongside Jamukula Katha, Burra Katha and Oggu Katha. [4] Thurston also records a similar name, Pambaikkaran, as an occupational name for Paraiyans who play a drum called pambai. [2]"
+    ],
+    "construction": [
+      "According to Telugu Wikipedia, pambas always come as a pair and must be made of brass, and two sticks are needed to play them. [5]"
+    ],
+    "playing": [
+      "The pambas are beaten with two sticks. Their sound is described as not sweet but stirring - meant to rouse heroic fervour rather than to please as music - and the instrument is never used in concerts, only at times of worship and ritual. [5]",
+      "In a Pambala performance of the Ankamma story, the companions (vantas) play the pamba pair and blow the titti (a bellows drone) to give the drone pitch, while the narrator, dressed as a prince, dances vigorously with a large sword in his right hand and a small blade called amajala in his left. This description is by Dr. Tangirala Venkata Subba Rao, quoted by Mikkilineni Radhakrishna Murthy. [3][5]"
+    ],
+    "cultural": [
+      "The Pambalas are priests to the Malas and have conducted their funeral rites, including the pedda karma. [5] Thurston records them reciting the story of Ankamma and making muggu (floor designs) at the peddadinamu death ceremony of the Gamallas. [1] The goddess worshipped in their tradition is called Marasapu (or Murasapu) Ankamma. [3][5]",
+      "When rains failed or disease struck a village, Pambalas were called to play their drums and tell stories through the night at the rites (kolupulu) held to appease the village goddesses, and it was said that jataras could not be completed without their instruments. [5]",
+      "In Chittoor district, when a family sets out for a village-goddess puja, the Pambalas must walk ahead of them playing the pambas all the way from the house to the temple. The sound rouses such fervour that some devotees go into trance (punakam). [5]"
+    ],
+    "usage": [
+      "The pamba accompanies Pamba (Pambala) Katha - above all the Ankamma katha sung in the coastal 'Sarkar' districts of Andhra - as well as processions of festival idols, jataras and village-goddess worship. [3][5]",
+      "In 1992 Mikkilineni wrote that Pambala story performances, once common at goddess festivals in coastal Andhra, were still held wherever village goddesses are worshipped but were gradually disappearing. [3] Telugu Wikipedia reports that the instrument is still widely used in village-goddess pujas in Chittoor district. [5]",
+      "The name also appears in Telangana, but with a different meaning: Bheemaiah notes that the Baindlas there are also called Pambalavaru and quotes the poet Arudra that Bavanis are called Pambalas because of an instrument called pamba - which in those accounts is another name for the jamidika string drum rather than the pair of brass drums. [7][8]"
+    ]
+  },
+  "traditions": [
+    "Pamba Katha / Pambala Katha",
+    "Ankamma Katha (Marasapu Ankamma)",
+    "Village goddess processions, kolupulu and jataras",
+    "Mala weddings and funeral rites"
+  ],
+  "facts": [
+    {
+      "label": "Type",
+      "value": "A pair of drums"
+    },
+    {
+      "label": "Body",
+      "value": "Brass (Telugu Wikipedia)"
+    },
+    {
+      "label": "Played with",
+      "value": "Two sticks"
+    },
+    {
+      "label": "Community",
+      "value": "Pambala (a section of the Malas)"
+    },
+    {
+      "label": "Heard at",
+      "value": "Village-goddess processions and pujas, Ankamma katha, funeral rites"
+    },
+    {
+      "label": "Rule",
+      "value": "Used only for worship and ritual, not in concerts"
+    }
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "sources": [
+    {
+      "title": "Castes and Tribes of Southern India, vol. VI (Edgar Thurston, 1909), entry 'Pambala', p. 29",
+      "publisher": "Government Press, Madras (text on English Wikisource)",
+      "url": "https://en.wikisource.org/wiki/Castes_and_Tribes_of_Southern_India/Pambala"
+    },
+    {
+      "title": "Castes and Tribes of Southern India, vol. VI (Edgar Thurston, 1909), entry 'Pambaikkaran', p. 29",
+      "publisher": "Government Press, Madras (text on English Wikisource)",
+      "url": "https://en.wikisource.org/wiki/Castes_and_Tribes_of_Southern_India/Pambaikk%C4%81ran"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (1992), chapter 'Pambalavaru' (పంబలవారు)",
+      "publisher": "Mikkilineni Radhakrishna Murthy; Telugu University, Hyderabad (text on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%AA%E0%B0%82%E0%B0%AC%E0%B0%B2%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B1%81"
+    },
+    {
+      "title": "Teluguvari Janapada Kalarupalu (1992), chapter 'Baggu gollala oggu kathalu', scan page 559 (story-singing forms named after their instruments)",
+      "publisher": "Mikkilineni Radhakrishna Murthy; Telugu University, Hyderabad (text on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%AA%E0%B1%81%E0%B0%9F:TeluguVariJanapadaKalarupalu.djvu/559"
+    },
+    {
+      "title": "పంబల వారు (Pambala varu)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%AA%E0%B0%82%E0%B0%AC%E0%B0%B2_%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B1%81"
+    },
+    {
+      "title": "A Telugu-English Dictionary (C. P. Brown, 1903), entry 'pamba', p. 693",
+      "publisher": "Digital Dictionaries of South Asia, University of Chicago",
+      "url": "https://dsal.uchicago.edu/cgi-bin/app/brown_query.py?qs=%E0%B0%AA%E0%B0%82%E0%B0%AC&searchhws=yes&matchtype=exact"
+    },
+    {
+      "title": "Small Cultures: Baindlas As Neglected Priests In Dalit Community (Dr. J. Bheemaiah, University of Hyderabad), Journal of Research in Humanities and Social Science, vol. 6, issue 10 (2018), pp. 34-37",
+      "publisher": "Quest Journals",
+      "url": "https://www.questjournals.org/jrhss/papers/vol6-issue10/I06103437.pdf"
+    },
+    {
+      "title": "బైండ్ల (Baindla)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%AC%E0%B1%88%E0%B0%82%E0%B0%A1%E0%B1%8D%E0%B0%B2"
+    }
+  ],
+  "uncertain": [
+    "Most physical details come from Telugu Wikipedia (a pair, brass, two sticks). The book it cites (Mikkilineni, 1992) does not contain these details, and no other written source describing the pamba's shape, heads or makers was found. [5][3]",
+    "Telugu Wikipedia illustrates the article with photographs from Chittoor district whose captions call the instrument pommalu or pommala jodu; whether pommalu is simply a local pronunciation of pambalu was not confirmed. [5]",
+    "The word pamba names different instruments in different places: the pair of brass drums of the Pambalas of Chittoor and coastal Andhra, and, according to Bheemaiah (citing Sri Rama Raju and Arudra) and Telugu Wikipedia, the jamidika string drum of the Baindlas in Telangana. Which instrument today's 'Pambala' Ankamma performers in Telangana use was not established from written sources. [7][8]",
+    "The community is described differently: Thurston calls the Pambalas a section of the Malas; Tangirala Venkata Subba Rao (via Mikkilineni) calls them Harijans 'of Ayyagari darsanam'; Telugu Wikipedia lists Pambala as the 21st caste in group A of Andhra Pradesh's Backward Classes list; and Brown's 1903 dictionary describes Pambalavandlu as wandering fortune-tellers. These classifications were not checked against official lists. [1][3][5][6]",
+    "Thurston lists the Tamil pambai (played by Paraiyans) next to the Telugu Pambalas, but no source consulted states that the two drums are the same instrument. [2]",
+    "Telugu Wikipedia's section on the community's history (rain and disease rites, funeral duties) is uncited. [5]"
+  ]
+}

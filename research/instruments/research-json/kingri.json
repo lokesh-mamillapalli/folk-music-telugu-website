@@ -1,0 +1,145 @@
+{
+  "id": "kingri",
+  "nameEn": "Kingri (Kikri)",
+  "nameTe": "కింగ్రి",
+  "otherNames": [
+    {
+      "en": "Kikri",
+      "te": "కిక్రి"
+    },
+    {
+      "en": "Khikri",
+      "te": ""
+    },
+    {
+      "en": "Hirabai kikri",
+      "te": "హీరాబాయి కిక్రి"
+    },
+    {
+      "en": "Dunadi vaja (sacred stringed instrument)",
+      "te": ""
+    }
+  ],
+  "category": "string",
+  "classification": "Bowed string instrument (fiddle) with a skin-covered box resonator (chordophone)",
+  "regions": [
+    "Telangana"
+  ],
+  "communities": [
+    "Pardhan (Pradhan)",
+    "Thoti",
+    "Gond (Raj Gond)"
+  ],
+  "summary": "A three-stringed bowed fiddle of the Pardhan and Thoti bards of the Gonds in Adilabad, with a skin-covered square sound box, a bamboo neck and a bow hung with brass bells. It is held sacred and is played at Gond clan-deity rites, births, marriages, deaths and the Nagoba jatara.",
+  "sections": {
+    "about": [
+      "The kingri (కింగ్రి), also called kikri or khikri, is a bowed string instrument of the Adivasi communities of Adilabad district in Telangana. It is played by the Pardhans, the bards and ritual guides of the Gonds, and by the Thotis, a tribe socially associated with the Gonds and Pardhans [1][2].",
+      "A 1992 survey of Telugu folk arts describes it as a three-stringed, fiddle-like instrument with a skin-covered wooden sound box, regarded as extremely valuable; at festivals the most prominent Pardhan plays it while younger men beat drums and blow horns [3][4].",
+      "The Pardhans use the kingri to accompany hymns and the recitation of Gond epics during the rites of the Gond clan deity Persa Pen, and it is played at all Gond religious rites and at births, marriages and deaths [4][1]. Gond tradition holds the instrument to be as old as Gondi mythology itself [1]."
+    ],
+    "construction": [
+      "The kingri has a square resonator box holding a long bamboo, with three tuning pegs at the other end. Its three strings and the bowstring are made of horse hair, and brass bells are tied to the bow so that they add a delicate rhythm as it is played [1].",
+      "A Telugu description based on the study Mula Dhwani says the square resonator, about one and a half spans (jana) long, is carved out of a tree trunk and covered with goat skin. A bamboo pole is inserted into it, and three holes at the far end hold tuning pegs called puteelu (పూటీలు). The bow (bhom or khom) is shaped like an archer's bow and hung with small bells (gajjelu) that sound along with the melodies as it is drawn [2].",
+      "Instruments are kept for generations. The kingri of the Pardhan bard Mesram Tukdoji was said in 2015 to be at least 200 years old, and its horse-hair strings had not been replaced in the 52 years since he inherited it [1]."
+    ],
+    "playing": [
+      "The kingri is played with its bow in the manner of a violin [2]. According to Mesram Tukdoji, it is positioned on the player's left shoulder while being played [1].",
+      "It is usually part of a group performance. Telugu sources say the kikri is played together with two pepre (a shehnai-type wind instrument) and the dakki drum [2]. At the Nagoba jatara, Tukdoji and his team sing a chorus beginning 'Aska ad ghat rai't ropo...' to the accompaniment of his kingri [1]."
+    ],
+    "cultural": [
+      "The kingri is treated as sacred. According to Gond mythology, the gods, when angry with the tribe, could be pacified only when the Pardhan elders played the 'Dunadi vaja', the sacred stringed instrument, and Pardhans say they carefully follow the customs that go with it [1]. Telugu sources add that the Hirabai kikri has the main role in pleasing the great god: in each of the four Gond saga (phratry) groups it goes before the great god, protecting the Gondi faith and bringing peace and prosperity [2].",
+      "The instrument is considered female. Mesram Tukdoji explained that the kingri is called Hirabai, and that when it is not in use it is tied to its male counterpart, Heerasukka, which is shaped like a small sword. Only married men may play it; Tukdoji began playing at the age of twenty, when he married [1].",
+      "A Gond legend retold in Telugu sources links the instrument to Hira Sukka, described as the religious music guru of the Gonds: when the Gond gods had fallen into Shiva's cave, Pari Kupar Lingo invited Hira Sukka, whose mother took the form of the Hirabai kikri, and its music brought the gods out [2]. An essay on Pardhan history notes that this version, in which the bard Hirasuka frees the gods with his kingri, comes from the modern Gondi retelling by Motiravan Kangali (1986) and not from the older colonial-era records of the Lingo story [6].",
+      "The Pardhans' role is ritually essential: an account citing the anthropologist Christoph von Fürer-Haimendorf says no Raj Gond marriage is celebrated, and no death rite performed, unless a Pardhan is present [4]."
+    ],
+    "usage": [
+      "The kingri is played at the rites of Persa Pen and at Gond births, marriages and deaths in Telangana and Maharashtra [4][1]. The Thotis also play it during rituals and devotional events [5][1].",
+      "At the Nagoba jatara, the annual pilgrimage of the Mesram clan of Gonds at Keslapur in Indervelli mandal, Adilabad, the Pardhan bard Mesram Tukdoji has sung the legend of Nagoba (Nagoba bhidi) with his kingri every night for four days before the main puja [1][4].",
+      "The tradition is fragile. Younger Pardhans are reported to be moving away from their bardic tradition, and in 2026 the kikri was among the rare tribal instruments shown at the Adya Kala exhibition on Telangana's endangered tribal heritage [4][5]."
+    ]
+  },
+  "traditions": [
+    "Persa Pen rites",
+    "Nagoba jatara",
+    "Gond marriage and death rites"
+  ],
+  "facts": [
+    {
+      "label": "Type",
+      "value": "Bowed fiddle"
+    },
+    {
+      "label": "Strings",
+      "value": "Three, of horse hair"
+    },
+    {
+      "label": "Body",
+      "value": "Square wooden resonator carved from a tree trunk, covered with goat skin; bamboo neck with three pegs"
+    },
+    {
+      "label": "Bow",
+      "value": "Horse-hair bowstring; brass bells tied to the bow"
+    },
+    {
+      "label": "Played by",
+      "value": "Pardhan and Thoti bards; only married men, according to Pardhan custom"
+    },
+    {
+      "label": "Beliefs",
+      "value": "Sacred; regarded as female (Hirabai) and kept tied to a sword-shaped male counterpart (Heerasukka)"
+    },
+    {
+      "label": "Occasions",
+      "value": "Persa Pen rites, Nagoba jatara, births, marriages and deaths"
+    },
+    {
+      "label": "Region",
+      "value": "Adilabad district, Telangana (also Maharashtra)"
+    }
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "sources": [
+    {
+      "title": "Simply out of this world! (S. Harpal Singh, 28 January 2015)",
+      "publisher": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/telangana/simply-out-of-this-world/article6828565.ece"
+    },
+    {
+      "title": "కిక్రి (వాయిద్యం) (Kikri instrument; cites Jayadhir Tirumala Rao and Guduri Manoja, Mula Dhwani, 2019)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%95%E0%B0%BF%E0%B0%95%E0%B1%8D%E0%B0%B0%E0%B0%BF_(%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%82)"
+    },
+    {
+      "title": "Mikkilineni Radhakrishna Murthy, Teluguvari Janapada Kalarupalu (1992), chapter 'వాయుజన్య శబ్ద వాయిద్యాలు' (section on string instruments: కింగ్రి)",
+      "publisher": "Telugu University; Telugu Wikisource",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B1%81%E0%B0%9C%E0%B0%A8%E0%B1%8D%E0%B0%AF_%E0%B0%B6%E0%B0%AC%E0%B1%8D%E0%B0%A6_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Kingri (February 2024)",
+      "publisher": "Telangana360",
+      "url": "https://www.telangana360.com/2024/02/kingri.html"
+    },
+    {
+      "title": "Preserving TG's tribal glory, the Adya Kala way (Dr Muchukota Suresh Babu, 11 July 2026)",
+      "publisher": "The Hans India",
+      "url": "https://www.thehansindia.com/hans/opinion/news-analysis/preserving-tgs-tribal-glory-the-adya-kala-way-1096160"
+    },
+    {
+      "title": "Pardhān Bards of the Gond – An Origin History",
+      "publisher": "Naavalam (Substack)",
+      "url": "https://naavalam.substack.com/p/pardhan-bards-of-the-gond-an-origin"
+    }
+  ],
+  "uncertain": [
+    "Name: sources use Kingri, Khikri (The Hindu), Kikri/కిక్రి (Telugu Wikipedia, The Hans India) and కింగ్రి (Mikkilineni). The English Wikipedia article 'Kingri (string instrument)' mixes this with Punjabi and Sri Lankan instruments and was not used.",
+    "The 1992 Mikkilineni text says the instrument is played by the most prominent among the 'వర్థానులు' and that youngsters blow 'బాణాలు'; these appear to be misprints for Pardhans and horns/trumpets (Telangana360 has a parallel English passage saying 'most prominent Pardhan' and 'younger men blow trumpets').",
+    "Holding position: The Hindu (quoting Tukdoji) says the kingri rests on the left shoulder, while Telugu Wikipedia says the player presses the box with his chin; not resolved. Telugu Wikipedia spells the bow's name both భోమ్ (bhom) and ఖోమ్ (khom).",
+    "Resonator: Adilabad sources describe a square wooden box covered with skin; the Naavalam essay notes that colonial records from central India also describe a gourd-bodied kingri and a related fiddle called bana. Only the Adilabad form is described here.",
+    "The claim that Tukdoji sings the Nagoba bhidi every night for four days before the mahapuja comes from Telangana360, which appears to draw on The Hindu; the original report for that detail was not found.",
+    "Hira Sukka / Heerasukka: Telugu Wikipedia treats Hira Sukka as a Gondi religious guru whose mother became the kikri, while The Hindu describes Heerasukka as the sword-shaped male counterpart to which the instrument is tied. The Naavalam essay (a secondary essay, not a peer-reviewed source) dates the Hirasuka story to a 1986 retelling.",
+    "The kingri belongs to Gondi-speaking Adivasi traditions within Telangana rather than to Telugu-language folk song; it is included because the brief covers tribal communities of Telangana.",
+    "Whether the kingri is still widely played in Adilabad today is not documented beyond the 2015 report and the 2026 exhibition."
+  ]
+}

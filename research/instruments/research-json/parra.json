@@ -1,0 +1,66 @@
+{
+  "id": "parra",
+  "nameEn": "Parra",
+  "nameTe": "పర్ర",
+  "otherNames": [
+    {"en": "Para", "te": "పారా"}
+  ],
+  "category": "drum",
+  "classification": "Small double-headed wooden hand drum (membranophone)",
+  "regions": ["Telangana"],
+  "communities": ["Raj Gond"],
+  "summary": "A small double-headed wooden drum of the Raj Gonds of Adilabad, played with the fingers of both hands. It is one of the sacred Dandari drums, worshipped at the start of the festival, and gives its name to a lively Dandari dance.",
+  "sections": {
+    "about": [
+      "The parra (also written para) is a small two-headed drum used by the Raj Gonds of the Adilabad region of northern Telangana, mainly in the Dandari festival season before Diwali [1][2]. Together with the gumela and vette drums and the kodal dance sticks it belongs to the set of Dandari instruments that are worshipped at the start of the festival [3][5].",
+      "It appears in a list of eighteen Gond instruments that, according to a 2013 account from Adilabad district, children learn at a traditional Gond learning centre called Gotul Pito [6]. The English Wikipedia describes the parra as a rhythm instrument used to keep the beat in the Gussadi dance [5]."
+    ],
+    "construction": [
+      "Haimendorf described para as small double-membrane drums that thicken slightly in the middle [1]. The Telugu writer Mikkilineni Radhakrishna Murthy compares its shape with the maddela drum, gives its length as about two feet, and says both ends are covered with goat skin [2].",
+      "According to Haimendorf, a new para is carved from the wood of a kurm tree or, if none can be found, a vengun tree, because only the fine-grained wood of these two trees is considered suitable. The tree must have a natural hollow running up from its base, and the section containing this hollow becomes the drum shell. After felling, a piece of the trunk is carried to the village, where any experienced craftsman carves the shell; membranes of shaved and dried goat hide, or the skin of any wild animal, are stretched over both ends and held taut with criss-cross thongs of cow and goat hide [1]."
+    ],
+    "playing": [
+      "The para is played with the fingers of both hands. The player sits cross-legged and rests the drum against one knee [1][2]. Haimendorf described the 'small handy para, beaten caressingly with gentle fingers' at night-time dances in the rainy season [1].",
+      "In the Dandari ensemble each para goes with one or two vette (turbuli) drums [1]. Haimendorf heard 'the sharp rapid clicking of the turbuli and the deep tone of a para' give a quick, vivacious rhythm for a figure-of-eight dance of young men that was performed without singing [1]."
+    ],
+    "cultural": [
+      "Making a new para is a ritual act. Haimendorf recorded that, after the Akadi rite and before the Dandari season, a man from a family with the traditional right to keep a para goes to the forest with friends, a chicken and food offerings. He waves incense before the chosen tree and prays to the dance gods Dundria Raur and Sipiserma Raur for luck and the well-being of his children, marks the trunk with red powder (a line and as many dots as his clan has 'brothers'), and sacrifices the chicken so that its blood marks the bark. He offers the roasted liver and millet bread, throws grain into the branches and embraces the tree, first with the right and then with the left shoulder; the two men who will fell it do the same, and with each of the first six or seven axe strokes a wish is spoken, such as for good health, good harvests or more cattle [1].",
+      "Before a new para is played for the first time, a chicken is sacrificed in honour of Dundria Raur, patron of dance and song. The drums are sprinkled with water, vermilion and turmeric, a little vermilion powder is dropped into the small hole in the shell of a new para, and those present pray to the dance gods that the drums may sound well and that no harm may befall the dancers [1].",
+      "Ownership was inherited. Haimendorf wrote that anyone may play the dance drums but only men with a hereditary right could own a para or gumela, and that he knew of no man who owned both [1]. In a Dandari legend recited by Pardhan bards, the ancestors of the Raur clans resolve to make golden para drums and then take their para drums to the grandmother goddess Padmalpuri to dance the dance of greeting [1].",
+      "Today, on Bhogi, the first day of the Dandari festival, the parra is worshipped together with the gummela, vette and kodal before the Gussadi costumes are put on [3][5]. At the end of the festival, drums such as the gumela, parra and vette are put away until the next Akadi festival [4]."
+    ],
+    "usage": [
+      "The para accompanies Dandari dancing. Haimendorf wrote that one lively type of dance, more energetic than the dances to melodious gumela songs, 'is called para after the drum used in accompaniment', and his photographs include a boys' para dance [1].",
+      "Para drums are also played outside the festival itself: Haimendorf described boys gathering round fires at night with para and gumela drums before the first-fruits rite (Nowon), singing songs about the vegetables they could not yet eat [1].",
+      "The Dandari–Gussadi festival during which the parra is played is celebrated by Raj Gonds and Kolams in Adilabad, Kumuram Bheem Asifabad, Nirmal and Mancherial districts of Telangana and in neighbouring parts of Maharashtra [4]."
+    ]
+  },
+  "traditions": ["Dandari–Gussadi festival", "Para dance (Dandari)", "Bhogi worship of Dandari instruments", "Akadi festival"],
+  "facts": [
+    {"label": "Type", "value": "Small double-headed hand drum"},
+    {"label": "Materials", "value": "Wooden shell (kurm or vengun wood); goat hide or wild-animal skin on both ends; cow- and goat-hide thongs"},
+    {"label": "Size", "value": "About two feet long, slightly thicker in the middle"},
+    {"label": "Played with", "value": "Fingers of both hands, seated cross-legged with the drum against one knee"},
+    {"label": "Made by", "value": "An experienced village wood-carver, from a tree chosen and felled with rituals"},
+    {"label": "Played with (ensemble)", "value": "One or two vette (turbuli) drums"}
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "sources": [
+    {"title": "The Raj Gonds of Adilabad: A Peasant Culture of the Deccan, Book I: Myth and Ritual (1948), full text", "publisher": "Christoph von Fürer-Haimendorf with Elizabeth von Fürer-Haimendorf; Macmillan, London (Internet Archive)", "url": "https://archive.org/details/in.ernet.dli.2015.123358"},
+    {"title": "తెలుగువారి జానపద కళారూపాలు: గిరిజనుల సంగీత వాయిద్యాలు [Telugu folk art forms: musical instruments of the tribes] (1992)", "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University (text on Telugu Wikisource)", "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%97%E0%B0%BF%E0%B0%B0%E0%B0%BF%E0%B0%9C%E0%B0%A8%E0%B1%81%E0%B0%B2_%E0%B0%B8%E0%B0%82%E0%B0%97%E0%B1%80%E0%B0%A4_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81"},
+    {"title": "గుస్సాడీ నృత్యం [Gussadi dance]", "publisher": "Telugu Wikipedia", "url": "https://te.wikipedia.org/wiki/%E0%B0%97%E0%B1%81%E0%B0%B8%E0%B1%8D%E0%B0%B8%E0%B0%BE%E0%B0%A1%E0%B1%80_%E0%B0%A8%E0%B1%83%E0%B0%A4%E0%B1%8D%E0%B0%AF%E0%B0%82"},
+    {"title": "దండారి పండుగ [Dandari festival]", "publisher": "Telugu Wikipedia", "url": "https://te.wikipedia.org/wiki/%E0%B0%A6%E0%B0%82%E0%B0%A1%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%AA%E0%B0%82%E0%B0%A1%E0%B1%81%E0%B0%97"},
+    {"title": "Gussadi dance", "publisher": "English Wikipedia", "url": "https://en.wikipedia.org/wiki/Gussadi_dance"},
+    {"title": "GhotulPito: Gondi culture and dance forms among Raj Gonds", "publisher": "Sphoorthi Theatre (blog), December 2013", "url": "https://sphoorthi-theatre.blogspot.com/2013/12/gotulpito-gondi-culture-and-dance-forms.html"}
+  ],
+  "uncertain": [
+    "Spelling: para (Haimendorf, Sphoorthi Theatre), parra (English Wikipedia), పారా (Mikkilineni) and పర్ర (Telugu Wikipedia).",
+    "Size: Haimendorf calls the para 'small' and 'handy', while Mikkilineni gives a length of about two feet; no measured examples were found.",
+    "The tree names 'kurm' and 'vengun' are Haimendorf's Gondi forms; their botanical identities were not confirmed (the OCR text of his book is partly damaged at this point).",
+    "The detailed making and consecration rituals come from Haimendorf's fieldwork in the 1940s; whether they are still followed was not confirmed by a recent source.",
+    "The English Wikipedia description of the parra as 'a rhythm instrument used to keep the beat' has no citation.",
+    "No free image was checked for this instrument (media research was dropped from scope); some online photographs of Dandari instrument worship show small laced double-headed drums that may be parras, but they are not labelled."
+  ]
+}

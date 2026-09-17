@@ -1,0 +1,134 @@
+{
+  "id": "burra-veena",
+  "nameEn": "Burra Veena",
+  "nameTe": "బుర్ర వీణ",
+  "otherNames": [
+    {
+      "en": "Burraveena",
+      "te": "బుర్రవీణ"
+    }
+  ],
+  "category": "string",
+  "classification": "Gourd-resonated string instrument on a bamboo stick, sounded with small sticks hung with bells (chordophone)",
+  "regions": [
+    "Telangana"
+  ],
+  "communities": [
+    "Mala Dasari"
+  ],
+  "summary": "A three-stringed instrument made from a dried gourd and a bamboo stick and played with little sticks hung with bells, used to accompany tatvalu and devotional songs. Its last known player, Dasari Kondappa of Damaragidda in Narayanpet district, received the Padma Shri in 2024.",
+  "sections": {
+    "about": [
+      "The Burra Veena (బుర్ర వీణ) is a stringed instrument described as unique to Telangana, made from bamboo, a gourd shell and metal strings [1][5]. It has been called an amalgamation of many stringed instruments and is said to be closely related to the Bhoomi Veena and to the tribal villadi vadyalu, instruments played with a bow string [1][2]. A Telugu account places it in the same family as the ektara and the tambura [3].",
+      "Only one player is known today: Dasari Kondappa of Damaragidda village in Narayanpet district, a third-generation Burra Veena player who was awarded the Padma Shri in 2024 as its guardian [5][4]. A 2021 review of the study Mula Dhwani likewise noted that only one person alive could play the Burra Veena [7]."
+    ],
+    "construction": [
+      "Kondappa makes his own instruments, as his forefathers did, and says one Burra Veena takes about a year to make [1][2][4]. First a mature bottle gourd or pumpkin is chosen, which can take eight months to a year to ripen on the vine, and it is then dried for about two months. The gourd must not crack, because a cracked gourd will not sound [3].",
+      "When the gourd has dried its seeds are removed and a straight bamboo stick is fitted into it. A wooden bridge is fixed on the gourd with wax, three iron strings are tied along the stick, and pegs made of mango wood are fitted to the far end of the bamboo so that the strings give different notes [3][1].",
+      "The sticks used to sound the strings are made from slivers of bamboo: small bells are tied with wire in a ring onto one bamboo stick, and another stick is fixed to that knot of bells [3]. Kondappa decorates the gourd with white vibhuti and kumkum namam marks [3]. He has said that suitable gourds (he names the ash gourd) have become hard to find, so new instruments are difficult to make [4]."
+    ],
+    "playing": [
+      "Unlike other veenas, which are played with the fingers, the Burra Veena has to be played with the help of sticks [4]. Kondappa plays it with small tingling bells and treats it like a percussion instrument: his right hand provides the bass and percussion, and his left hand the melody [1][2].",
+      "He says he can produce 24 different sounds on it, apart from the ragas, and that people who already play the dakki drum, cymbals or dappu find it easier to learn [2][4]. He performs seated on a mat on the floor, and before beginning a song he bows to the instrument with folded hands [3]."
+    ],
+    "cultural": [
+      "Kondappa belongs to the Mala Dasari community, a Dalit community described as dependents (ashrita) of the Malas. Mala Dasaris spread Vaishnava devotion, and Kondappa travels with his decorated instrument to the homes of the community he serves [1][3].",
+      "The family once made its living through house-to-house rounds, singing with the Burra Veena and collecting grain as alms in an akshaya patra. Kondappa says he gave up these rounds, hurt by people's remarks that he was able-bodied and could work for a living, and began giving stage performances instead [4].",
+      "The art is handed down within the family. Kondappa learned to play from his father Venkanna and learned the songs from his elder brother Kondanna; he began playing at sixteen and is now teaching his grandson Bhanuprasad [4]. He has said that whenever he plays he feels a deep connection to his ancestors and a responsibility to keep the art alive for future generations [6]. Professor Manoja of Palamuru University has suggested that caste prejudice is one reason few people have come forward to learn it [1].",
+      "His performances end with the name of Govinda, remembering his favourite deity, Sri Venkateswara [3]."
+    ],
+    "usage": [
+      "The Burra Veena accompanies tatvalu, socio-religious and philosophical songs, which Kondappa sings in Telugu and Kannada as well as Hindi [5][3]. His repertoire also includes songs from the Ramayana, Mahabharata and Bhagavad Gita, Satya Harishchandra, Bathukamma songs, the Kalagnana tatvalu of Veerabrahmendra Swamy, kirtanas of Manyamkonda Hanumaddasu, Chenchu kommalu and Dharmanga charitra [2][3][4].",
+      "A team led by Professor Jayadhir Tirumala Rao introduced Kondappa to a wider public in 2016. The instrument was shown at the Adya Kala exhibition at the State Art Gallery in Madapur in 2021, and Kondappa has performed in an Indo-French music collaboration in Hyderabad and sung in the background music of the Telugu film Balagam [3].",
+      "The instrument is critically endangered. In 2019 The News Minute described Kondappa as the only person in Telangana who could play it; none of his children took up the art, though he says he is ready to teach anyone who wants to learn [1][4]."
+    ]
+  },
+  "traditions": [
+    "Tatvalu",
+    "Mala Dasari devotional songs",
+    "Bathukamma songs"
+  ],
+  "facts": [
+    {
+      "label": "Materials",
+      "value": "Dried bottle gourd, pumpkin or ash gourd; bamboo stick; three iron strings; wooden bridge fixed with wax; mango-wood pegs"
+    },
+    {
+      "label": "Played with",
+      "value": "Small bamboo sticks hung with bells"
+    },
+    {
+      "label": "Strings",
+      "value": "Three"
+    },
+    {
+      "label": "Range",
+      "value": "24 sounds, according to Dasari Kondappa"
+    },
+    {
+      "label": "Making time",
+      "value": "About a year, including ripening and drying the gourd"
+    },
+    {
+      "label": "Community",
+      "value": "Mala Dasari"
+    },
+    {
+      "label": "Region",
+      "value": "Damaragidda, Narayanpet district (formerly Mahabubnagar), Telangana"
+    },
+    {
+      "label": "Status",
+      "value": "One known player: Dasari Kondappa (Padma Shri 2024)"
+    }
+  ],
+  "images": [],
+  "videos": [],
+  "audio": [],
+  "sources": [
+    {
+      "title": "Meet Dasari Kondappa, the last Burra Veena player in Telangana (Nitin B., 5 July 2019)",
+      "publisher": "The News Minute",
+      "url": "https://www.thenewsminute.com/article/meet-dasari-kondappa-last-burra-veena-player-telangana-105431"
+    },
+    {
+      "title": "Dasari Kondappa Sole custodian of Burra Veena (25 February 2024)",
+      "publisher": "The Pioneer",
+      "url": "https://pynr.in/dasari-kondappa-sole-custodian-of-burra-veena/"
+    },
+    {
+      "title": "తెలంగాణ బుర్రవీణకు..దక్కిన గౌరవం (Honour for Telangana's Burra Veena; Jampala Praveen, 3 February 2024)",
+      "publisher": "V6 Velugu",
+      "url": "https://www.v6velugu.com/dasari-kondappa-telanganas-last-maestro-of-burra-veena-conferred-with-padma-shri"
+    },
+    {
+      "title": "బుర్రవీణకు పద్మభిషేకం (Padma honour for the Burra Veena; interview, 30 January 2024)",
+      "publisher": "Namasthe Telangana",
+      "url": "https://www.ntnews.com/mahabubnagar/dasari-kondappa-was-selected-for-the-padma-shri-award-for-namasthe-telangana-1453604"
+    },
+    {
+      "title": "Five from Telangana get Padma Shri in art, literature (IANS, 26 January 2024)",
+      "publisher": "Siasat.com",
+      "url": "https://www.siasat.com/five-from-telangana-get-padma-shri-in-art-literature-2964273/"
+    },
+    {
+      "title": "The Last Burra Veena Player from Telangana (11 July 2024)",
+      "publisher": "Humans of Hyderabad",
+      "url": "https://humansofhyderabad.co.in/the-last-burra-veena-player-from-telangana/"
+    },
+    {
+      "title": "Documenting Bahujan Musical Instruments (Dr. Chandraiah Gopani, 16 June 2021), review of Mula Dhwani by Jayadhir Tirumala Rao and Guduru Manoja",
+      "publisher": "Round Table India",
+      "url": "https://www.roundtableindia.co.in/documenting-bahujan-musical-instruments/"
+    }
+  ],
+  "uncertain": [
+    "Community name varies: Mala Dasari (The News Minute), Mala Dasari / Danda Dasari (V6 Velugu), Vanne Dasari (Kondappa in Namasthe Telangana).",
+    "Kondappa's age and lineage differ between reports: 63 years old (IANS, January 2024), born 1 January 1960 (The Pioneer), 70 years old (V6 Velugu); third generation (IANS, Namasthe Telangana) versus 'over five generations' in the family (Humans of Hyderabad).",
+    "Type of gourd: 'gourd' (The News Minute), mature bottle gourd or pumpkin (V6 Velugu), ash gourd (Namasthe Telangana).",
+    "Exactly how the belled sticks are used (striking the strings or the gourd, and whether any string is also plucked) is not described in detail in the sources; only 'played with the help of sticks', 'with small tingling bells', and the division of bass/percussion (right hand) and melody (left hand) are reported.",
+    "The comparison with the Bhoomi Veena and villadi vadyalu comes from Professor Manoja of Palamuru University (The News Minute) and is repeated by The Pioneer; V6 Velugu's placement in the 'ektara and tambura family' is a description, not evidence that it is an ektara.",
+    "Possible relation to the 'kaddi vadyam' (కడ్డీ వాయిద్యం) of Dasari singers: the 1992 Mikkilineni survey describes a veena-like instrument of the Mittula Ayyavarlu/Dasaris of Karimnagar played with two thin sticks, and the Mula Dhwani review says only one or two people can play the kaddi vadyam. Whether this is the same instrument as the Burra Veena was not confirmed, so it is not merged here.",
+    "V6 Velugu says the materials are found in the Nallamala forests where the community lives, but Damaragidda is in Narayanpet district; this detail was not used."
+  ]
+}

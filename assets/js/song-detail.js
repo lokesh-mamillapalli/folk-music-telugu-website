@@ -9,6 +9,7 @@
     escapeHtml,
     splitArtists,
     findRegion,
+    regionTagHTML,
     getSongs,
     getSong,
     getCategories,
@@ -42,6 +43,24 @@
     } catch {
       // Storage can be unavailable (private mode); preferences are optional.
     }
+  }
+
+  function messageHTML(title, text) {
+    return `
+      <section class="card empty-state" style="margin-top: 48px;">
+        <h3>${escapeHtml(title)}</h3>
+        <p>${escapeHtml(text)}</p>
+        <p style="margin-top: 1.2rem;"><a class="btn" href="index.html">Browse songs</a></p>
+      </section>
+    `;
+  }
+
+  function flashButton(button, text) {
+    const original = button.textContent;
+    button.textContent = text;
+    setTimeout(() => {
+      button.textContent = original;
+    }, 1800);
   }
 
   function splitLines(value) {
@@ -146,9 +165,9 @@
     }
 
     return `
-      <section class="card lyrics-panel" style="margin-top: 1rem;">
-        <div class="section-head lyrics-head">
-          <h2>📜 Lyrics</h2>
+      <section class="card lyrics-panel" aria-labelledby="lyrics-title">
+        <div class="lyrics-head">
+          <h2 class="card-title" id="lyrics-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10M4 18h7"/></svg> Lyrics</h2>
           ${toggles}
         </div>
         <div id="lyrics-lines" class="lyrics-lines">${body}</div>
@@ -162,9 +181,9 @@
     }
     const both = song.summaryEn && song.summaryTe;
     return `
-      <section class="card summary-card" style="margin-top: 1rem;">
-        <div class="section-head">
-          <h2>📖 About this song</h2>
+      <section class="card summary-card" aria-labelledby="about-title">
+        <div class="lyrics-head">
+          <h2 class="card-title" id="about-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg> About this song</h2>
           ${both ? `
             <div class="summary-tabs" role="tablist">
               <button type="button" role="tab" data-summary-lang="en">English</button>
@@ -276,9 +295,9 @@
       .join("");
 
     return `
-      <section class="card" style="margin-top: 0.9rem;">
-        <h2>Admin Quick Edit</h2>
-        <form id="song-inline-edit-form" class="admin-form-grid" style="margin-top: 0.7rem;">
+      <section class="card">
+        <h2 class="card-title">Admin quick edit</h2>
+        <form id="song-inline-edit-form" class="admin-form-grid">
           <label>
             Telugu Title
             <input id="edit-title-te" type="text" value="${escapeHtml(song.titleTe)}" required />
@@ -352,13 +371,7 @@
 
   async function bootstrap() {
     if (!id) {
-      root.innerHTML = `
-        <section class="card">
-          <h1>Song not found</h1>
-          <p class="muted">Please return to the songs page and choose a valid song.</p>
-          <p><a class="btn" href="index.html">Back to Songs</a></p>
-        </section>
-      `;
+      root.innerHTML = messageHTML("Song not found", "Please go back to the songs list and choose a song.");
       return;
     }
 
@@ -367,7 +380,7 @@
     const categories = isAdmin ? await getCategories() : [];
     const related = (await getSongs({ category: song.category, region: song.region, sort: "latest" }))
       .filter((item) => item.id !== song.id)
-      .slice(0, 2);
+      .slice(0, 3);
 
     document.title = `${song.titleTe} (${song.titleEn}) | Telugu Folk Songs`;
 
@@ -376,63 +389,73 @@
     const regionPage = region ? region.page : "index.html";
     const regionLabel = region ? region.label : song.region;
     document.querySelectorAll(".nav-links a").forEach((link) => {
-      if (region && link.getAttribute("href") === region.page) {
+      if (region && link.getAttribute("href").endsWith(`songs/${region.page}`)) {
         link.setAttribute("aria-current", "page");
       }
     });
 
     const artistLinks = splitArtists(song.artist)
-      .map((name) => `<a class="text-link" href="../artists/index.html?artist=${encodeURIComponent(name)}">${escapeHtml(name)}</a>`)
+      .map((name) => `<a href="../artists/index.html?artist=${encodeURIComponent(name)}">${escapeHtml(name)}</a>`)
       .join(", ");
     const safeLinks = song.links.filter((link) => /^https?:\/\//i.test(link.url));
+    const albumText = song.album ? `${escapeHtml(song.album)}${song.year ? ` (${escapeHtml(song.year)})` : ""}` : "";
 
+    root.dataset.region = song.region;
     root.innerHTML = `
-      <section class="song-layout">
-        <article>
-          <p class="breadcrumb"><a class="text-link" href="${regionPage}">← ${escapeHtml(regionLabel)} Songs</a></p>
-          <h1 class="song-title-te">${escapeHtml(song.titleTe)}</h1>
-          <p class="song-title-en">${escapeHtml(song.titleEn)}</p>
+      <header class="song-hero">
+        <a class="breadcrumb" href="${regionPage}">← ${escapeHtml(regionLabel)} Songs</a>
+        <div class="song-hero__tags">
+          ${regionTagHTML(song.region)}
+          <a class="cat-tag" href="${regionPage}?category=${encodeURIComponent(song.category)}">${escapeHtml(song.category)}</a>
+        </div>
+        <h1 class="song-title-te" lang="te">${escapeHtml(song.titleTe)}</h1>
+        <p class="song-title-en">${escapeHtml(song.titleEn)}</p>
+        ${artistLinks || albumText ? `<p class="song-hero__meta">${artistLinks ? `Sung by ${artistLinks}` : ""}${artistLinks && albumText ? " · " : ""}${albumText}</p>` : ""}
+      </header>
 
-          <div class="card" style="margin-bottom:1rem;">
-            <h2>🎧 Audio Player</h2>
-            <audio id="main-audio" controls preload="none" style="width:100%;margin-top:0.5rem;"></audio>
-          </div>
+      <div class="song-layout">
+        <div class="song-main">
+          <section class="card audio-card" aria-labelledby="audio-title">
+            <h2 class="card-title" id="audio-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> Listen</h2>
+            <audio id="main-audio" controls preload="none"></audio>
+            <p class="audio-note">Audio streams from Google Drive, so the first play can take a few seconds to start.</p>
+          </section>
 
           ${lyricsHTML(song)}
           ${summaryHTML(song)}
+          ${isAdmin ? adminEditorHTML(song, categories) : ""}
+        </div>
+
+        <aside class="song-aside">
+          <section class="card">
+            <h2 class="card-title">Details</h2>
+            <div class="details-list">
+              <div><strong>Region</strong><a href="${regionPage}">${escapeHtml(regionLabel)}</a></div>
+              <div><strong>Category</strong><a href="${regionPage}?category=${encodeURIComponent(song.category)}">${escapeHtml(song.category)}</a></div>
+              ${artistLinks ? `<div><strong>Artists</strong><span>${artistLinks}</span></div>` : ""}
+              ${albumText ? `<div><strong>Album</strong><span>${albumText}</span></div>` : ""}
+            </div>
+            <div class="share-row">
+              <button class="btn" id="share-btn" type="button">Share</button>
+              <button class="btn-secondary" id="copy-link-btn" type="button">Copy link</button>
+            </div>
+          </section>
 
           ${safeLinks.length ? `
-          <section class="card" style="margin-top: 1rem;">
-            <h2>🔗 External Links</h2>
-            <div class="mini-links">
-              ${safeLinks.map((link) => `<a class="text-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">↗ ${escapeHtml(link.label)}</a>`).join("")}
+          <section class="card">
+            <h2 class="card-title">Source</h2>
+            <div class="link-list">
+              ${safeLinks.map((link) => `<a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(link.label)}</span><span aria-hidden="true">↗</span></a>`).join("")}
             </div>
           </section>
           ` : ""}
-          ${isAdmin ? adminEditorHTML(song, categories) : ""}
-        </article>
 
-        <aside>
           <section class="card">
-            <h2>📋 Details</h2>
-            <div class="details-list">
-              <div><strong>Region:</strong> <a class="text-link" href="${regionPage}">${escapeHtml(regionLabel)}</a></div>
-              <div><strong>Category:</strong> <a class="text-link" href="${regionPage}?category=${encodeURIComponent(song.category)}">${escapeHtml(song.category)}</a></div>
-              ${artistLinks ? `<div><strong>Artists:</strong> ${artistLinks}</div>` : ""}
-              ${song.album ? `<div><strong>Album:</strong> ${escapeHtml(song.album)}${song.year ? ` (${escapeHtml(song.year)})` : ""}</div>` : ""}
-            </div>
-            <div class="mini-links" style="margin-top:0.8rem;">
-              <button class="btn" id="share-btn">Share</button>
-              <button class="btn-secondary" id="copy-link-btn">Copy Link</button>
-            </div>
-          </section>
-
-          <section class="card" style="margin-top: 1rem;">
-            <h2>🎵 Related Songs</h2>
-            <div id="related-songs" class="grid"></div>
+            <h2 class="card-title">More ${escapeHtml(song.category)}</h2>
+            <div id="related-songs" class="related-list"></div>
           </section>
         </aside>
-      </section>
+      </div>
     `;
 
     setupLyricToggles();
@@ -468,7 +491,7 @@
 
     el("#copy-link-btn").addEventListener("click", async () => {
       await copyText(window.location.href);
-      alert("Song link copied");
+      flashButton(el("#copy-link-btn"), "Link copied ✓");
     });
 
     el("#share-btn").addEventListener("click", async () => {
@@ -488,7 +511,7 @@
         return;
       }
       await copyText(window.location.href);
-      alert("Song link copied");
+      flashButton(el("#share-btn"), "Link copied ✓");
     });
 
     if (isAdmin) {
@@ -538,12 +561,8 @@
 
   bootstrap().catch((error) => {
     const notFound = error && error.status === 404;
-    root.innerHTML = `
-      <section class="card">
-        <h1>${notFound ? "Song not found" : "Could not load this song"}</h1>
-        <p class="muted">${notFound ? "Please return to the songs page and choose a valid song." : "The server may be waking up. Please wait a moment and refresh the page."}</p>
-        <p><a class="btn" href="index.html">Back to Songs</a></p>
-      </section>
-    `;
+    root.innerHTML = notFound
+      ? messageHTML("Song not found", "Please go back to the songs list and choose a song.")
+      : messageHTML("Could not load this song", "The server may be waking up. Please wait a moment and refresh the page.");
   });
 })();

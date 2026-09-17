@@ -164,21 +164,37 @@
     return data;
   }
 
+  function regionTagHTML(regionKey) {
+    const region = findRegion(regionKey);
+    return `<span class="region-tag" data-region="${escapeHtml(regionKey)}">${escapeHtml(region ? region.label : regionKey)}</span>`;
+  }
+
+  // First couple of lyric lines, used as a preview on song cards.
+  function lyricPreview(lyrics) {
+    const lines = String(lyrics || "")
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean);
+    const meaningful = lines.filter((line) => line.replace(/[.\s…:]/g, "").length >= 10);
+    return (meaningful.length ? meaningful : lines).slice(0, 2).join(" / ");
+  }
+
   function cardHTML(song, base = "", index = 0) {
-    const preview = song.lyrics.length > 90 ? `${song.lyrics.slice(0, 90)}…` : song.lyrics;
-    const delay = Math.min(index * 0.08, 0.6);
+    const delay = Math.min(index * 0.04, 0.4);
+    const artists = splitArtists(song.artist);
+    const artistText = artists.length > 2 ? `${artists.slice(0, 2).join(", ")} +${artists.length - 2}` : artists.join(", ");
     return `
-      <article class="card song-card card-reveal" style="animation-delay: ${delay}s">
-        <span class="card-region-badge">${escapeHtml(song.region)}</span>
-        <div class="card-title-te">${escapeHtml(song.titleTe)}</div>
-        <div class="card-title-en">${escapeHtml(song.titleEn)}</div>
-        <div class="card-meta">
-          <span>${escapeHtml(song.category)}</span>
-          ${song.artist ? `<span>${escapeHtml(song.artist)}</span>` : ""}
+      <article class="song-card card-reveal" data-region="${escapeHtml(song.region)}" style="animation-delay: ${delay}s">
+        <div class="song-card__top">
+          ${regionTagHTML(song.region)}
+          <span class="cat-tag">${escapeHtml(song.category)}</span>
         </div>
-        <p class="lyrics-preview">"${escapeHtml(preview)}"</p>
-        <div class="card-footer">
-          <a class="btn" href="${base}songs/song.html?id=${encodeURIComponent(song.id)}">View Song →</a>
+        <h3 class="song-card__title-te" lang="te"><a href="${base}songs/song.html?id=${encodeURIComponent(song.id)}">${escapeHtml(song.titleTe)}</a></h3>
+        <p class="song-card__title-en">${escapeHtml(song.titleEn)}</p>
+        <p class="song-card__lyric" lang="te">${escapeHtml(lyricPreview(song.lyrics))}</p>
+        <div class="song-card__foot">
+          <span class="song-card__artist" title="${escapeHtml(artists.join(", "))}">${escapeHtml(artistText)}</span>
+          <span class="song-card__cta" aria-hidden="true">Read &amp; listen →</span>
         </div>
       </article>
     `;
@@ -283,14 +299,34 @@
   const themeToggle = document.getElementById("theme-toggle");
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
-      const current = document.documentElement.getAttribute("data-theme");
-      const nextTheme = current === "light" ? "dark" : "light";
-      if (nextTheme === "light") {
-        document.documentElement.setAttribute("data-theme", "light");
-        localStorage.setItem("folkSite_theme", "light");
-      } else {
-        document.documentElement.removeAttribute("data-theme");
-        localStorage.removeItem("folkSite_theme");
+      const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("folkSite_theme", next);
+      } catch {
+        // Theme still switches for this page view without storage.
+      }
+    });
+  }
+
+  // Mobile menu
+  const header = document.querySelector(".site-header");
+  const navToggle = document.getElementById("nav-toggle");
+  if (header && navToggle) {
+    const setOpen = (open) => {
+      header.classList.toggle("nav-open", open);
+      navToggle.setAttribute("aria-expanded", String(open));
+      navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    };
+    navToggle.addEventListener("click", () => setOpen(!header.classList.contains("nav-open")));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+      }
+    });
+    document.addEventListener("click", (event) => {
+      if (!header.contains(event.target)) {
+        setOpen(false);
       }
     });
   }
@@ -308,6 +344,8 @@
     normalizeAudioUrl,
     getGoogleDriveFileId,
     cardHTML,
+    regionTagHTML,
+    lyricPreview,
     getSongs,
     getSong,
     getCategories,

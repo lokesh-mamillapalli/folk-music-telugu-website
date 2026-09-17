@@ -1,5 +1,5 @@
 (function () {
-  const { el, parseQuery, getSongs, escapeHtml, groupSongsByArtist, findRegion } = window.FolkCommon;
+  const { el, parseQuery, getSongs, escapeHtml, groupSongsByArtist, findRegion, regionTagHTML } = window.FolkCommon;
   const root = el("#artists-grid");
   const toggle = el("#artist-region-toggle");
   const countEl = el("#artists-count");
@@ -7,6 +7,7 @@
     return;
   }
 
+  const VISIBLE_SONGS = 5;
   const query = parseQuery();
   const selectedArtist = String(query.artist || "").trim().toLowerCase();
   let region = findRegion(query.region) ? query.region : "All";
@@ -23,10 +24,53 @@
     window.history.replaceState(null, "", `${window.location.pathname}${suffix}`);
   }
 
-  function regionTags(songs) {
-    return Array.from(new Set(songs.map((song) => song.region)))
-      .map((key) => `<span class="card-region-badge">${escapeHtml(findRegion(key)?.label || key)}</span>`)
-      .join(" ");
+  function initials(name) {
+    const words = name.replace(/[^A-Za-z\s]/g, " ").split(/\s+/).filter((word) => word.length > 1);
+    const picked = words.length > 1 ? [words[0], words[words.length - 1]] : words;
+    return picked.map((word) => word[0].toUpperCase()).join("") || name.slice(0, 1).toUpperCase();
+  }
+
+  function avatarVariant(name) {
+    let hash = 0;
+    for (const char of name) {
+      hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
+    }
+    return hash % 5;
+  }
+
+  function songItem(song) {
+    return `<li><a href="../songs/song.html?id=${encodeURIComponent(song.id)}"><span class="te" lang="te">${escapeHtml(song.titleTe)}</span><span class="en">${escapeHtml(song.titleEn)}</span></a></li>`;
+  }
+
+  function artistCard(artist, idx) {
+    const count = artist.songs.length;
+    const regions = Array.from(new Set(artist.songs.map((song) => song.region))).map(regionTagHTML).join("");
+    const visible = artist.songs.slice(0, VISIBLE_SONGS).map(songItem).join("");
+    const rest = artist.songs.slice(VISIBLE_SONGS);
+    const more = rest.length
+      ? `<details class="artist-more">
+           <summary><span class="when-closed">Show all ${count} songs</span><span class="when-open">Show fewer</span></summary>
+           <ul class="artist-songs" style="margin-top: 0;">${rest.map(songItem).join("")}</ul>
+         </details>`
+      : "";
+
+    return `
+      <article class="artist-card card-reveal" style="animation-delay: ${Math.min(idx * 0.03, 0.3)}s">
+        <div class="artist-card__head">
+          <span class="avatar avatar--${avatarVariant(artist.name)}" aria-hidden="true">${escapeHtml(initials(artist.name))}</span>
+          <div>
+            <h3>${escapeHtml(artist.name)}</h3>
+            <p class="artist-card__meta">${count} song${count === 1 ? "" : "s"} ${regions}</p>
+          </div>
+        </div>
+        <ul class="artist-songs">${visible}</ul>
+        ${more}
+      </article>
+    `;
+  }
+
+  function messageCard(title, text) {
+    return `<article class="card empty-state"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(text)}</p></article>`;
   }
 
   function render() {
@@ -43,48 +87,24 @@
     const regionLabel = region === "All" ? "" : findRegion(region).label;
     countEl.textContent = selectedArtist ? "" : `${artists.length} artist${artists.length === 1 ? "" : "s"}`;
 
-    const showAllLink = selectedArtist
-      ? '<p style="grid-column: 1 / -1;"><a class="text-link" href="index.html">← Show all artists</a></p>'
-      : "";
+    const backLink = selectedArtist ? '<p class="back-link"><a class="text-link" href="index.html">← Show all artists</a></p>' : "";
 
     if (!artists.length) {
-      let message;
+      let card;
       if (selectedArtist) {
-        message = regionLabel
-          ? `No ${escapeHtml(regionLabel)} songs by this artist. Try "All Artists".`
-          : "No artist found with this name.";
+        card = regionLabel
+          ? messageCard("No songs in this region", `This artist has no ${regionLabel} songs yet. Try “All Artists”.`)
+          : messageCard("Artist not found", "Please go back and choose an artist from the list.");
       } else if (regionLabel) {
-        message = `${escapeHtml(regionLabel)} artists will appear here once ${escapeHtml(regionLabel)} songs are added.`;
+        card = messageCard(`${regionLabel} artists coming soon`, `Artists will appear here as soon as ${regionLabel} songs are added to the archive.`);
       } else {
-        message = "Artists appear here automatically when songs are added from the Admin panel.";
+        card = messageCard("No artists yet", "Artists appear here automatically when songs are added.");
       }
-      root.innerHTML = `${showAllLink}<article class="card"><p class="muted">${message}</p></article>`;
+      root.innerHTML = backLink + card;
       return;
     }
 
-    root.innerHTML =
-      showAllLink +
-      artists
-        .map((artist, idx) => {
-          const delay = Math.min(idx * 0.05, 0.5);
-          const count = artist.songs.length;
-          const songsList = artist.songs
-            .map(
-              (song) =>
-                `<li style="margin: 0.3rem 0;"><a class="text-link" href="../songs/song.html?id=${encodeURIComponent(song.id)}">${escapeHtml(song.titleTe)} <span style="color:var(--muted)">(${escapeHtml(song.titleEn)})</span></a></li>`
-            )
-            .join("");
-
-          return `
-            <article class="card card-reveal" style="animation-delay: ${delay}s">
-              <h3 style="font-size:1.15rem;">${escapeHtml(artist.name)}</h3>
-              <p class="meta" style="margin-bottom:0.6rem;">${count} song${count === 1 ? "" : "s"} ${regionTags(artist.songs)}</p>
-              <h4 style="font-size:0.9rem; color:var(--primary); margin-bottom:0.3rem;">Songs Performed</h4>
-              <ul style="list-style:none; padding:0; margin:0;">${songsList}</ul>
-            </article>
-          `;
-        })
-        .join("");
+    root.innerHTML = backLink + artists.map(artistCard).join("");
   }
 
   toggle.addEventListener("click", (event) => {
@@ -98,7 +118,7 @@
   });
 
   async function bootstrap() {
-    root.innerHTML = Array.from({ length: 4 })
+    root.innerHTML = Array.from({ length: 6 })
       .map(() => '<div class="skeleton skeleton-card"></div>')
       .join("");
     allSongs = await getSongs({ sort: "alphabetical" });
@@ -106,6 +126,6 @@
   }
 
   bootstrap().catch((error) => {
-    root.innerHTML = `<article class="card"><p class="muted">${escapeHtml(error.message)}</p></article>`;
+    root.innerHTML = messageCard("Could not load artists", error.message || "Please refresh the page in a moment.");
   });
 })();

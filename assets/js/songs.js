@@ -78,10 +78,10 @@
     }
 
     if (!songs.length) {
-      const message = regionHasSongs
-        ? "No songs found for this filter."
-        : `${escapeHtml(findRegion(fixedRegion)?.label || fixedRegion)} songs are being added to the collection. Please check back soon.`;
-      songsGrid.innerHTML = `<article class="card"><p class="muted">${message}</p></article>`;
+      const label = escapeHtml(findRegion(fixedRegion)?.label || fixedRegion);
+      songsGrid.innerHTML = regionHasSongs
+        ? '<article class="card empty-state"><h3>No songs match</h3><p>Try a different search, or set Category and Artist back to “All”.</p></article>'
+        : `<article class="card empty-state"><h3>${label} songs are coming soon</h3><p>Songs from ${label} are being added to the archive. Please check back soon.</p></article>`;
     } else {
       songsGrid.innerHTML = songs.map((song, i) => cardHTML(song, "../", i)).join("");
     }
@@ -124,7 +124,7 @@
     let debounceTimer;
     const runFilter = () => {
       filterSongs().catch((error) => {
-        songsGrid.innerHTML = `<article class="card"><p class="muted">${escapeHtml(error.message)}</p></article>`;
+        songsGrid.innerHTML = `<article class="card empty-state"><h3>Could not load songs</h3><p>${escapeHtml(error.message)}. The server may be waking up; please refresh in a moment.</p></article>`;
       });
     };
     searchEl.addEventListener("input", () => {
@@ -139,6 +139,6 @@
   }
 
   bootstrap().catch((error) => {
-    songsGrid.innerHTML = `<article class="card"><p class="muted">${escapeHtml(error.message)}</p></article>`;
+    songsGrid.innerHTML = `<article class="card empty-state"><h3>Could not load songs</h3><p>${escapeHtml(error.message)}. The server may be waking up; please refresh in a moment.</p></article>`;
   });
 })();

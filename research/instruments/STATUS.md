@@ -13,9 +13,10 @@ Research was paused at the user's request. Everything gathered so far is saved i
 
 Copies of news articles were not saved (copyright). Every source URL is listed inside each research file.
 
-## On the website (local only, not published)
+## On the website
 
-`scripts/site/instruments.json` is built from `research-json/` by `scripts/site/curate_instruments.py`. It holds **25 instruments**, and pages are generated in `instruments/`.
+`scripts/site/instruments.json` is built from `research-json/` by `scripts/site/curate_instruments.py`. It holds
+**25 instruments**, and pages are generated in `instruments/`. Published 17 September 2026 (commit 7a3ea6b).
 
 To rebuild after editing or adding research files:
 
@@ -93,6 +94,36 @@ From the Andhra drums researcher. Unless another source is given, the evidence i
 
 Useful tool for Telugu names: the AndhraBharati dictionary search, `https://andhrabharati.com/dictionary/index.php?w=<word>`, covers Sabdaratnakaram, Brown and dialect dictionaries.
 
-## Paused by the user
+## Media: photos and videos (added 18 September 2026)
 
-- **Photos and videos/recordings for each instrument.** The research files have empty `images`, `videos` and `audio` lists. Any image used later must be freely licensed (e.g. Wikimedia Commons) and credited.
+At the user's request, `images`/`videos` (the fields BRIEF.md already specified) were filled in for 14 of the 25
+instruments, found by searching the Wikimedia Commons API and Wikipedia's own articles, and — for a few — YouTube.
+Every image is freely licensed (CC BY / CC BY-SA / GFDL) and hotlinked from `upload.wikimedia.org`, exactly as the
+site already hotlinks song audio from Google Drive; nothing was downloaded into the repo. `curate_instruments.py`
+now checks that every image/video is fully credited and that image/audio licences are on the free-licence
+allow-list (`FREE_LICENSE`); YouTube embeds don't need a licence check, since embedding just shows YouTube's own
+player under YouTube's terms, unlike hosting a copy.
+
+**Has a photo:** chekkalu, dappu, dolu, gumela, gummeta, kikri, kinnera, kolatam-karralu, maddela, oggu, sannayi,
+talalu, tambura, tudumu (14). **Has a photo and video:** kinnera, kolatam-karralu, oggu, tambura (tambura's video
+is a Commons-hosted clip, not YouTube; the other three are YouTube).
+
+**Worth a second look:**
+- **Tudumu**: the photo (from a Kolam community Wikipedia contributor, captioned "తుడం వాయిద్యాలు") shows a
+  double-headed, rope-laced drum. This page's own written sources (one account, already flagged "medium
+  confidence") describe the tudumu as a single-headed clay kettle drum. The photo may show a different or
+  variant instrument under the same local name — flagged inline on the page and here, not resolved.
+- **Talalu**: reuses the Dolu page's Bonalu photo, since the same photo happens to show both drummers and
+  cymbal players; said so in both captions.
+- **Gummeta**: the same photo also shows a tambura player; captioned to say so.
+- **Chekkalu**: the only photo found shows the clappers, but small and not the frame's focus.
+
+**No free photo or video found** (despite trying targeted Commons/Wikipedia searches, and — for the rarest
+instruments — searching by the name of their last known player): andelu, burra-veena, chirutalu, jamidika,
+kalikom, pamba, parra, pepre, pillana-grovi, tappeta, vette. Burra-veena has a single named living player
+(Dasari Kondappa, Padma Shri 2024) but no photo of him turned up; by contrast, searching by name is exactly how
+kikri and kinnera *did* get photos (of Darshanam Mogulaiah), so it's worth retrying burra-veena's search later
+rather than assuming none exists. Chirutalu's closest relative with photos, the Rajasthani khartal, was
+deliberately not substituted: its published photos show plain wooden blocks, not the jingled clappers this page
+describes, so the visual would have been misleading. Re-run `research/instruments/BRIEF.md`'s media steps for
+any of these if better sources turn up.

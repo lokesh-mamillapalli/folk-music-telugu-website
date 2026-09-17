@@ -98,8 +98,26 @@
       "value": "Andhra Pradesh and Telangana"
     }
   ],
-  "images": [],
-  "videos": [],
+  "images": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Indian_village_musicians.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Indian_village_musicians.jpg",
+      "author": "Sukanto Debnath",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "shows": "Village musicians in Hyderabad with a drum and a tambura"
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/8b/Sarada_burra_katha.webm/Sarada_burra_katha.webm.480p.vp9.webm",
+      "title": "Sarada singers performing a Burrakatha-style ballad (Sarada Kandrulu)",
+      "channel": "WikiPBR",
+      "what": "Sarada singers of Telangana performing a Burrakatha-style ballad with tambura",
+      "license": "CC BY-SA 4.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Sarada_burra_katha.webm"
+    }
+  ],
   "audio": [],
   "sources": [
     {

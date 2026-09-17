@@ -90,7 +90,16 @@
       "value": "Gatha Saptashati verse; Kakatiya-period sculptures at Palampet; Srinatha's Palnati Veera Charitra"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Maddela_2.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Maddela_2.jpg/1280px-Maddela_2.jpg",
+      "author": "T.sujatha (Telugu Wiktionary)",
+      "license": "GFDL",
+      "licenseUrl": "https://www.gnu.org/copyleft/fdl.html",
+      "shows": "A maddela — Telugu Wiktionary's picture of the week, 2012"
+    }
+  ],
   "videos": [],
   "audio": [],
   "uncertain": [

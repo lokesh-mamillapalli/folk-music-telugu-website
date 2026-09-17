@@ -104,8 +104,24 @@
       "value": "Endangered; very few players"
     }
   ],
-  "images": [],
-  "videos": [],
+  "images": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Darshanam_Mogilaiah_at_Ugadi_Celebrations_in_Ravindra_Bharathi_%2808.04.2016%29.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Darshanam_Mogilaiah_at_Ugadi_Celebrations_in_Ravindra_Bharathi_%2808.04.2016%29.jpg/1280px-Darshanam_Mogilaiah_at_Ugadi_Celebrations_in_Ravindra_Bharathi_%2808.04.2016%29.jpg",
+      "author": "Department of Language and Culture, Government of Telangana",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "shows": "12-fret kinnera player Darshanam Mogilaiah performing at Ugadi celebrations, Ravindra Bharathi (2016)"
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=d7_jdjDXTAw",
+      "title": "12 Metla Kinnera Documentary Film, Part 1 (Darshanam Mogulayya)",
+      "channel": "Department of Language and Culture Telangana",
+      "what": "A documentary on Darshanam Mogulayya and the 12-fret kinnera"
+    }
+  ],
   "audio": [],
   "sources": [
     {

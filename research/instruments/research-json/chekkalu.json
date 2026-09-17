@@ -85,7 +85,17 @@
       "value": "Rayalaseema (especially Kadapa), also Chittoor and Vizianagaram"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Chekka_bhajana.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Chekka_bhajana.jpg/1280px-Chekka_bhajana.jpg",
+      "author": "రహ్మానుద్దీన్",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "shows": "A Chekka Bhajana performance, Andhra Pradesh",
+      "note": "The wooden chekkalu are visible in the performers' hands but are small and not the clearest part of the frame."
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [

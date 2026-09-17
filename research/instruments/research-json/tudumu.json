@@ -80,7 +80,17 @@
       "value": "Gondi tuḍum, Kui ṭuḍumi, Marathi tuḍūm"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:%E0%B0%A4%E0%B1%81%E0%B0%A1%E0%B0%82_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/%E0%B0%A4%E0%B1%81%E0%B0%A1%E0%B0%82_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81.jpg/1280px-%E0%B0%A4%E0%B1%81%E0%B0%A1%E0%B0%82_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81.jpg",
+      "author": "Mothiram 123",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "shows": "Two drums photographed as 'tudum instruments' among the Kolam community, Adilabad",
+      "note": "This photo, from a Kolam community contributor, shows a double-headed, rope-laced drum. The written sources behind this page describe the tudumu as a single-headed clay kettle drum, so this may be a different, related instrument, or a variant this page's sources don't cover — worth checking with a Gond/Kolam community member before treating it as definitive."
+    }
+  ],
   "videos": [],
   "audio": [],
   "uncertain": [

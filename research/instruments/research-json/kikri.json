@@ -3,16 +3,37 @@
   "nameEn": "Kikri (Kingri)",
   "nameTe": "కిక్రి",
   "otherNames": [
-    {"en": "Kingri", "te": "కింగ్రి"},
-    {"en": "Khikri", "te": ""},
-    {"en": "Kikiri", "te": ""},
-    {"en": "Hirabai Kikri", "te": "హీరాబాయి కిక్రి"},
-    {"en": "Dunadi vaja (sacred stringed instrument)", "te": ""}
+    {
+      "en": "Kingri",
+      "te": "కింగ్రి"
+    },
+    {
+      "en": "Khikri",
+      "te": ""
+    },
+    {
+      "en": "Kikiri",
+      "te": ""
+    },
+    {
+      "en": "Hirabai Kikri",
+      "te": "హీరాబాయి కిక్రి"
+    },
+    {
+      "en": "Dunadi vaja (sacred stringed instrument)",
+      "te": ""
+    }
   ],
   "category": "string",
   "classification": "Three-stringed bowed fiddle (chordophone) with a square, skin-covered wooden sound box",
-  "regions": ["Telangana"],
-  "communities": ["Pardhan (bards of the Gonds)", "Thoti", "Raj Gond (patrons)"],
+  "regions": [
+    "Telangana"
+  ],
+  "communities": [
+    "Pardhan (bards of the Gonds)",
+    "Thoti",
+    "Raj Gond (patrons)"
+  ],
   "summary": "A three-stringed bowed fiddle with a square, skin-covered wooden sound box, played by the Pardhan and Thoti bards of the Gonds in the Adilabad region. It accompanies Gond hymns and epics and clan-god rites, and is treated as sacred, personified as the ancestress Hirabai.",
   "sections": {
     "about": [
@@ -44,26 +65,87 @@
       "Haimendorf observed in the 1940s that where Pardhans gave up their fiddle and their old association with the Gonds, cultural life suffered [1]. A 2025 study of the Thoti community found that the playing of the kikri and related instruments by Thoti men at festivals and funerals in Gond homes has greatly declined, although the community still plays the kikri [5]. The instrument has been shown in exhibitions of tribal instruments in Hyderabad, including Adya Kala's 'Adi Dhwani' [7]."
     ]
   },
-  "traditions": ["Persa Pen clan-god rites", "Nagoba Jatara (Keslapur)", "Gond hymns and epics (Gond Gatha)", "Gond marriages", "Gond funeral rites"],
-  "facts": [
-    {"label": "Type", "value": "Three-stringed bowed fiddle"},
-    {"label": "Materials", "value": "Square wooden sound box covered with skin (goat skin in Telugu accounts), bamboo neck, horse-hair strings and bow hair, bells on the bow"},
-    {"label": "Played by", "value": "Pardhan and Thoti bards of the Gonds; according to one Pardhan elder, only married men"},
-    {"label": "Played with", "value": "A bow hung with small bells; alongside pepre shawms, drums (including the dakki) and small cymbals"},
-    {"label": "Region", "value": "Adilabad region of northern Telangana; also Gondi-speaking areas of Maharashtra"},
-    {"label": "Belief", "value": "Personified as the ancestress Hirabai; its music is believed to calm the clan god Persa Pen"}
+  "traditions": [
+    "Persa Pen clan-god rites",
+    "Nagoba Jatara (Keslapur)",
+    "Gond hymns and epics (Gond Gatha)",
+    "Gond marriages",
+    "Gond funeral rites"
   ],
-  "images": [],
+  "facts": [
+    {
+      "label": "Type",
+      "value": "Three-stringed bowed fiddle"
+    },
+    {
+      "label": "Materials",
+      "value": "Square wooden sound box covered with skin (goat skin in Telugu accounts), bamboo neck, horse-hair strings and bow hair, bells on the bow"
+    },
+    {
+      "label": "Played by",
+      "value": "Pardhan and Thoti bards of the Gonds; according to one Pardhan elder, only married men"
+    },
+    {
+      "label": "Played with",
+      "value": "A bow hung with small bells; alongside pepre shawms, drums (including the dakki) and small cymbals"
+    },
+    {
+      "label": "Region",
+      "value": "Adilabad region of northern Telangana; also Gondi-speaking areas of Maharashtra"
+    },
+    {
+      "label": "Belief",
+      "value": "Personified as the ancestress Hirabai; its music is believed to calm the clan god Persa Pen"
+    }
+  ],
+  "images": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Adivasi_Kala_Jathara_in_Adilabad_%2825-05-_2023%29_43.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Adivasi_Kala_Jathara_in_Adilabad_%2825-05-_2023%29_43.jpg/1280px-Adivasi_Kala_Jathara_in_Adilabad_%2825-05-_2023%29_43.jpg",
+      "author": "Department of Language and Culture, Government of Telangana",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "shows": "A kikri player at the Adivasi Kala Jathara, Adilabad (2023)"
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [
-    {"title": "The Raj Gonds of Adilabad: A Peasant Culture of the Deccan, Book I: Myth and Ritual (1948), full text", "publisher": "Christoph von Fürer-Haimendorf with Elizabeth von Fürer-Haimendorf; Macmillan, London (Internet Archive)", "url": "https://archive.org/details/in.ernet.dli.2015.123358"},
-    {"title": "Simply out of this world!", "publisher": "S. Harpal Singh, The Hindu, 28 January 2015", "url": "https://www.thehindu.com/news/national/telangana/simply-out-of-this-world/article6828565.ece"},
-    {"title": "కిక్రి (వాయిద్యం) [Kikri (instrument)], citing Jayadheer Tirumala Rao and Guduri Manoja, Mooladhwani: a social history of folk and tribal musical instruments (2019)", "publisher": "Telugu Wikipedia", "url": "https://te.wikipedia.org/wiki/%E0%B0%95%E0%B0%BF%E0%B0%95%E0%B1%8D%E0%B0%B0%E0%B0%BF_(%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%82)"},
-    {"title": "తెలుగువారి జానపద కళారూపాలు: వాయుజన్య శబ్ద వాయిద్యాలు / తంత్రీ వాయిద్యాలు [Telugu folk art forms: wind and string instruments] (1992)", "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University (text on Telugu Wikisource)", "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B1%81%E0%B0%9C%E0%B0%A8%E0%B1%8D%E0%B0%AF_%E0%B0%B6%E0%B0%AC%E0%B1%8D%E0%B0%A6_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81"},
-    {"title": "Investigating the Lost Adivasi Sustainable Culture: The Fascinating Case of the Thoti Adivasi Community in the Adilabad District", "publisher": "S. Kannan, International Journal of Environmental Sciences, Vol. 11 No. 8s, 2025", "url": "https://theaspd.com/index.php/ijes/article/download/844/588/1656"},
-    {"title": "GhotulPito: Gondi culture and dance forms among Raj Gonds", "publisher": "Sphoorthi Theatre (blog), December 2013", "url": "https://sphoorthi-theatre.blogspot.com/2013/12/gotulpito-gondi-culture-and-dance-forms.html"},
-    {"title": "Preserving TG's tribal glory, the Adya Kala way", "publisher": "Muchukota Suresh Babu, The Hans India, July 2026", "url": "https://www.thehansindia.com/hans/opinion/news-analysis/preserving-tgs-tribal-glory-the-adya-kala-way-1096160"}
+    {
+      "title": "The Raj Gonds of Adilabad: A Peasant Culture of the Deccan, Book I: Myth and Ritual (1948), full text",
+      "publisher": "Christoph von Fürer-Haimendorf with Elizabeth von Fürer-Haimendorf; Macmillan, London (Internet Archive)",
+      "url": "https://archive.org/details/in.ernet.dli.2015.123358"
+    },
+    {
+      "title": "Simply out of this world!",
+      "publisher": "S. Harpal Singh, The Hindu, 28 January 2015",
+      "url": "https://www.thehindu.com/news/national/telangana/simply-out-of-this-world/article6828565.ece"
+    },
+    {
+      "title": "కిక్రి (వాయిద్యం) [Kikri (instrument)], citing Jayadheer Tirumala Rao and Guduri Manoja, Mooladhwani: a social history of folk and tribal musical instruments (2019)",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%95%E0%B0%BF%E0%B0%95%E0%B1%8D%E0%B0%B0%E0%B0%BF_(%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%82)"
+    },
+    {
+      "title": "తెలుగువారి జానపద కళారూపాలు: వాయుజన్య శబ్ద వాయిద్యాలు / తంత్రీ వాయిద్యాలు [Telugu folk art forms: wind and string instruments] (1992)",
+      "publisher": "Mikkilineni Radhakrishna Murthy, Telugu University (text on Telugu Wikisource)",
+      "url": "https://te.wikisource.org/wiki/%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81%E0%B0%B5%E0%B0%BE%E0%B0%B0%E0%B0%BF_%E0%B0%9C%E0%B0%BE%E0%B0%A8%E0%B0%AA%E0%B0%A6_%E0%B0%95%E0%B0%B3%E0%B0%BE%E0%B0%B0%E0%B1%82%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81/%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B1%81%E0%B0%9C%E0%B0%A8%E0%B1%8D%E0%B0%AF_%E0%B0%B6%E0%B0%AC%E0%B1%8D%E0%B0%A6_%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%BE%E0%B0%B2%E0%B1%81"
+    },
+    {
+      "title": "Investigating the Lost Adivasi Sustainable Culture: The Fascinating Case of the Thoti Adivasi Community in the Adilabad District",
+      "publisher": "S. Kannan, International Journal of Environmental Sciences, Vol. 11 No. 8s, 2025",
+      "url": "https://theaspd.com/index.php/ijes/article/download/844/588/1656"
+    },
+    {
+      "title": "GhotulPito: Gondi culture and dance forms among Raj Gonds",
+      "publisher": "Sphoorthi Theatre (blog), December 2013",
+      "url": "https://sphoorthi-theatre.blogspot.com/2013/12/gotulpito-gondi-culture-and-dance-forms.html"
+    },
+    {
+      "title": "Preserving TG's tribal glory, the Adya Kala way",
+      "publisher": "Muchukota Suresh Babu, The Hans India, July 2026",
+      "url": "https://www.thehansindia.com/hans/opinion/news-analysis/preserving-tgs-tribal-glory-the-adya-kala-way-1096160"
+    }
   ],
   "uncertain": [
     "Spelling varies between sources: kikri, kingri, khikri, kikiri and keekri; Telugu sources use both కిక్రి and కింగ్రి.",

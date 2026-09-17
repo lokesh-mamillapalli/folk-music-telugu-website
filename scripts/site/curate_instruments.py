@@ -24,7 +24,45 @@ CATEGORIES = {"drum", "wind", "string", "idiophone"}
 REGIONS = {"Andhra", "Telangana"}
 SECTIONS = ["about", "construction", "playing", "cultural", "usage"]
 KEEP = ["id", "nameEn", "nameTe", "otherNames", "category", "classification", "regions", "communities",
-        "summary", "sections", "traditions", "facts", "sources", "uncertain"]
+        "summary", "sections", "traditions", "facts", "sources", "uncertain", "images", "videos", "audio"]
+# Only these count as freely licensed (never fair use / all-rights-reserved / "for educational use").
+FREE_LICENSE = re.compile(r"^(cc0|cc-by(-sa)?-[0-9.]+|public domain|pd-|gfdl)", re.I)
+YOUTUBE_HOST = re.compile(r"(youtube\.com/watch\?v=|youtu\.be/)")
+
+
+def check_media(inst):
+    """images/videos/audio are optional (BRIEF.md's schema); if present, every item must be fully
+    credited, and images/audio must be free-licensed (never fair use)."""
+    errs = []
+    for image in inst.get("images") or []:
+        for key in ["filePage", "imageUrl", "author", "license", "shows"]:
+            if not image.get(key):
+                errs.append(f"images: missing {key} ({image.get('filePage') or image.get('imageUrl')})")
+        if image.get("filePage") and "commons.wikimedia.org/wiki/File:" not in image["filePage"]:
+            errs.append(f"images: filePage is not a Commons file page: {image['filePage']!r}")
+        if image.get("imageUrl") and "wikimedia.org" not in image["imageUrl"]:
+            errs.append(f"images: imageUrl is not hosted on wikimedia.org: {image['imageUrl']!r}")
+        if image.get("license") and not FREE_LICENSE.match(image["license"].replace(" ", "-")):
+            errs.append(f"images: license {image['license']!r} is not a recognised free licence")
+    for video in inst.get("videos") or []:
+        for key in ["url", "title", "channel", "what"]:
+            if not video.get(key):
+                errs.append(f"videos: missing {key} ({video.get('url')})")
+        if video.get("url") and not (YOUTUBE_HOST.search(video["url"]) or "wikimedia.org" in video["url"]):
+            errs.append(f"videos: url is neither YouTube nor Commons: {video['url']!r}")
+        if video.get("license") and not FREE_LICENSE.match(video["license"].replace(" ", "-")):
+            errs.append(f"videos: license {video['license']!r} is not a recognised free licence")
+        if video.get("filePage") and "commons.wikimedia.org/wiki/File:" not in video["filePage"]:
+            errs.append(f"videos: filePage is not a Commons file page: {video['filePage']!r}")
+    for audio in inst.get("audio") or []:
+        for key in ["filePage", "url", "author", "license"]:
+            if not audio.get(key):
+                errs.append(f"audio: missing {key} ({audio.get('filePage') or audio.get('url')})")
+        if audio.get("filePage") and "commons.wikimedia.org/wiki/File:" not in audio["filePage"]:
+            errs.append(f"audio: filePage is not a Commons file page: {audio['filePage']!r}")
+        if audio.get("license") and not FREE_LICENSE.match(audio["license"].replace(" ", "-")):
+            errs.append(f"audio: license {audio['license']!r} is not a recognised free licence")
+    return errs
 
 
 def check(inst, path):
@@ -59,6 +97,9 @@ def check(inst, path):
     for s in inst.get("sources", []):
         if not str(s.get("url", "")).startswith("http"):
             errs.append(f"source without URL: {s.get('title')}")
+    errs.extend(check_media(inst))
+    if not inst.get("images") and not inst.get("videos") and not inst.get("audio"):
+        warns.append("no media (images/videos/audio)")
     return errs, warns, paragraphs
 
 

@@ -108,7 +108,16 @@
       "value": "Tappeta, kanaka tappetlu (Rayalaseema), palaka"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Dappu_Artists_Performance_in_Culture_of_Telangana_Programme_at_Surajkund%2C_Haryana_%2802.02.2016%29_03.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Dappu_Artists_Performance_in_Culture_of_Telangana_Programme_at_Surajkund%2C_Haryana_%2802.02.2016%29_03.jpg/1280px-Dappu_Artists_Performance_in_Culture_of_Telangana_Programme_at_Surajkund%2C_Haryana_%2802.02.2016%29_03.jpg",
+      "author": "Department of Language and Culture, Government of Telangana",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "shows": "Women dappu players performing at the Culture of Telangana programme, Surajkund (2016)"
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [

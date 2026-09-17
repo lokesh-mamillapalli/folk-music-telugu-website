@@ -416,7 +416,52 @@ def region_tags(regions):
 
 
 def media_tile(inst):
+    images = inst.get("images") or []
+    if images:
+        return '<img src="{}" alt="{}" loading="lazy" width="400" height="300" />'.format(esc(images[0]["imageUrl"]), esc(images[0]["shows"]))
     return '<div class="media-placeholder" aria-hidden="true"><span lang="te">{}</span></div>'.format(esc(inst["nameTe"]))
+
+
+def youtube_id(url):
+    match = re.search(r"(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]{11})", url)
+    return match.group(1) if match else None
+
+
+def media_credit(label, source_url, author, license_=None, note=None):
+    """A short, linked credit line for a photo, video or audio clip, plus any note on how confidently it
+    matches this instrument (e.g. a name or shape that doesn't quite line up with the written sources)."""
+    by = ' by <a href="{}" target="_blank" rel="noopener noreferrer">{}</a>'.format(esc(source_url), esc(author)) if author else ""
+    licence = ", {}".format(esc(license_)) if license_ else ""
+    credit = '<p class="media-credit">{}{}{} — <a href="{}" target="_blank" rel="noopener noreferrer">source</a></p>'.format(
+        esc(label), by, licence, esc(source_url))
+    if note:
+        credit += '<p class="media-note"><strong>Note:</strong> {}</p>'.format(esc(note))
+    return credit
+
+
+def hero_media_html(inst):
+    images, videos, audio = inst.get("images") or [], inst.get("videos") or [], inst.get("audio") or []
+    if not images and not videos and not audio:
+        return ""
+    parts = ['<section class="card inst-media-card">']
+    for image in images:
+        parts.append('<img class="inst-hero__img" src="{}" alt="{}" loading="lazy" />'.format(esc(image["imageUrl"]), esc(image["shows"])))
+        parts.append(media_credit("Photo: " + image["shows"], image["filePage"], image["author"], image["license"], image.get("note")))
+    for video in videos:
+        vid = youtube_id(video["url"])
+        if vid:
+            parts.append(
+                '<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/{}" title="{}" '
+                'loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>'.format(
+                    esc(vid), esc(video["title"])))
+        else:
+            parts.append('<div class="video-embed"><video controls preload="none" src="{}"></video></div>'.format(esc(video["url"])))
+        parts.append(media_credit("Video: " + video["what"], video.get("filePage") or video["url"], video["channel"], video.get("license"), video.get("note")))
+    for clip in audio:
+        parts.append('<audio controls preload="none" src="{}" style="width: 100%;"></audio>'.format(esc(clip["url"])))
+        parts.append(media_credit("Audio", clip["filePage"], clip["author"], clip["license"], clip.get("note")))
+    parts.append("</section>")
+    return "\n          ".join(parts)
 
 
 def instrument_card(inst, prefix):
@@ -503,6 +548,7 @@ def instrument_detail(inst, instruments, prefix):
 
       <div class="inst-layout">
         <article class="inst-main">
+          {media}
 {body}
         </article>
         <aside class="inst-aside">
@@ -514,7 +560,7 @@ def instrument_detail(inst, instruments, prefix):
 """.format(
         cat=esc(inst["category"]), type=esc(CATEGORY_SINGULAR[inst["category"]]), regions=region_tags(inst.get("regions", [])),
         te=esc(inst["nameTe"]), en=esc(inst["nameEn"]), aka=aka, summary=esc(inst["summary"]), toc="".join(toc),
-        body="\n".join(body), aside="\n          ".join(aside),
+        media=hero_media_html(inst), body="\n".join(body), aside="\n          ".join(aside),
     )
 
 

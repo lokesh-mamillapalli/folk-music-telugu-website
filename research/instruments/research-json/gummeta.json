@@ -105,7 +105,16 @@
       "value": "Budige, budike, dakki, dikki"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Burrakatha_Artists_at_Ravindra_Bharathi_in_Janapada_Jathara_%282016%29.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Burrakatha_Artists_at_Ravindra_Bharathi_in_Janapada_Jathara_%282016%29.jpg/1280px-Burrakatha_Artists_at_Ravindra_Bharathi_in_Janapada_Jathara_%282016%29.jpg",
+      "author": "Unknown author",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "shows": "A Burrakatha troupe at Janapada Jathara, Ravindra Bharathi (2016): gummeta (left), tambura (centre)"
+    }
+  ],
   "videos": [],
   "audio": [],
   "uncertain": [

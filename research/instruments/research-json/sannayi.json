@@ -103,7 +103,16 @@
       "value": "Weddings, temple rituals, processions, jataras, Sankranti Gangireddu rounds"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Nadaswaram.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Nadaswaram.jpg/1280px-Nadaswaram.jpg",
+      "author": "Bharath chandra badavath",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "shows": "A nadaswaram (sannayi)"
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [

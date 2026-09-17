@@ -128,7 +128,7 @@
             <div>
               <h3>${escapeHtml(song.titleTe)}</h3>
               <p class="meta">${escapeHtml(song.titleEn)}</p>
-              <p class="meta">${escapeHtml(song.region)} • ${escapeHtml(song.category)} • ${escapeHtml(song.artist)}</p>
+              <p class="meta">${[song.region, song.category, song.artist].filter(Boolean).map(escapeHtml).join(" • ")}</p>
             </div>
             <div class="admin-actions">
               <button type="button" class="btn-secondary" data-edit-song="${escapeHtml(song.id)}">Edit</button>

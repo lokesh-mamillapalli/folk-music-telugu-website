@@ -7,7 +7,7 @@ const songSchema = new mongoose.Schema(
     titleEn: { type: String, required: true },
     region: { type: String, required: true },
     category: { type: String, required: true },
-    artist: { type: String, required: true },
+    artist: { type: String, default: "" },
     album: { type: String, default: "" },
     year: { type: String, default: "" },
     lyrics: { type: String, required: true },

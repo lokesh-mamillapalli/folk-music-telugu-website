@@ -7,5 +7,10 @@ npm-debug.log*
 # Raw song sources, audio and secrets (never commit)
 andhra_songs/
 andhra-songs/audio/
+telangana_songs/
+telangana-songs/audio/
 *.mp3
 *firebase-adminsdk*.json
+
+# Python bytecode
+__pycache__/

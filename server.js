@@ -363,7 +363,7 @@ app.post("/api/songs", requireAuth, async (req, res) => {
   const lyrics = String(req.body.lyrics || "").trim();
   let audioUrl = normalizeAudioUrl(req.body.audioUrl);
 
-  if (!titleTe || !titleEn || !region || !category || !artist || !lyrics) {
+  if (!titleTe || !titleEn || !region || !category || !lyrics) {
     res.status(400).json({ error: "Missing required fields" });
     return;
   }
@@ -412,7 +412,7 @@ app.put("/api/songs/:id", requireAuth, async (req, res) => {
   const titleEn = String(req.body.titleEn || song.titleEn).trim();
   const region = String(req.body.region || song.region).trim();
   const category = String(req.body.category || song.category).trim();
-  const artist = String(req.body.artist || song.artist).trim();
+  const artist = String(req.body.artist !== undefined ? req.body.artist : song.artist || "").trim();
   const lyrics = String(req.body.lyrics || song.lyrics).trim();
   let audioUrl = normalizeAudioUrl(req.body.audioUrl || song.audioVersions[0]?.url || "");
 

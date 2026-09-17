@@ -256,7 +256,7 @@
         ]
       : [];
 
-    if (!payload.titleTe || !payload.titleEn || !payload.region || !payload.category || !payload.artist || !payload.lyrics) {
+    if (!payload.titleTe || !payload.titleEn || !payload.region || !payload.category || !payload.lyrics) {
       throw new Error("Please fill all required fields.");
     }
 
@@ -298,7 +298,7 @@
           </label>
           <label class="full-row">
             Artists (comma separated)
-            <input id="edit-artist" type="text" value="${escapeHtml(song.artist)}" required />
+            <input id="edit-artist" type="text" value="${escapeHtml(song.artist)}" placeholder="Leave blank if not known" />
           </label>
           <label>
             Album
@@ -418,7 +418,7 @@
             <div class="details-list">
               <div><strong>Region:</strong> <a class="text-link" href="${regionPage}">${escapeHtml(regionLabel)}</a></div>
               <div><strong>Category:</strong> <a class="text-link" href="${regionPage}?category=${encodeURIComponent(song.category)}">${escapeHtml(song.category)}</a></div>
-              <div><strong>Artists:</strong> ${artistLinks || escapeHtml(song.artist)}</div>
+              ${artistLinks ? `<div><strong>Artists:</strong> ${artistLinks}</div>` : ""}
               ${song.album ? `<div><strong>Album:</strong> ${escapeHtml(song.album)}${song.year ? ` (${escapeHtml(song.year)})` : ""}</div>` : ""}
             </div>
             <div class="mini-links" style="margin-top:0.8rem;">

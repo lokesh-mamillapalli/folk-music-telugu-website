@@ -174,7 +174,7 @@
         <div class="card-title-en">${escapeHtml(song.titleEn)}</div>
         <div class="card-meta">
           <span>${escapeHtml(song.category)}</span>
-          <span>${escapeHtml(song.artist)}</span>
+          ${song.artist ? `<span>${escapeHtml(song.artist)}</span>` : ""}
         </div>
         <p class="lyrics-preview">"${escapeHtml(preview)}"</p>
         <div class="card-footer">

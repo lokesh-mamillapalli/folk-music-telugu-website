@@ -447,13 +447,20 @@ label { display: grid; gap: 0.4rem; font-size: 0.85rem; font-weight: 600; color:
 .home-hero {
   position: relative; overflow: hidden;
   padding-block: clamp(56px, 9vw, 112px) clamp(48px, 7vw, 88px);
+  /* Light from the top-right corner and the bottom-left, rather than a glow sitting in the middle of
+     the empty right-hand side — that read as a hole where the old emblem used to be. */
   background:
-    radial-gradient(ellipse 55% 70% at 88% 18%, color-mix(in srgb, var(--gold) 20%, transparent), transparent 70%),
-    radial-gradient(ellipse 50% 60% at 8% 100%, color-mix(in srgb, var(--primary) 12%, transparent), transparent 70%),
+    radial-gradient(ellipse 75% 95% at 100% 0%, color-mix(in srgb, var(--gold) 17%, transparent), transparent 68%),
+    radial-gradient(ellipse 55% 65% at 0% 100%, color-mix(in srgb, var(--primary) 13%, transparent), transparent 70%),
     var(--bg);
   border-bottom: 1px solid var(--line);
 }
 .home-hero .container { position: relative; }
+/* Fade the dots out of the corner instead of clustering them where the emblem was. */
+.home-hero .dot-field {
+  -webkit-mask-image: radial-gradient(ellipse 65% 105% at 100% 0%, #000 5%, transparent 72%);
+  mask-image: radial-gradient(ellipse 65% 105% at 100% 0%, #000 5%, transparent 72%);
+}
 .home-hero h1 { font-size: clamp(2.4rem, 6vw, 4.3rem); line-height: 1.04; margin-top: 1rem; max-width: 14ch; }
 .home-hero h1 em { font-style: italic; color: var(--primary); }
 .home-hero__te { font-family: var(--font-te-display); font-size: clamp(1.2rem, 2.6vw, 1.65rem); color: var(--ink-2); margin-top: 0.9rem; }

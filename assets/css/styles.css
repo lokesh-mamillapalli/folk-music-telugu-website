@@ -562,23 +562,6 @@ label { display: grid; gap: 0.4rem; font-size: 0.85rem; font-weight: 600; color:
 .vocab__extra span:first-child { color: var(--ink-3); font-weight: 600; }
 .vocab__meaning + .vocab__extra { border-top: 1px dashed var(--line); margin-top: 0.8rem; }
 
-/* Music */
-.music-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-@media (max-width: 900px) { .music-grid { grid-template-columns: 1fr; } }
-.music-card { padding: 24px; border-radius: var(--radius); background: var(--bg-elev); border: 1px solid var(--line); }
-.music-card h3 { margin-top: 0.5rem; }
-.music-card p { margin-top: 0.6rem; font-size: 0.94rem; color: var(--ink-2); }
-.raga-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.9rem; }
-.raga-list span { padding: 0.3rem 0.7rem; border-radius: 999px; background: var(--bg-sunk); font-size: 0.85rem; font-weight: 500; }
-.beats { display: flex; align-items: center; gap: 6px; margin-top: 1rem; }
-.beats i { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--gold); }
-.beats i.accent { background: var(--gold); }
-.beats .gap { width: 8px; }
-.call-response { margin-top: 1rem; display: grid; gap: 6px; font-size: 0.9rem; }
-.call-response div { display: flex; gap: 0.6rem; align-items: baseline; }
-.call-response span:first-child { flex: none; width: 70px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
-.call-response em { color: var(--primary); font-style: normal; font-weight: 600; }
-
 /* Instruments */
 .instrument-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
 @media (max-width: 1040px) { .instrument-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

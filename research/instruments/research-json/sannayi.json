@@ -105,12 +105,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Nadaswaram.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Nadaswaram.jpg/1280px-Nadaswaram.jpg",
-      "author": "Bharath chandra badavath",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "shows": "A nadaswaram (sannayi)"
+      "imageUrl": "https://drive.google.com/thumbnail?id=17R2gz5qsplJAtxzADvnjNLO3pbn3Qb2N&sz=w1200",
+      "driveId": "17R2gz5qsplJAtxzADvnjNLO3pbn3Qb2N",
+      "driveFile": "sannayi.jpg",
+      "shows": "A sannayi (nadaswaram), the double-reed pipe",
+      "source": "project"
     }
   ],
   "videos": [],

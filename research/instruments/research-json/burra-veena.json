@@ -82,7 +82,15 @@
       "value": "One known player: Dasari Kondappa (Padma Shri 2024)"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageUrl": "https://drive.google.com/thumbnail?id=11PAgQp2X5XeyLGBTSLeaq5HvDYEPmdeZ&sz=w1200",
+      "driveId": "11PAgQp2X5XeyLGBTSLeaq5HvDYEPmdeZ",
+      "driveFile": "burra-veena.jpg",
+      "shows": "A burra veena player holding the gourd-resonated instrument",
+      "source": "project"
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [

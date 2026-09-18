@@ -428,12 +428,18 @@ def youtube_id(url):
 
 
 def media_credit(label, source_url, author, license_=None, note=None):
-    """A short, linked credit line for a photo, video or audio clip, plus any note on how confidently it
-    matches this instrument (e.g. a name or shape that doesn't quite line up with the written sources)."""
-    by = ' by <a href="{}" target="_blank" rel="noopener noreferrer">{}</a>'.format(esc(source_url), esc(author)) if author else ""
-    licence = ", {}".format(esc(license_)) if license_ else ""
-    credit = '<p class="media-credit">{}{}{} — <a href="{}" target="_blank" rel="noopener noreferrer">source</a></p>'.format(
-        esc(label), by, licence, esc(source_url))
+    """A short credit line for a photo, video or audio clip, plus any note on how confidently it matches
+    this instrument (e.g. a name or shape that doesn't quite line up with the written sources).
+
+    With no source_url — a photo from the project's own collection — it is just the caption: better to
+    say nothing about authorship than to imply a credit or licence that hasn't been established."""
+    if not source_url:
+        credit = '<p class="media-credit">{}</p>'.format(esc(label))
+    else:
+        by = ' by <a href="{}" target="_blank" rel="noopener noreferrer">{}</a>'.format(esc(source_url), esc(author)) if author else ""
+        licence = ", {}".format(esc(license_)) if license_ else ""
+        credit = '<p class="media-credit">{}{}{} — <a href="{}" target="_blank" rel="noopener noreferrer">source</a></p>'.format(
+            esc(label), by, licence, esc(source_url))
     if note:
         credit += '<p class="media-note"><strong>Note:</strong> {}</p>'.format(esc(note))
     return credit
@@ -446,7 +452,8 @@ def hero_media_html(inst):
     parts = ['<section class="card inst-media-card">']
     for image in images:
         parts.append('<img class="inst-hero__img" src="{}" alt="{}" loading="lazy" />'.format(esc(image["imageUrl"]), esc(image["shows"])))
-        parts.append(media_credit("Photo: " + image["shows"], image["filePage"], image["author"], image["license"], image.get("note")))
+        parts.append(media_credit("Photo: " + image["shows"], image.get("filePage"), image.get("author"),
+                                  image.get("license"), image.get("note")))
     for video in videos:
         vid = youtube_id(video["url"])
         if vid:

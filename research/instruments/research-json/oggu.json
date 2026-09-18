@@ -89,12 +89,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Oggudolu_Team_in_Oggukatha-Oggudolu_Festival_in_Bellampally_%2825.10.2018%29.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Oggudolu_Team_in_Oggukatha-Oggudolu_Festival_in_Bellampally_%2825.10.2018%29.jpg/1280px-Oggudolu_Team_in_Oggukatha-Oggudolu_Festival_in_Bellampally_%2825.10.2018%29.jpg",
-      "author": "Department of Language and Culture, Government of Telangana",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "shows": "An oggu dolu team at the Oggukatha-Oggudolu festival, Bellampally (2018)"
+      "imageUrl": "https://drive.google.com/thumbnail?id=1K4IXXds_pgrIx6asKYvB74YGw7XiXlXN&sz=w1200",
+      "driveId": "1K4IXXds_pgrIx6asKYvB74YGw7XiXlXN",
+      "driveFile": "oggu.jpg",
+      "shows": "An oggu drum decorated for performance",
+      "source": "project"
     }
   ],
   "videos": [

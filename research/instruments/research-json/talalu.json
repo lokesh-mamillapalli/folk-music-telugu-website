@@ -94,13 +94,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg/1280px-Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg",
-      "author": "Department of Language and Culture, Government of Telangana",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "shows": "Talalu (hand cymbals) played alongside dolu drummers at the Hyderabad Mahankali Bonalu (2018)",
-      "note": "The same festival photo used on the Dolu page — the talalu players are on the right."
+      "imageUrl": "https://drive.google.com/thumbnail?id=1wFXGrIJjxNzaoXNubgE6dzE8l6aXyBod&sz=w1200",
+      "driveId": "1wFXGrIJjxNzaoXNubgE6dzE8l6aXyBod",
+      "driveFile": "talalu.jpg",
+      "shows": "A pair of talalu — hand cymbals of bell metal",
+      "source": "project"
     }
   ],
   "videos": [],

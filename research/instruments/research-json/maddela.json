@@ -92,12 +92,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Maddela_2.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Maddela_2.jpg/1280px-Maddela_2.jpg",
-      "author": "T.sujatha (Telugu Wiktionary)",
-      "license": "GFDL",
-      "licenseUrl": "https://www.gnu.org/copyleft/fdl.html",
-      "shows": "A maddela — Telugu Wiktionary's picture of the week, 2012"
+      "imageUrl": "https://drive.google.com/thumbnail?id=13TjkHr_r_EgsOIegy1rtVuuaNIg97uc8&sz=w1200",
+      "driveId": "13TjkHr_r_EgsOIegy1rtVuuaNIg97uc8",
+      "driveFile": "maddela.png",
+      "shows": "A maddela, laced along the length of the barrel",
+      "source": "project"
     }
   ],
   "videos": [],

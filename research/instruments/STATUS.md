@@ -94,36 +94,45 @@ From the Andhra drums researcher. Unless another source is given, the evidence i
 
 Useful tool for Telugu names: the AndhraBharati dictionary search, `https://andhrabharati.com/dictionary/index.php?w=<word>`, covers Sabdaratnakaram, Brown and dialect dictionaries.
 
-## Media: photos and videos (added 18 September 2026)
+## Media: photos and videos
 
-At the user's request, `images`/`videos` (the fields BRIEF.md already specified) were filled in for 14 of the 25
-instruments, found by searching the Wikimedia Commons API and Wikipedia's own articles, and — for a few — YouTube.
-Every image is freely licensed (CC BY / CC BY-SA / GFDL) and hotlinked from `upload.wikimedia.org`, exactly as the
-site already hotlinks song audio from Google Drive; nothing was downloaded into the repo. `curate_instruments.py`
-now checks that every image/video is fully credited and that image/audio licences are on the free-licence
-allow-list (`FREE_LICENSE`); YouTube embeds don't need a licence check, since embedding just shows YouTube's own
-player under YouTube's terms, unlike hosting a copy.
+**Photos (18 September 2026).** 22 of the 25 instruments now show a photo. 20 of them are the project's own
+photos, uploaded to Google Drive (`Telugu Folk Songs / Instruments`) and linked from there with Drive's
+`thumbnail?id=...&sz=w1200` URL — the same arrangement as the song audio, so nothing image-heavy sits in the repo.
+`instrument-images/` holds the upload folder, the Apps Script that collects the links, `drive-files.csv` and a
+manifest; `scripts/build-instrument-images.py` renames the raw files in `images/` to `<instrument-id>.<ext>`, and
+`scripts/apply-instrument-images.py` writes the links onto the pages. Both raw folders are git-ignored.
 
-**Has a photo:** chekkalu, dappu, dolu, gumela, gummeta, kikri, kinnera, kolatam-karralu, maddela, oggu, sannayi,
-talalu, tambura, tudumu (14). **Has a photo and video:** kinnera, kolatam-karralu, oggu, tambura (tambura's video
-is a Commons-hosted clip, not YouTube; the other three are YouTube).
+- **Project photo (20):** andelu, burra-veena, chekkalu, chirutalu, dappu, dolu, gumela, gummeta, jamidika,
+  kalikom, kikri, kolatam-karralu, maddela, oggu, pamba, pillana-grovi, sannayi, talalu, tambura, tappeta.
+  Twelve of these replaced a Wikimedia photo that was used earlier; eight were the page's first photo.
+- **Wikimedia photo (2):** kinnera and tudumu — no project photo was supplied for either.
+- **No photo (3):** parra, pepre, vette.
+
+**⚠ Where the project photos came from is not recorded.** They were supplied as a folder of downloads, and the
+question of whether they were taken by the team, used with permission, or collected from websites was put to the
+user and not answered. So they carry **no author and no licence tag** on the page — just a caption saying what the
+photo shows — because claiming a credit or a licence that hasn't been established would be worse than saying
+nothing. `curate_instruments.py` enforces this: an entry marked `"source": "project"` is rejected if it carries a
+licence. If any of them turn out to be copyrighted, they should be swapped back to the Wikimedia photo (still in
+this file's git history) or removed. The Wikimedia photos that remain, and every video, keep full attribution.
+
+**Videos (4), unchanged:** kinnera and oggu and kolatam-karralu (YouTube), tambura (a Commons-hosted clip).
+Videos are embedded, not copied: a YouTube embed shows YouTube's own player under YouTube's terms, which is a
+different matter from hosting a file, so no licence check applies to them.
 
 **Worth a second look:**
-- **Tudumu**: the photo (from a Kolam community Wikipedia contributor, captioned "తుడం వాయిద్యాలు") shows a
-  double-headed, rope-laced drum. This page's own written sources (one account, already flagged "medium
-  confidence") describe the tudumu as a single-headed clay kettle drum. The photo may show a different or
-  variant instrument under the same local name — flagged inline on the page and here, not resolved.
-- **Talalu**: reuses the Dolu page's Bonalu photo, since the same photo happens to show both drummers and
-  cymbal players; said so in both captions.
-- **Gummeta**: the same photo also shows a tambura player; captioned to say so.
-- **Chekkalu**: the only photo found shows the clappers, but small and not the frame's focus.
+- **Tudumu**: its Wikimedia photo (from a Kolam community contributor, captioned "తుడం వాయిద్యాలు") shows a
+  double-headed, rope-laced drum, while this page's own written sources — one account, already flagged "medium
+  confidence" — describe a single-headed clay kettle drum. It may be a different or variant instrument under the
+  same local name. Flagged inline on the page; not resolved.
+- **Small photos**: several project photos are well under the ~800px slot they fill and will look soft —
+  pillana-grovi (500×142), kalikom (250×407), gumela (451×545), tambura (452×678), andelu (500×285),
+  dolu (500×500), kikri (534×718), gummeta (547×365). Worth replacing with larger versions.
 
-**No free photo or video found** (despite trying targeted Commons/Wikipedia searches, and — for the rarest
-instruments — searching by the name of their last known player): andelu, burra-veena, chirutalu, jamidika,
-kalikom, pamba, parra, pepre, pillana-grovi, tappeta, vette. Burra-veena has a single named living player
-(Dasari Kondappa, Padma Shri 2024) but no photo of him turned up; by contrast, searching by name is exactly how
-kikri and kinnera *did* get photos (of Darshanam Mogulaiah), so it's worth retrying burra-veena's search later
-rather than assuming none exists. Chirutalu's closest relative with photos, the Rajasthani khartal, was
-deliberately not substituted: its published photos show plain wooden blocks, not the jingled clappers this page
-describes, so the visual would have been misleading. Re-run `research/instruments/BRIEF.md`'s media steps for
-any of these if better sources turn up.
+**Still no photo, and why.** parra, pepre and vette had no free photo on Commons or Wikipedia and none was
+supplied. Earlier searching also drew a blank for burra-veena, chirutalu, jamidika, kalikom, pamba, pillana-grovi,
+tappeta and andelu — all now covered by project photos. When searching Commons for the rarest instruments, going
+by the name of a known player worked well (that is how kinnera's photo was found); burra-veena's one named living
+player, Dasari Kondappa (Padma Shri 2024), is worth retrying that way. A Rajasthani khartal photo was deliberately
+*not* substituted for chirutalu: its wooden blocks don't match the jingled clappers this page describes.

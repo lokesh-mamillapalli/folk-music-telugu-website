@@ -12,5 +12,9 @@ telangana-songs/audio/
 *.mp3
 *firebase-adminsdk*.json
 
+# Raw instrument photos: uploaded to Drive and linked from there, like the song audio
+images/
+instrument-images/upload/
+
 # Python bytecode
 __pycache__/

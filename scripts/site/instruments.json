@@ -169,6 +169,15 @@
       "Number of rings: Mikkilineni lists three andelu in a Jangam storyteller's kit, and Courtney describes a pair; performers may wear several.",
       "No source was found on who makes andelu or on beliefs or rituals specific to them.",
       "The claim about bullock carts comes only from Courtney's article."
+    ],
+    "images": [
+      {
+        "imageUrl": "https://drive.google.com/thumbnail?id=1NcTyYb9fKJai04Vwh-XV1w-hXRlDJE0J&sz=w1200",
+        "driveId": "1NcTyYb9fKJai04Vwh-XV1w-hXRlDJE0J",
+        "driveFile": "andelu.jpg",
+        "shows": "A pair of andelu — hollow metal rings struck together to keep time",
+        "source": "project"
+      }
     ]
   },
   {
@@ -300,6 +309,15 @@
       "The comparison with the Bhoomi Veena and villadi vadyalu comes from Professor Manoja of Palamuru University (The News Minute) and is repeated by The Pioneer; V6 Velugu's placement in the 'ektara and tambura family' is a description, not evidence that it is an ektara.",
       "Possible relation to the 'kaddi vadyam' (కడ్డీ వాయిద్యం) of Dasari singers: the 1992 Mikkilineni survey describes a veena-like instrument of the Mittula Ayyavarlu/Dasaris of Karimnagar played with two thin sticks, and the Mula Dhwani review says only one or two people can play the kaddi vadyam. Whether this is the same instrument as the Burra Veena was not confirmed, so it is not merged here.",
       "V6 Velugu says the materials are found in the Nallamala forests where the community lives, but Damaragidda is in Narayanpet district; this detail was not used."
+    ],
+    "images": [
+      {
+        "imageUrl": "https://drive.google.com/thumbnail?id=11PAgQp2X5XeyLGBTSLeaq5HvDYEPmdeZ&sz=w1200",
+        "driveId": "11PAgQp2X5XeyLGBTSLeaq5HvDYEPmdeZ",
+        "driveFile": "burra-veena.jpg",
+        "shows": "A burra veena player holding the gourd-resonated instrument",
+        "source": "project"
+      }
     ]
   },
   {
@@ -437,13 +455,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Chekka_bhajana.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Chekka_bhajana.jpg/1280px-Chekka_bhajana.jpg",
-        "author": "రహ్మానుద్దీన్",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "A Chekka Bhajana performance, Andhra Pradesh",
-        "note": "The wooden chekkalu are visible in the performers' hands but are small and not the clearest part of the frame."
+        "imageUrl": "https://drive.google.com/thumbnail?id=1xiD3RZG9yRKinBYhBMXqFTBO_U_mne2Q&sz=w1200",
+        "driveId": "1xiD3RZG9yRKinBYhBMXqFTBO_U_mne2Q",
+        "driveFile": "chekkalu.jpg",
+        "shows": "Wooden chekkalu clappers fitted with metal jingles",
+        "source": "project"
       }
     ]
   },
@@ -635,6 +651,15 @@
       "The word chirutalu is used loosely: Mikkilineni also calls Kolatam sticks 'kolatapu chirutalu' and the Chekka Bhajana clappers 'chirutalu'. The large carved clappers of Telangana's Chirutala Bhajana appear to be the same kind of instrument as the chekkalu of Chekka Bhajana, which are described in a separate file (chekkalu.json).",
       "No source was found on who makes chirutalu, what woods are used for the small Harikatha type, or making rituals specific to the instrument.",
       "The list of active Chirutala Ramayanam villages comes from a 1992 book and may be out of date. The 2025 and 2026 news reports were known only from their titles and short descriptions."
+    ],
+    "images": [
+      {
+        "imageUrl": "https://drive.google.com/thumbnail?id=1PeewMqSpW7mifAfntKFVUBl3xwV2Ku3z&sz=w1200",
+        "driveId": "1PeewMqSpW7mifAfntKFVUBl3xwV2Ku3z",
+        "driveFile": "chirutalu.jpg",
+        "shows": "A pair of chirutalu — wooden clappers with metal jingles",
+        "source": "project"
+      }
     ]
   },
   {
@@ -826,12 +851,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Dappu_Artists_Performance_in_Culture_of_Telangana_Programme_at_Surajkund%2C_Haryana_%2802.02.2016%29_03.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Dappu_Artists_Performance_in_Culture_of_Telangana_Programme_at_Surajkund%2C_Haryana_%2802.02.2016%29_03.jpg/1280px-Dappu_Artists_Performance_in_Culture_of_Telangana_Programme_at_Surajkund%2C_Haryana_%2802.02.2016%29_03.jpg",
-        "author": "Department of Language and Culture, Government of Telangana",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "Women dappu players performing at the Culture of Telangana programme, Surajkund (2016)"
+        "imageUrl": "https://drive.google.com/thumbnail?id=1aFEmVEnYgzkXhWk8qcmJJeVDQF6zjwE_&sz=w1200",
+        "driveId": "1aFEmVEnYgzkXhWk8qcmJJeVDQF6zjwE_",
+        "driveFile": "dappu.jpg",
+        "shows": "A dappu frame drum",
+        "source": "project"
       }
     ]
   },
@@ -1013,12 +1037,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg/1280px-Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg",
-        "author": "Department of Language and Culture, Government of Telangana",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "Dolu artists performing at the Hyderabad Mahankali Bonalu (2018)"
+        "imageUrl": "https://drive.google.com/thumbnail?id=1rOFjXfrsYDLqNUEG4oia3_JPEtALJmmb&sz=w1200",
+        "driveId": "1rOFjXfrsYDLqNUEG4oia3_JPEtALJmmb",
+        "driveFile": "dolu.jpg",
+        "shows": "A pair of dolu barrel drums",
+        "source": "project"
       }
     ]
   },
@@ -1156,12 +1179,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Kolami_Gumela.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Kolami_Gumela.jpg/1280px-Kolami_Gumela.jpg",
-        "author": "Mothiram 123",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "A gumela (Kolami: కొపం గుమేళా) on display"
+        "imageUrl": "https://drive.google.com/thumbnail?id=1cwg7WuLqh8FZxpPByLZrhPGTrY5rRg7M&sz=w1200",
+        "driveId": "1cwg7WuLqh8FZxpPByLZrhPGTrY5rRg7M",
+        "driveFile": "gumela.png",
+        "shows": "Gumela pot drums, laced with cord",
+        "source": "project"
       }
     ]
   },
@@ -1349,12 +1371,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Burrakatha_Artists_at_Ravindra_Bharathi_in_Janapada_Jathara_%282016%29.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Burrakatha_Artists_at_Ravindra_Bharathi_in_Janapada_Jathara_%282016%29.jpg/1280px-Burrakatha_Artists_at_Ravindra_Bharathi_in_Janapada_Jathara_%282016%29.jpg",
-        "author": "Unknown author",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "A Burrakatha troupe at Janapada Jathara, Ravindra Bharathi (2016): gummeta (left), tambura (centre)"
+        "imageUrl": "https://drive.google.com/thumbnail?id=165Al8J8HGea59jB-DadpP-as8BBHlzxj&sz=w1200",
+        "driveId": "165Al8J8HGea59jB-DadpP-as8BBHlzxj",
+        "driveFile": "gummeta.jpg",
+        "shows": "Gummeta pot drums with skin heads",
+        "source": "project"
       }
     ]
   },
@@ -1547,6 +1568,15 @@
       "In Srikakulam the jamuku-accompanied song is also called 'Budabukkala paata' from its 'budukku' sound (Mikkilineni). This is not the budabukka drum of the Budabukkala community. [2]",
       "The Suketu myth and the belief that evil spirits keep away from the jamuku's sound come from Telugu Wikipedia sections not found in Mikkilineni's chapter; the Sphoorthi Theatre description of early clay-pot instruments is from a blog without references. [7][10]",
       "Mikkilineni's chapter on the Asadulu says Madiga Asadulu play a 'chedika' as well as their javanikas; what the chedika is was not established. [3]"
+    ],
+    "images": [
+      {
+        "imageUrl": "https://drive.google.com/thumbnail?id=1dMWxIYKV1Ab3uOw8ICV3JCIZ-CcH5ol9&sz=w1200",
+        "driveId": "1dMWxIYKV1Ab3uOw8ICV3JCIZ-CcH5ol9",
+        "driveFile": "jamidika.jpg",
+        "shows": "Jamidika players in a procession",
+        "source": "project"
+      }
     ]
   },
   {
@@ -1670,6 +1700,15 @@
       "Haimendorf (1948) describes a Pardhan's 'huge metal horn' in Dandari processions and illustrates Pardhan wind instruments called pepre and bonga, but never uses the name kalikom; whether his horn or the bonga is the kalikom was not confirmed.",
       "The material ('brass or wood') comes only from the uncited English Wikipedia table; no reliable written description of its construction was found.",
       "Weak point: the sources for this instrument are mostly short mentions in lists; no detailed study of the kalikom was found."
+    ],
+    "images": [
+      {
+        "imageUrl": "https://drive.google.com/thumbnail?id=1FarXntzMfhZsLTb4odiQO5jLhk9pa3iZ&sz=w1200",
+        "driveId": "1FarXntzMfhZsLTb4odiQO5jLhk9pa3iZ",
+        "driveFile": "kalikom.jpg",
+        "shows": "A kalikom horn being blown at a festival",
+        "source": "project"
+      }
     ]
   },
   {
@@ -1820,12 +1859,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Adivasi_Kala_Jathara_in_Adilabad_%2825-05-_2023%29_43.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Adivasi_Kala_Jathara_in_Adilabad_%2825-05-_2023%29_43.jpg/1280px-Adivasi_Kala_Jathara_in_Adilabad_%2825-05-_2023%29_43.jpg",
-        "author": "Department of Language and Culture, Government of Telangana",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "A kikri player at the Adivasi Kala Jathara, Adilabad (2023)"
+        "imageUrl": "https://drive.google.com/thumbnail?id=15XNfNhMlGNexcGYfz5SF1XKFIpmWXz65&sz=w1200",
+        "driveId": "15XNfNhMlGNexcGYfz5SF1XKFIpmWXz65",
+        "driveFile": "kikri.jpg",
+        "shows": "A seated kikri player with the bowed fiddle",
+        "source": "project"
       }
     ]
   },
@@ -2173,12 +2211,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Kolatam_performance_in_Janapada_Jathara_%282019%29_02.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Kolatam_performance_in_Janapada_Jathara_%282019%29_02.jpg/1280px-Kolatam_performance_in_Janapada_Jathara_%282019%29_02.jpg",
-        "author": "Department of Language and Culture, Government of Telangana",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "A kolatam performance at Janapada Jathara, Ravindra Bharathi (2019)"
+        "imageUrl": "https://drive.google.com/thumbnail?id=1kTbmhp3qY3IPEuh5Gn92m3EKkDdCe53I&sz=w1200",
+        "driveId": "1kTbmhp3qY3IPEuh5Gn92m3EKkDdCe53I",
+        "driveFile": "kolatam-karralu.jpg",
+        "shows": "A pair of decorated kolatam sticks",
+        "source": "project"
       }
     ],
     "videos": [
@@ -2392,12 +2429,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Maddela_2.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Maddela_2.jpg/1280px-Maddela_2.jpg",
-        "author": "T.sujatha (Telugu Wiktionary)",
-        "license": "GFDL",
-        "licenseUrl": "https://www.gnu.org/copyleft/fdl.html",
-        "shows": "A maddela — Telugu Wiktionary's picture of the week, 2012"
+        "imageUrl": "https://drive.google.com/thumbnail?id=13TjkHr_r_EgsOIegy1rtVuuaNIg97uc8&sz=w1200",
+        "driveId": "13TjkHr_r_EgsOIegy1rtVuuaNIg97uc8",
+        "driveFile": "maddela.png",
+        "shows": "A maddela, laced along the length of the barrel",
+        "source": "project"
       }
     ]
   },
@@ -2554,12 +2590,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Oggudolu_Team_in_Oggukatha-Oggudolu_Festival_in_Bellampally_%2825.10.2018%29.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Oggudolu_Team_in_Oggukatha-Oggudolu_Festival_in_Bellampally_%2825.10.2018%29.jpg/1280px-Oggudolu_Team_in_Oggukatha-Oggudolu_Festival_in_Bellampally_%2825.10.2018%29.jpg",
-        "author": "Department of Language and Culture, Government of Telangana",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "An oggu dolu team at the Oggukatha-Oggudolu festival, Bellampally (2018)"
+        "imageUrl": "https://drive.google.com/thumbnail?id=1K4IXXds_pgrIx6asKYvB74YGw7XiXlXN&sz=w1200",
+        "driveId": "1K4IXXds_pgrIx6asKYvB74YGw7XiXlXN",
+        "driveFile": "oggu.jpg",
+        "shows": "An oggu drum decorated for performance",
+        "source": "project"
       }
     ],
     "videos": [
@@ -2703,6 +2738,15 @@
       "The community is described differently: Thurston calls the Pambalas a section of the Malas; Tangirala Venkata Subba Rao (via Mikkilineni) calls them Harijans 'of Ayyagari darsanam'; Telugu Wikipedia lists Pambala as the 21st caste in group A of Andhra Pradesh's Backward Classes list; and Brown's 1903 dictionary describes Pambalavandlu as wandering fortune-tellers. These classifications were not checked against official lists. [1][3][5][6]",
       "Thurston lists the Tamil pambai (played by Paraiyans) next to the Telugu Pambalas, but no source consulted states that the two drums are the same instrument. [2]",
       "Telugu Wikipedia's section on the community's history (rain and disease rites, funeral duties) is uncited. [5]"
+    ],
+    "images": [
+      {
+        "imageUrl": "https://drive.google.com/thumbnail?id=1u2RhjmtcFbV5pypHrvykSzTCk82ysdfN&sz=w1200",
+        "driveId": "1u2RhjmtcFbV5pypHrvykSzTCk82ysdfN",
+        "driveFile": "pamba.jpg",
+        "shows": "A pair of pamba drums in their stand",
+        "source": "project"
+      }
     ]
   },
   {
@@ -3087,6 +3131,15 @@
       "No source consulted names present-day flute makers or village flute players in Andhra Pradesh or Telangana, so the current state of folk flute playing could not be confirmed.",
       "C. R. Day says the end-blown 'nuy' flute, not the side-blown pillagovi, was 'much used by shepherds and cowherds'; the herders' flutes in the Katamaraju ballads are simply called pillanagrovi, and their exact form is not described.",
       "Tribal flutes (for example the Savara 'panar' and the flute called 'pirodi' used in peacock dances) are left to the tribal-instruments research."
+    ],
+    "images": [
+      {
+        "imageUrl": "https://drive.google.com/thumbnail?id=1fZ9dW9dbwgW8ZeWi28zWJP0vIZLQNHrX&sz=w1200",
+        "driveId": "1fZ9dW9dbwgW8ZeWi28zWJP0vIZLQNHrX",
+        "driveFile": "pillana-grovi.jpg",
+        "shows": "A bamboo pillana grovi flute",
+        "source": "project"
+      }
     ]
   },
   {
@@ -3322,12 +3375,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Nadaswaram.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Nadaswaram.jpg/1280px-Nadaswaram.jpg",
-        "author": "Bharath chandra badavath",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "A nadaswaram (sannayi)"
+        "imageUrl": "https://drive.google.com/thumbnail?id=17R2gz5qsplJAtxzADvnjNLO3pbn3Qb2N&sz=w1200",
+        "driveId": "17R2gz5qsplJAtxzADvnjNLO3pbn3Qb2N",
+        "driveFile": "sannayi.jpg",
+        "shows": "A sannayi (nadaswaram), the double-reed pipe",
+        "source": "project"
       }
     ]
   },
@@ -3511,13 +3563,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg/1280px-Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg",
-        "author": "Department of Language and Culture, Government of Telangana",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "shows": "Talalu (hand cymbals) played alongside dolu drummers at the Hyderabad Mahankali Bonalu (2018)",
-        "note": "The same festival photo used on the Dolu page — the talalu players are on the right."
+        "imageUrl": "https://drive.google.com/thumbnail?id=1wFXGrIJjxNzaoXNubgE6dzE8l6aXyBod&sz=w1200",
+        "driveId": "1wFXGrIJjxNzaoXNubgE6dzE8l6aXyBod",
+        "driveFile": "talalu.jpg",
+        "shows": "A pair of talalu — hand cymbals of bell metal",
+        "source": "project"
       }
     ]
   },
@@ -3715,12 +3765,11 @@
     ],
     "images": [
       {
-        "filePage": "https://commons.wikimedia.org/wiki/File:Indian_village_musicians.jpg",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Indian_village_musicians.jpg",
-        "author": "Sukanto Debnath",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-        "shows": "Village musicians in Hyderabad with a drum and a tambura"
+        "imageUrl": "https://drive.google.com/thumbnail?id=1KQuLrrZUrofrdzAu0BPaNgvbNYhfB7n0&sz=w1200",
+        "driveId": "1KQuLrrZUrofrdzAu0BPaNgvbNYhfB7n0",
+        "driveFile": "tambura.jpg",
+        "shows": "A tambura, the shoulder-held string drone",
+        "source": "project"
       }
     ],
     "videos": [
@@ -3898,6 +3947,15 @@
       "Troupe sizes vary between sources: 12 to 15 (Jai Ho Srikakulam), 12 to 20 (Auchitya), up to about 20 (Mikkilineni) and 30 to 35 (The Hans India, 2024).",
       "Telugu Wikipedia (without a cited source) credits a 19th-century Srikakulam poet, Balivada Narayana, with the first Tappeta Gullu ballad, 'Sri Krishna', and names the Korrayi Gangayya and Duryodhana brothers of Gollapeta (Pathapatnam mandal) as keepers of the art. These claims were not confirmed elsewhere.",
       "Telugu Traditions and Telugu Wikipedia say the tradition is about 400 years old (Telugu Traditions traces its origin to Srikakulam district); neither gives a source for this figure, so it is not used in the text."
+    ],
+    "images": [
+      {
+        "imageUrl": "https://drive.google.com/thumbnail?id=1vWIIFezUExBTtF--72Pkb-FR9Q3jwaxV&sz=w1200",
+        "driveId": "1vWIIFezUExBTtF--72Pkb-FR9Q3jwaxV",
+        "driveFile": "tappeta.jpg",
+        "shows": "Tappeta gullu dancers with drums tied to the chest",
+        "source": "project"
+      }
     ]
   },
   {

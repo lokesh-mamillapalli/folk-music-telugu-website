@@ -100,12 +100,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Indian_village_musicians.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Indian_village_musicians.jpg",
-      "author": "Sukanto Debnath",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "shows": "Village musicians in Hyderabad with a drum and a tambura"
+      "imageUrl": "https://drive.google.com/thumbnail?id=1KQuLrrZUrofrdzAu0BPaNgvbNYhfB7n0&sz=w1200",
+      "driveId": "1KQuLrrZUrofrdzAu0BPaNgvbNYhfB7n0",
+      "driveFile": "tambura.jpg",
+      "shows": "A tambura, the shoulder-held string drone",
+      "source": "project"
     }
   ],
   "videos": [

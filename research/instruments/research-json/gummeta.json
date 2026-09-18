@@ -107,12 +107,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Burrakatha_Artists_at_Ravindra_Bharathi_in_Janapada_Jathara_%282016%29.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Burrakatha_Artists_at_Ravindra_Bharathi_in_Janapada_Jathara_%282016%29.jpg/1280px-Burrakatha_Artists_at_Ravindra_Bharathi_in_Janapada_Jathara_%282016%29.jpg",
-      "author": "Unknown author",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "shows": "A Burrakatha troupe at Janapada Jathara, Ravindra Bharathi (2016): gummeta (left), tambura (centre)"
+      "imageUrl": "https://drive.google.com/thumbnail?id=165Al8J8HGea59jB-DadpP-as8BBHlzxj&sz=w1200",
+      "driveId": "165Al8J8HGea59jB-DadpP-as8BBHlzxj",
+      "driveFile": "gummeta.jpg",
+      "shows": "Gummeta pot drums with skin heads",
+      "source": "project"
     }
   ],
   "videos": [],

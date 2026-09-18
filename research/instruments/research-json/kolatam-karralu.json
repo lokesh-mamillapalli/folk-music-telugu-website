@@ -87,12 +87,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Kolatam_performance_in_Janapada_Jathara_%282019%29_02.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Kolatam_performance_in_Janapada_Jathara_%282019%29_02.jpg/1280px-Kolatam_performance_in_Janapada_Jathara_%282019%29_02.jpg",
-      "author": "Department of Language and Culture, Government of Telangana",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "shows": "A kolatam performance at Janapada Jathara, Ravindra Bharathi (2019)"
+      "imageUrl": "https://drive.google.com/thumbnail?id=1kTbmhp3qY3IPEuh5Gn92m3EKkDdCe53I&sz=w1200",
+      "driveId": "1kTbmhp3qY3IPEuh5Gn92m3EKkDdCe53I",
+      "driveFile": "kolatam-karralu.jpg",
+      "shows": "A pair of decorated kolatam sticks",
+      "source": "project"
     }
   ],
   "videos": [

@@ -88,7 +88,15 @@
       "value": "Gangamma, clan goddess of the Yadavas"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageUrl": "https://drive.google.com/thumbnail?id=1vWIIFezUExBTtF--72Pkb-FR9Q3jwaxV&sz=w1200",
+      "driveId": "1vWIIFezUExBTtF--72Pkb-FR9Q3jwaxV",
+      "driveFile": "tappeta.jpg",
+      "shows": "Tappeta gullu dancers with drums tied to the chest",
+      "source": "project"
+    }
+  ],
   "videos": [],
   "audio": [],
   "uncertain": [

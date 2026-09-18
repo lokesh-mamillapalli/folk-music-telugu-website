@@ -98,7 +98,15 @@
       "value": "Chiratalu, chidatalu, chitikelu"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageUrl": "https://drive.google.com/thumbnail?id=1PeewMqSpW7mifAfntKFVUBl3xwV2Ku3z&sz=w1200",
+      "driveId": "1PeewMqSpW7mifAfntKFVUBl3xwV2Ku3z",
+      "driveFile": "chirutalu.jpg",
+      "shows": "A pair of chirutalu — wooden clappers with metal jingles",
+      "source": "project"
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [

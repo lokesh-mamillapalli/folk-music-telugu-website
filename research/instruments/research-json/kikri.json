@@ -100,12 +100,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Adivasi_Kala_Jathara_in_Adilabad_%2825-05-_2023%29_43.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Adivasi_Kala_Jathara_in_Adilabad_%2825-05-_2023%29_43.jpg/1280px-Adivasi_Kala_Jathara_in_Adilabad_%2825-05-_2023%29_43.jpg",
-      "author": "Department of Language and Culture, Government of Telangana",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "shows": "A kikri player at the Adivasi Kala Jathara, Adilabad (2023)"
+      "imageUrl": "https://drive.google.com/thumbnail?id=15XNfNhMlGNexcGYfz5SF1XKFIpmWXz65&sz=w1200",
+      "driveId": "15XNfNhMlGNexcGYfz5SF1XKFIpmWXz65",
+      "driveFile": "kikri.jpg",
+      "shows": "A seated kikri player with the bowed fiddle",
+      "source": "project"
     }
   ],
   "videos": [],

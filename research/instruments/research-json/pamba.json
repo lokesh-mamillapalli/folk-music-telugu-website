@@ -81,7 +81,15 @@
       "value": "Used only for worship and ritual, not in concerts"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageUrl": "https://drive.google.com/thumbnail?id=1u2RhjmtcFbV5pypHrvykSzTCk82ysdfN&sz=w1200",
+      "driveId": "1u2RhjmtcFbV5pypHrvykSzTCk82ysdfN",
+      "driveFile": "pamba.jpg",
+      "shows": "A pair of pamba drums in their stand",
+      "source": "project"
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [

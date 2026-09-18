@@ -28,6 +28,7 @@ KEEP = ["id", "nameEn", "nameTe", "otherNames", "category", "classification", "r
 # Only these count as freely licensed (never fair use / all-rights-reserved / "for educational use").
 FREE_LICENSE = re.compile(r"^(cc0|cc-by(-sa)?-[0-9.]+|public domain|pd-|gfdl)", re.I)
 YOUTUBE_HOST = re.compile(r"(youtube\.com/watch\?v=|youtu\.be/)")
+DRIVE_HOST = re.compile(r"(drive\.google\.com|lh3\.googleusercontent\.com)")
 
 
 def check_media(inst):
@@ -35,6 +36,19 @@ def check_media(inst):
     credited, and images/audio must be free-licensed (never fair use)."""
     errs = []
     for image in inst.get("images") or []:
+        own = image.get("source") == "project"
+        if own:
+            # A photo the project supplied itself, served from its Google Drive folder (same
+            # arrangement as the song audio). No Commons file page or licence tag to check; it just
+            # has to say what it shows, and must not claim a licence nobody has verified.
+            for key in ["imageUrl", "shows"]:
+                if not image.get(key):
+                    errs.append(f"images: missing {key} ({image.get('imageUrl')})")
+            if image.get("imageUrl") and not DRIVE_HOST.search(image["imageUrl"]):
+                errs.append(f"images: project imageUrl is not a Google Drive link: {image['imageUrl']!r}")
+            if image.get("license"):
+                errs.append("images: a project photo should not carry a licence tag unless its source is known")
+            continue
         for key in ["filePage", "imageUrl", "author", "license", "shows"]:
             if not image.get(key):
                 errs.append(f"images: missing {key} ({image.get('filePage') or image.get('imageUrl')})")

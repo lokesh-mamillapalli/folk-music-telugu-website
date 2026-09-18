@@ -87,12 +87,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Kolami_Gumela.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Kolami_Gumela.jpg/1280px-Kolami_Gumela.jpg",
-      "author": "Mothiram 123",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "shows": "A gumela (Kolami: కొపం గుమేళా) on display"
+      "imageUrl": "https://drive.google.com/thumbnail?id=1cwg7WuLqh8FZxpPByLZrhPGTrY5rRg7M&sz=w1200",
+      "driveId": "1cwg7WuLqh8FZxpPByLZrhPGTrY5rRg7M",
+      "driveFile": "gumela.png",
+      "shows": "Gumela pot drums, laced with cord",
+      "source": "project"
     }
   ],
   "videos": [],

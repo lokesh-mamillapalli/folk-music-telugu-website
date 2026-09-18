@@ -106,12 +106,11 @@
   ],
   "images": [
     {
-      "filePage": "https://commons.wikimedia.org/wiki/File:Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg/1280px-Rajanna_Dolu_Artists_Performance_at_Hyderabad_Mahankali_Bonalu_%2828.07.2018%29_02.jpg",
-      "author": "Department of Language and Culture, Government of Telangana",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "shows": "Dolu artists performing at the Hyderabad Mahankali Bonalu (2018)"
+      "imageUrl": "https://drive.google.com/thumbnail?id=1rOFjXfrsYDLqNUEG4oia3_JPEtALJmmb&sz=w1200",
+      "driveId": "1rOFjXfrsYDLqNUEG4oia3_JPEtALJmmb",
+      "driveFile": "dolu.jpg",
+      "shows": "A pair of dolu barrel drums",
+      "source": "project"
     }
   ],
   "videos": [],

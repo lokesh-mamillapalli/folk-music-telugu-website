@@ -116,7 +116,15 @@
       "value": "Described as 'jukajum, jukajum'"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageUrl": "https://drive.google.com/thumbnail?id=1dMWxIYKV1Ab3uOw8ICV3JCIZ-CcH5ol9&sz=w1200",
+      "driveId": "1dMWxIYKV1Ab3uOw8ICV3JCIZ-CcH5ol9",
+      "driveFile": "jamidika.jpg",
+      "shows": "Jamidika players in a procession",
+      "source": "project"
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [

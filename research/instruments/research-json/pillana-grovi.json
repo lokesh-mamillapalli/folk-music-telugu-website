@@ -84,7 +84,15 @@
       "value": "Krishna (venugana lola) and herding life"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageUrl": "https://drive.google.com/thumbnail?id=1fZ9dW9dbwgW8ZeWi28zWJP0vIZLQNHrX&sz=w1200",
+      "driveId": "1fZ9dW9dbwgW8ZeWi28zWJP0vIZLQNHrX",
+      "driveFile": "pillana-grovi.jpg",
+      "shows": "A bamboo pillana grovi flute",
+      "source": "project"
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [

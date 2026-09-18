@@ -3,13 +3,24 @@
   "nameEn": "Kalikom",
   "nameTe": "కాలికోం",
   "otherNames": [
-    {"en": "Kalikom (alternative Telugu spelling)", "te": "కాళికోం"},
-    {"en": "Kolikammu", "te": "కొలికమ్ము"}
+    {
+      "en": "Kalikom (alternative Telugu spelling)",
+      "te": "కాళికోం"
+    },
+    {
+      "en": "Kolikammu",
+      "te": "కొలికమ్ము"
+    }
   ],
   "category": "wind",
   "classification": "Long curved horn (aerophone)",
-  "regions": ["Telangana"],
-  "communities": ["Pardhan (bards of the Gonds)", "Raj Gond"],
+  "regions": [
+    "Telangana"
+  ],
+  "communities": [
+    "Pardhan (bards of the Gonds)",
+    "Raj Gond"
+  ],
   "summary": "A long, curved horn of the Gonds of Adilabad, played by Pardhan musicians. It sounds together with the tudum drum and the pepre shawm in the Dandari–Gussadi festival and at the Nagoba Jatara, and its call is likened to a conch summoning people to battle.",
   "sections": {
     "about": [
@@ -32,26 +43,85 @@
       "At the Nagoba Jatara at Keslapur in Indervelli mandal, the Deccan Chronicle reported in 2025 that the kalikom, dhol, thudum and pepri are played differently to suit each ritual or occasion, their sound resounding across Keslapur [4]."
     ]
   },
-  "traditions": ["Dandari–Gussadi festival", "Nagoba Jatara (Keslapur)", "Gond clan and village rites"],
-  "facts": [
-    {"label": "Type", "value": "Long curved horn"},
-    {"label": "Materials", "value": "Brass or wood (English Wikipedia)"},
-    {"label": "Played by", "value": "Pardhan musicians of the Gonds"},
-    {"label": "Played with", "value": "Tudum drum, dhol and pepre shawm"},
-    {"label": "Region", "value": "Adilabad region, northern Telangana"}
+  "traditions": [
+    "Dandari–Gussadi festival",
+    "Nagoba Jatara (Keslapur)",
+    "Gond clan and village rites"
   ],
-  "images": [],
+  "facts": [
+    {
+      "label": "Type",
+      "value": "Long curved horn"
+    },
+    {
+      "label": "Materials",
+      "value": "Brass or wood (English Wikipedia)"
+    },
+    {
+      "label": "Played by",
+      "value": "Pardhan musicians of the Gonds"
+    },
+    {
+      "label": "Played with",
+      "value": "Tudum drum, dhol and pepre shawm"
+    },
+    {
+      "label": "Region",
+      "value": "Adilabad region, northern Telangana"
+    }
+  ],
+  "images": [
+    {
+      "imageUrl": "https://drive.google.com/thumbnail?id=1FarXntzMfhZsLTb4odiQO5jLhk9pa3iZ&sz=w1200",
+      "driveId": "1FarXntzMfhZsLTb4odiQO5jLhk9pa3iZ",
+      "driveFile": "kalikom.jpg",
+      "shows": "A kalikom horn being blown at a festival",
+      "source": "project"
+    }
+  ],
   "videos": [],
   "audio": [],
   "sources": [
-    {"title": "Gussadi dance", "publisher": "English Wikipedia", "url": "https://en.wikipedia.org/wiki/Gussadi_dance"},
-    {"title": "తుడుం (వాయిద్యం) [Tudum (instrument)]", "publisher": "Telugu Wikipedia", "url": "https://te.wikipedia.org/wiki/%E0%B0%A4%E0%B1%81%E0%B0%A1%E0%B1%81%E0%B0%82_(%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%82)"},
-    {"title": "గుస్సాడీ నృత్యం [Gussadi dance]", "publisher": "Telugu Wikipedia", "url": "https://te.wikipedia.org/wiki/%E0%B0%97%E0%B1%81%E0%B0%B8%E0%B1%8D%E0%B0%B8%E0%B0%BE%E0%B0%A1%E0%B1%80_%E0%B0%A8%E0%B1%83%E0%B0%A4%E0%B1%8D%E0%B0%AF%E0%B0%82"},
-    {"title": "Popular Adivasi fete Nagoba Jatara turns popular among non-Adivasis", "publisher": "Pillalamarri Srinivas, Deccan Chronicle, 31 January 2025", "url": "https://www.deccanchronicle.com/southern-states/telangana/popular-adivasi-fete-nagoba-jatara-turns-popular-among-non-adivasis-1858015"},
-    {"title": "Have you heard these rural Indian musical instruments yet?", "publisher": "Village Square, April 2024", "url": "https://villagesquare.in/have-you-heard-these-rural-indian-musical-instruments-yet/"},
-    {"title": "GhotulPito: Gondi culture and dance forms among Raj Gonds", "publisher": "Sphoorthi Theatre (blog), December 2013", "url": "https://sphoorthi-theatre.blogspot.com/2013/12/gotulpito-gondi-culture-and-dance-forms.html"},
-    {"title": "Telangana's musical legacy (reproduces a Deccan Chronicle report by Jaywant Naidu on the 'Adi Dhwani' exhibition, November 2019)", "publisher": "vijaykrishna blog (WordPress)", "url": "https://satyasairamkrishna9.wordpress.com/2019/11/13/telanganas-musical-legacy/"},
-    {"title": "The Raj Gonds of Adilabad: A Peasant Culture of the Deccan, Book I: Myth and Ritual (1948), full text", "publisher": "Christoph von Fürer-Haimendorf with Elizabeth von Fürer-Haimendorf; Macmillan, London (Internet Archive)", "url": "https://archive.org/details/in.ernet.dli.2015.123358"}
+    {
+      "title": "Gussadi dance",
+      "publisher": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gussadi_dance"
+    },
+    {
+      "title": "తుడుం (వాయిద్యం) [Tudum (instrument)]",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%A4%E0%B1%81%E0%B0%A1%E0%B1%81%E0%B0%82_(%E0%B0%B5%E0%B0%BE%E0%B0%AF%E0%B0%BF%E0%B0%A6%E0%B1%8D%E0%B0%AF%E0%B0%82)"
+    },
+    {
+      "title": "గుస్సాడీ నృత్యం [Gussadi dance]",
+      "publisher": "Telugu Wikipedia",
+      "url": "https://te.wikipedia.org/wiki/%E0%B0%97%E0%B1%81%E0%B0%B8%E0%B1%8D%E0%B0%B8%E0%B0%BE%E0%B0%A1%E0%B1%80_%E0%B0%A8%E0%B1%83%E0%B0%A4%E0%B1%8D%E0%B0%AF%E0%B0%82"
+    },
+    {
+      "title": "Popular Adivasi fete Nagoba Jatara turns popular among non-Adivasis",
+      "publisher": "Pillalamarri Srinivas, Deccan Chronicle, 31 January 2025",
+      "url": "https://www.deccanchronicle.com/southern-states/telangana/popular-adivasi-fete-nagoba-jatara-turns-popular-among-non-adivasis-1858015"
+    },
+    {
+      "title": "Have you heard these rural Indian musical instruments yet?",
+      "publisher": "Village Square, April 2024",
+      "url": "https://villagesquare.in/have-you-heard-these-rural-indian-musical-instruments-yet/"
+    },
+    {
+      "title": "GhotulPito: Gondi culture and dance forms among Raj Gonds",
+      "publisher": "Sphoorthi Theatre (blog), December 2013",
+      "url": "https://sphoorthi-theatre.blogspot.com/2013/12/gotulpito-gondi-culture-and-dance-forms.html"
+    },
+    {
+      "title": "Telangana's musical legacy (reproduces a Deccan Chronicle report by Jaywant Naidu on the 'Adi Dhwani' exhibition, November 2019)",
+      "publisher": "vijaykrishna blog (WordPress)",
+      "url": "https://satyasairamkrishna9.wordpress.com/2019/11/13/telanganas-musical-legacy/"
+    },
+    {
+      "title": "The Raj Gonds of Adilabad: A Peasant Culture of the Deccan, Book I: Myth and Ritual (1948), full text",
+      "publisher": "Christoph von Fürer-Haimendorf with Elizabeth von Fürer-Haimendorf; Macmillan, London (Internet Archive)",
+      "url": "https://archive.org/details/in.ernet.dli.2015.123358"
+    }
   ],
   "uncertain": [
     "The kalikom is a horn of the kommu/kahala family covered on a separate page; it may be better presented there as the Gond form of the horn, or cross-linked.",

@@ -63,7 +63,6 @@ def header(prefix, current):
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="{prefix}index.html" aria-label="Telugu Folk Songs — home">
-        {BRAND_MARK}
         <span class="brand-text">
           <span class="brand-name">Telugu Folk Songs</span>
           <span class="brand-te" lang="te">తెలుగు జానపద గీతాలు</span>

@@ -506,12 +506,9 @@ def instrument_detail(inst, instruments, prefix):
             key, esc(title), "".join("<p>{}</p>".format(cited(p)) for p in paragraphs), extra))
 
     toc.append('<a href="#sources">Sources</a>')
-    notes = ""
-    if inst.get("uncertain"):
-        notes = '<details class="research-notes"><summary>Research notes: points where sources differ or could not be confirmed</summary><ul>{}</ul></details>'.format(
-            "".join("<li>{}</li>".format(esc(n)) for n in inst["uncertain"]))
-    body.append('        <section class="card inst-section sources" id="sources">\n          <h2>Sources</h2>\n          <ol>{}</ol>\n          <p class="research-note">This page was compiled from the sources above. The numbers in the text point to the source for each statement.</p>\n          {}\n        </section>'.format(
-        "".join(source_item(n, s) for n, s in enumerate(inst.get("sources", []), start=1)), notes))
+    # The "uncertain" notes stay in research-json/ as working research, but aren't shown on the page.
+    body.append('        <section class="card inst-section sources" id="sources">\n          <h2>Sources</h2>\n          <ol>{}</ol>\n          <p class="research-note">This page was compiled from the sources above. The numbers in the text point to the source for each statement.</p>\n        </section>'.format(
+        "".join(source_item(n, s) for n, s in enumerate(inst.get("sources", []), start=1))))
 
     facts = list(inst.get("facts", []))
     if inst.get("communities") and not any(f.get("label", "").lower().startswith("communit") for f in facts):

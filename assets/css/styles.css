@@ -789,10 +789,6 @@ label { display: grid; gap: 0.4rem; font-size: 0.85rem; font-weight: 600; color:
 .sources li:target { background: var(--primary-soft); border-radius: 6px; }
 .sources a { word-break: break-word; }
 .research-note { margin-top: 1rem; font-size: 0.85rem; color: var(--ink-3); }
-.research-notes { margin-top: 1rem; padding: 12px 14px; border-radius: var(--radius-sm); background: var(--bg-sunk); }
-.research-notes summary { cursor: pointer; font-size: 0.88rem; font-weight: 600; color: var(--ink-2); }
-.research-notes ul { margin: 0.7rem 0 0; padding-left: 1.2rem; display: grid; gap: 0.4rem; }
-.research-notes li { font-size: 0.85rem; color: var(--ink-2); }
 
 .related-inst { display: grid; gap: 8px; }
 .related-inst a { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; padding: 0.6rem 0.8rem; border-radius: var(--radius-sm); background: var(--bg-sunk); color: var(--ink); }
